@@ -1,0 +1,7 @@
+Running: xsim.dir/MIPSLiteTest_behav/xsimk.exe -simmode gui -wdb MIPSLiteTest_behav.wdb -simrunnum 0 -socket 50007
+Design successfully loaded
+Design Loading Memory Usage: 19532 KB (Peak: 19532 KB)
+Design Loading CPU Usage: 93 ms
+Simulation completed
+Simulation Memory Usage: 19920 KB (Peak: 19920 KB)
+Simulation CPU Usage: 93 ms

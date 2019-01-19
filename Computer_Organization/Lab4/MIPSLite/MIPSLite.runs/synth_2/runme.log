@@ -1,0 +1,452 @@
+
+*** Running vivado
+    with args -log top.vds -m64 -mode batch -messageDb vivado.pb -notrace -source top.tcl
+
+WARNING: Default location for XILINX_VIVADO_HLS not found: 
+
+****** Vivado v2015.2 (64-bit)
+  **** SW Build 1266856 on Fri Jun 26 16:35:25 MDT 2015
+  **** IP Build 1264090 on Wed Jun 24 14:22:01 MDT 2015
+    ** Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
+
+source top.tcl -notrace
+Command: synth_design -top top -part xc7a35tcpg236-1 -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-1223] The version limit for your license is '2016.12' and will expire in -318 days. A version limit expiration means that, although you may be able to continue to use the current version of tools or IP with this license, you will not be eligible for any updates or new releases.
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 248.438 ; gain = 68.840
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'top' [D:/Users/TEMP.PCLABS/Desktop/MIPSLite/MIPSLite.srcs/sources_1/new/top.sv:8]
+INFO: [Synth 8-638] synthesizing module 'mips' [D:/Users/TEMP.PCLABS/Desktop/MIPSLite/MIPSLite.srcs/sources_1/new/mips.sv:3]
+INFO: [Synth 8-638] synthesizing module 'controller' [D:/Users/TEMP.PCLABS/Desktop/MIPSLite/MIPSLite.srcs/sources_1/new/mips.sv:20]
+INFO: [Synth 8-638] synthesizing module 'maindec' [D:/Users/TEMP.PCLABS/Desktop/MIPSLite/MIPSLite.srcs/sources_1/new/mips.sv:40]
+INFO: [Synth 8-256] done synthesizing module 'maindec' (1#1) [D:/Users/TEMP.PCLABS/Desktop/MIPSLite/MIPSLite.srcs/sources_1/new/mips.sv:40]
+INFO: [Synth 8-638] synthesizing module 'aludec' [D:/Users/TEMP.PCLABS/Desktop/MIPSLite/MIPSLite.srcs/sources_1/new/mips.sv:61]
+INFO: [Synth 8-256] done synthesizing module 'aludec' (2#1) [D:/Users/TEMP.PCLABS/Desktop/MIPSLite/MIPSLite.srcs/sources_1/new/mips.sv:61]
+INFO: [Synth 8-256] done synthesizing module 'controller' (3#1) [D:/Users/TEMP.PCLABS/Desktop/MIPSLite/MIPSLite.srcs/sources_1/new/mips.sv:20]
+INFO: [Synth 8-638] synthesizing module 'datapath' [D:/Users/TEMP.PCLABS/Desktop/MIPSLite/MIPSLite.srcs/sources_1/new/mips.sv:79]
+INFO: [Synth 8-638] synthesizing module 'flopr' [D:/Users/TEMP.PCLABS/Desktop/MIPSLite/MIPSLite.srcs/sources_1/new/mips.sv:179]
+	Parameter WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'flopr' (4#1) [D:/Users/TEMP.PCLABS/Desktop/MIPSLite/MIPSLite.srcs/sources_1/new/mips.sv:179]
+INFO: [Synth 8-638] synthesizing module 'adder' [D:/Users/TEMP.PCLABS/Desktop/MIPSLite/MIPSLite.srcs/sources_1/new/mips.sv:160]
+INFO: [Synth 8-256] done synthesizing module 'adder' (5#1) [D:/Users/TEMP.PCLABS/Desktop/MIPSLite/MIPSLite.srcs/sources_1/new/mips.sv:160]
+INFO: [Synth 8-638] synthesizing module 'sl2' [D:/Users/TEMP.PCLABS/Desktop/MIPSLite/MIPSLite.srcs/sources_1/new/mips.sv:166]
+INFO: [Synth 8-256] done synthesizing module 'sl2' (6#1) [D:/Users/TEMP.PCLABS/Desktop/MIPSLite/MIPSLite.srcs/sources_1/new/mips.sv:166]
+INFO: [Synth 8-638] synthesizing module 'mux2' [D:/Users/TEMP.PCLABS/Desktop/MIPSLite/MIPSLite.srcs/sources_1/new/mips.sv:191]
+	Parameter WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'mux2' (7#1) [D:/Users/TEMP.PCLABS/Desktop/MIPSLite/MIPSLite.srcs/sources_1/new/mips.sv:191]
+INFO: [Synth 8-638] synthesizing module 'regfile' [D:/Users/TEMP.PCLABS/Desktop/MIPSLite/MIPSLite.srcs/sources_1/new/mips.sv:117]
+WARNING: [Synth 8-4767] Trying to implement RAM 'rf_reg' in registers. Block RAM or DRAM implementation is not possible; see log for reasons.
+Reason is one or more of the following :
+	1: Invalid write to RAM. 
+	2: Unable to determine number of words or word size in RAM. 
+RAM "rf_reg" dissolved into registers
+INFO: [Synth 8-256] done synthesizing module 'regfile' (8#1) [D:/Users/TEMP.PCLABS/Desktop/MIPSLite/MIPSLite.srcs/sources_1/new/mips.sv:117]
+INFO: [Synth 8-638] synthesizing module 'mux2__parameterized0' [D:/Users/TEMP.PCLABS/Desktop/MIPSLite/MIPSLite.srcs/sources_1/new/mips.sv:191]
+	Parameter WIDTH bound to: 5 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'mux2__parameterized0' (8#1) [D:/Users/TEMP.PCLABS/Desktop/MIPSLite/MIPSLite.srcs/sources_1/new/mips.sv:191]
+INFO: [Synth 8-638] synthesizing module 'signext' [D:/Users/TEMP.PCLABS/Desktop/MIPSLite/MIPSLite.srcs/sources_1/new/mips.sv:172]
+INFO: [Synth 8-256] done synthesizing module 'signext' (9#1) [D:/Users/TEMP.PCLABS/Desktop/MIPSLite/MIPSLite.srcs/sources_1/new/mips.sv:172]
+INFO: [Synth 8-638] synthesizing module 'alu' [D:/Users/TEMP.PCLABS/Desktop/MIPSLite/MIPSLite.srcs/sources_1/new/mips.sv:137]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/Users/TEMP.PCLABS/Desktop/MIPSLite/MIPSLite.srcs/sources_1/new/mips.sv:145]
+WARNING: [Synth 8-87] always_comb on 'Y_reg' did not result in combinational logic [D:/Users/TEMP.PCLABS/Desktop/MIPSLite/MIPSLite.srcs/sources_1/new/mips.sv:146]
+WARNING: [Synth 8-87] always_comb on 'zero_reg' did not result in combinational logic [D:/Users/TEMP.PCLABS/Desktop/MIPSLite/MIPSLite.srcs/sources_1/new/mips.sv:148]
+INFO: [Synth 8-256] done synthesizing module 'alu' (10#1) [D:/Users/TEMP.PCLABS/Desktop/MIPSLite/MIPSLite.srcs/sources_1/new/mips.sv:137]
+INFO: [Synth 8-256] done synthesizing module 'datapath' (11#1) [D:/Users/TEMP.PCLABS/Desktop/MIPSLite/MIPSLite.srcs/sources_1/new/mips.sv:79]
+INFO: [Synth 8-256] done synthesizing module 'mips' (12#1) [D:/Users/TEMP.PCLABS/Desktop/MIPSLite/MIPSLite.srcs/sources_1/new/mips.sv:3]
+INFO: [Synth 8-638] synthesizing module 'imem' [D:/Users/TEMP.PCLABS/Desktop/MIPSLite/MIPSLite.srcs/sources_1/new/imem.sv:8]
+INFO: [Synth 8-256] done synthesizing module 'imem' (13#1) [D:/Users/TEMP.PCLABS/Desktop/MIPSLite/MIPSLite.srcs/sources_1/new/imem.sv:8]
+INFO: [Synth 8-638] synthesizing module 'dmem' [D:/Users/TEMP.PCLABS/Desktop/MIPSLite/MIPSLite.srcs/sources_1/new/dmem.sv:5]
+INFO: [Synth 8-256] done synthesizing module 'dmem' (14#1) [D:/Users/TEMP.PCLABS/Desktop/MIPSLite/MIPSLite.srcs/sources_1/new/dmem.sv:5]
+INFO: [Synth 8-256] done synthesizing module 'top' (15#1) [D:/Users/TEMP.PCLABS/Desktop/MIPSLite/MIPSLite.srcs/sources_1/new/top.sv:8]
+---------------------------------------------------------------------------------
+Finished Synthesize : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 282.617 ; gain = 103.020
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 282.617 ; gain = 103.020
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcpg236-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 282.617 ; gain = 103.020
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+WARNING: [Synth 8-327] inferring latch for variable 'Y_reg' [D:/Users/TEMP.PCLABS/Desktop/MIPSLite/MIPSLite.srcs/sources_1/new/mips.sv:146]
+WARNING: [Synth 8-327] inferring latch for variable 'zero_reg' [D:/Users/TEMP.PCLABS/Desktop/MIPSLite/MIPSLite.srcs/sources_1/new/mips.sv:148]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 331.883 ; gain = 152.285
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+No constraint files found.
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     33 Bit       Adders := 1     
+	   3 Input     33 Bit       Adders := 1     
+	   2 Input     32 Bit       Adders := 2     
++---Registers : 
+	               32 Bit    Registers := 33    
++---Muxes : 
+	   2 Input   1024 Bit        Muxes := 2     
+	   2 Input     32 Bit        Muxes := 38    
+	  20 Input     32 Bit        Muxes := 1     
+	   7 Input      9 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 1     
+	  20 Input      5 Bit        Muxes := 1     
+	   8 Input      3 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 32    
+	   8 Input      1 Bit        Muxes := 3     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module maindec 
+Detailed RTL Component Info : 
++---Muxes : 
+	   7 Input      9 Bit        Muxes := 1     
+Module aludec 
+Detailed RTL Component Info : 
++---Muxes : 
+	   8 Input      3 Bit        Muxes := 1     
+Module flopr 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+Module adder 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+Module mux2 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+Module regfile 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 32    
++---Muxes : 
+	   2 Input   1024 Bit        Muxes := 2     
+	   2 Input     32 Bit        Muxes := 34    
+	   2 Input      1 Bit        Muxes := 32    
+Module mux2__parameterized0 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      5 Bit        Muxes := 1     
+Module alu 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     33 Bit       Adders := 1     
+	   3 Input     33 Bit       Adders := 1     
++---Muxes : 
+	   8 Input      1 Bit        Muxes := 3     
+Module imem 
+Detailed RTL Component Info : 
++---Muxes : 
+	  20 Input     32 Bit        Muxes := 1     
+	  20 Input      5 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 120 (col length:60)
+BRAMs: 150 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+Start Parallel Synthesis Optimization  : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 418.379 ; gain = 238.781
+---------------------------------------------------------------------------------
+Start Cross Boundary Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Cross Boundary Optimization : Time (s): cpu = 00:00:07 ; elapsed = 00:00:06 . Memory (MB): peak = 418.379 ; gain = 238.781
+---------------------------------------------------------------------------------
+Finished Parallel Reinference  : Time (s): cpu = 00:00:07 ; elapsed = 00:00:06 . Memory (MB): peak = 418.379 ; gain = 238.781
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: 
++------------+--------------+-----------+----------------------+-----------------+-------------------+
+|Module Name | RTL Object   | Inference | Size (Depth x Width) | Primitives      | Hierarchical Name | 
++------------+--------------+-----------+----------------------+-----------------+-------------------+
+|top         | dmem/RAM_reg | Implied   | 64 x 32              | RAM64X1S x 32   | top/ram__2        | 
++------------+--------------+-----------+----------------------+-----------------+-------------------+
+
+Note: The table shows the Distributed RAMs at the current stage of the synthesis flow. Some Distributed RAMs may be reimplemented as non Distributed RAM primitives later in the synthesis flow. Multiple instantiated RAMs are reported only once. "Hierarchical Name" reflects the Distributed RAM name as it appears in the hierarchical module and only part of it is displayed.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+No constraint files found.
+WARNING: [Synth 8-3332] Sequential element (\rf_reg[8][31] ) is unused and will be removed from module regfile.
+WARNING: [Synth 8-3332] Sequential element (\rf_reg[8][30] ) is unused and will be removed from module regfile.
+WARNING: [Synth 8-3332] Sequential element (\rf_reg[8][29] ) is unused and will be removed from module regfile.
+WARNING: [Synth 8-3332] Sequential element (\rf_reg[8][28] ) is unused and will be removed from module regfile.
+WARNING: [Synth 8-3332] Sequential element (\rf_reg[8][27] ) is unused and will be removed from module regfile.
+WARNING: [Synth 8-3332] Sequential element (\rf_reg[8][26] ) is unused and will be removed from module regfile.
+WARNING: [Synth 8-3332] Sequential element (\rf_reg[8][25] ) is unused and will be removed from module regfile.
+WARNING: [Synth 8-3332] Sequential element (\rf_reg[8][24] ) is unused and will be removed from module regfile.
+WARNING: [Synth 8-3332] Sequential element (\rf_reg[8][23] ) is unused and will be removed from module regfile.
+WARNING: [Synth 8-3332] Sequential element (\rf_reg[8][22] ) is unused and will be removed from module regfile.
+WARNING: [Synth 8-3332] Sequential element (\rf_reg[8][21] ) is unused and will be removed from module regfile.
+WARNING: [Synth 8-3332] Sequential element (\rf_reg[8][20] ) is unused and will be removed from module regfile.
+WARNING: [Synth 8-3332] Sequential element (\rf_reg[8][19] ) is unused and will be removed from module regfile.
+WARNING: [Synth 8-3332] Sequential element (\rf_reg[8][18] ) is unused and will be removed from module regfile.
+WARNING: [Synth 8-3332] Sequential element (\rf_reg[8][17] ) is unused and will be removed from module regfile.
+WARNING: [Synth 8-3332] Sequential element (\rf_reg[8][16] ) is unused and will be removed from module regfile.
+WARNING: [Synth 8-3332] Sequential element (\rf_reg[8][15] ) is unused and will be removed from module regfile.
+WARNING: [Synth 8-3332] Sequential element (\rf_reg[8][14] ) is unused and will be removed from module regfile.
+WARNING: [Synth 8-3332] Sequential element (\rf_reg[8][13] ) is unused and will be removed from module regfile.
+WARNING: [Synth 8-3332] Sequential element (\rf_reg[8][12] ) is unused and will be removed from module regfile.
+WARNING: [Synth 8-3332] Sequential element (\rf_reg[8][11] ) is unused and will be removed from module regfile.
+WARNING: [Synth 8-3332] Sequential element (\rf_reg[8][10] ) is unused and will be removed from module regfile.
+WARNING: [Synth 8-3332] Sequential element (\rf_reg[8][9] ) is unused and will be removed from module regfile.
+WARNING: [Synth 8-3332] Sequential element (\rf_reg[8][8] ) is unused and will be removed from module regfile.
+WARNING: [Synth 8-3332] Sequential element (\rf_reg[8][7] ) is unused and will be removed from module regfile.
+WARNING: [Synth 8-3332] Sequential element (\rf_reg[8][6] ) is unused and will be removed from module regfile.
+WARNING: [Synth 8-3332] Sequential element (\rf_reg[8][5] ) is unused and will be removed from module regfile.
+WARNING: [Synth 8-3332] Sequential element (\rf_reg[8][4] ) is unused and will be removed from module regfile.
+WARNING: [Synth 8-3332] Sequential element (\rf_reg[8][3] ) is unused and will be removed from module regfile.
+WARNING: [Synth 8-3332] Sequential element (\rf_reg[8][2] ) is unused and will be removed from module regfile.
+WARNING: [Synth 8-3332] Sequential element (\rf_reg[8][1] ) is unused and will be removed from module regfile.
+WARNING: [Synth 8-3332] Sequential element (\rf_reg[8][0] ) is unused and will be removed from module regfile.
+WARNING: [Synth 8-3332] Sequential element (\rf_reg[9][31] ) is unused and will be removed from module regfile.
+WARNING: [Synth 8-3332] Sequential element (\rf_reg[9][30] ) is unused and will be removed from module regfile.
+WARNING: [Synth 8-3332] Sequential element (\rf_reg[9][29] ) is unused and will be removed from module regfile.
+WARNING: [Synth 8-3332] Sequential element (\rf_reg[9][28] ) is unused and will be removed from module regfile.
+WARNING: [Synth 8-3332] Sequential element (\rf_reg[9][27] ) is unused and will be removed from module regfile.
+WARNING: [Synth 8-3332] Sequential element (\rf_reg[9][26] ) is unused and will be removed from module regfile.
+WARNING: [Synth 8-3332] Sequential element (\rf_reg[9][25] ) is unused and will be removed from module regfile.
+WARNING: [Synth 8-3332] Sequential element (\rf_reg[9][24] ) is unused and will be removed from module regfile.
+WARNING: [Synth 8-3332] Sequential element (\rf_reg[9][23] ) is unused and will be removed from module regfile.
+WARNING: [Synth 8-3332] Sequential element (\rf_reg[9][22] ) is unused and will be removed from module regfile.
+WARNING: [Synth 8-3332] Sequential element (\rf_reg[9][21] ) is unused and will be removed from module regfile.
+WARNING: [Synth 8-3332] Sequential element (\rf_reg[9][20] ) is unused and will be removed from module regfile.
+WARNING: [Synth 8-3332] Sequential element (\rf_reg[9][19] ) is unused and will be removed from module regfile.
+WARNING: [Synth 8-3332] Sequential element (\rf_reg[9][18] ) is unused and will be removed from module regfile.
+WARNING: [Synth 8-3332] Sequential element (\rf_reg[9][17] ) is unused and will be removed from module regfile.
+WARNING: [Synth 8-3332] Sequential element (\rf_reg[9][16] ) is unused and will be removed from module regfile.
+WARNING: [Synth 8-3332] Sequential element (\rf_reg[9][15] ) is unused and will be removed from module regfile.
+WARNING: [Synth 8-3332] Sequential element (\rf_reg[9][14] ) is unused and will be removed from module regfile.
+WARNING: [Synth 8-3332] Sequential element (\rf_reg[9][13] ) is unused and will be removed from module regfile.
+WARNING: [Synth 8-3332] Sequential element (\rf_reg[9][12] ) is unused and will be removed from module regfile.
+WARNING: [Synth 8-3332] Sequential element (\rf_reg[9][11] ) is unused and will be removed from module regfile.
+WARNING: [Synth 8-3332] Sequential element (\rf_reg[9][10] ) is unused and will be removed from module regfile.
+WARNING: [Synth 8-3332] Sequential element (\rf_reg[9][9] ) is unused and will be removed from module regfile.
+WARNING: [Synth 8-3332] Sequential element (\rf_reg[9][8] ) is unused and will be removed from module regfile.
+WARNING: [Synth 8-3332] Sequential element (\rf_reg[9][7] ) is unused and will be removed from module regfile.
+WARNING: [Synth 8-3332] Sequential element (\rf_reg[9][6] ) is unused and will be removed from module regfile.
+WARNING: [Synth 8-3332] Sequential element (\rf_reg[9][5] ) is unused and will be removed from module regfile.
+WARNING: [Synth 8-3332] Sequential element (\rf_reg[9][4] ) is unused and will be removed from module regfile.
+WARNING: [Synth 8-3332] Sequential element (\rf_reg[9][3] ) is unused and will be removed from module regfile.
+WARNING: [Synth 8-3332] Sequential element (\rf_reg[9][2] ) is unused and will be removed from module regfile.
+WARNING: [Synth 8-3332] Sequential element (\rf_reg[9][1] ) is unused and will be removed from module regfile.
+WARNING: [Synth 8-3332] Sequential element (\rf_reg[9][0] ) is unused and will be removed from module regfile.
+WARNING: [Synth 8-3332] Sequential element (\rf_reg[10][31] ) is unused and will be removed from module regfile.
+WARNING: [Synth 8-3332] Sequential element (\rf_reg[10][30] ) is unused and will be removed from module regfile.
+WARNING: [Synth 8-3332] Sequential element (\rf_reg[10][29] ) is unused and will be removed from module regfile.
+WARNING: [Synth 8-3332] Sequential element (\rf_reg[10][28] ) is unused and will be removed from module regfile.
+WARNING: [Synth 8-3332] Sequential element (\rf_reg[10][27] ) is unused and will be removed from module regfile.
+WARNING: [Synth 8-3332] Sequential element (\rf_reg[10][26] ) is unused and will be removed from module regfile.
+WARNING: [Synth 8-3332] Sequential element (\rf_reg[10][25] ) is unused and will be removed from module regfile.
+WARNING: [Synth 8-3332] Sequential element (\rf_reg[10][24] ) is unused and will be removed from module regfile.
+WARNING: [Synth 8-3332] Sequential element (\rf_reg[10][23] ) is unused and will be removed from module regfile.
+WARNING: [Synth 8-3332] Sequential element (\rf_reg[10][22] ) is unused and will be removed from module regfile.
+WARNING: [Synth 8-3332] Sequential element (\rf_reg[10][21] ) is unused and will be removed from module regfile.
+WARNING: [Synth 8-3332] Sequential element (\rf_reg[10][20] ) is unused and will be removed from module regfile.
+WARNING: [Synth 8-3332] Sequential element (\rf_reg[10][19] ) is unused and will be removed from module regfile.
+WARNING: [Synth 8-3332] Sequential element (\rf_reg[10][18] ) is unused and will be removed from module regfile.
+WARNING: [Synth 8-3332] Sequential element (\rf_reg[10][17] ) is unused and will be removed from module regfile.
+WARNING: [Synth 8-3332] Sequential element (\rf_reg[10][16] ) is unused and will be removed from module regfile.
+WARNING: [Synth 8-3332] Sequential element (\rf_reg[10][15] ) is unused and will be removed from module regfile.
+WARNING: [Synth 8-3332] Sequential element (\rf_reg[10][14] ) is unused and will be removed from module regfile.
+WARNING: [Synth 8-3332] Sequential element (\rf_reg[10][13] ) is unused and will be removed from module regfile.
+WARNING: [Synth 8-3332] Sequential element (\rf_reg[10][12] ) is unused and will be removed from module regfile.
+WARNING: [Synth 8-3332] Sequential element (\rf_reg[10][11] ) is unused and will be removed from module regfile.
+WARNING: [Synth 8-3332] Sequential element (\rf_reg[10][10] ) is unused and will be removed from module regfile.
+WARNING: [Synth 8-3332] Sequential element (\rf_reg[10][9] ) is unused and will be removed from module regfile.
+WARNING: [Synth 8-3332] Sequential element (\rf_reg[10][8] ) is unused and will be removed from module regfile.
+WARNING: [Synth 8-3332] Sequential element (\rf_reg[10][7] ) is unused and will be removed from module regfile.
+WARNING: [Synth 8-3332] Sequential element (\rf_reg[10][6] ) is unused and will be removed from module regfile.
+WARNING: [Synth 8-3332] Sequential element (\rf_reg[10][5] ) is unused and will be removed from module regfile.
+WARNING: [Synth 8-3332] Sequential element (\rf_reg[10][4] ) is unused and will be removed from module regfile.
+WARNING: [Synth 8-3332] Sequential element (\rf_reg[10][3] ) is unused and will be removed from module regfile.
+WARNING: [Synth 8-3332] Sequential element (\rf_reg[10][2] ) is unused and will be removed from module regfile.
+WARNING: [Synth 8-3332] Sequential element (\rf_reg[10][1] ) is unused and will be removed from module regfile.
+WARNING: [Synth 8-3332] Sequential element (\rf_reg[10][0] ) is unused and will be removed from module regfile.
+WARNING: [Synth 8-3332] Sequential element (\rf_reg[11][31] ) is unused and will be removed from module regfile.
+WARNING: [Synth 8-3332] Sequential element (\rf_reg[11][30] ) is unused and will be removed from module regfile.
+WARNING: [Synth 8-3332] Sequential element (\rf_reg[11][29] ) is unused and will be removed from module regfile.
+WARNING: [Synth 8-3332] Sequential element (\rf_reg[11][28] ) is unused and will be removed from module regfile.
+INFO: [Common 17-14] Message 'Synth 8-3332' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Start Area Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Area Optimization : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 446.055 ; gain = 266.457
+---------------------------------------------------------------------------------
+Finished Parallel Area Optimization  : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 446.055 ; gain = 266.457
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+Finished Parallel Synthesis Optimization  : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 446.055 ; gain = 266.457
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 446.055 ; gain = 266.457
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 446.055 ; gain = 266.457
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 446.055 ; gain = 266.457
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 446.055 ; gain = 266.457
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 446.055 ; gain = 266.457
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 446.055 ; gain = 266.457
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 446.055 ; gain = 266.457
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+---------+------+
+|      |Cell     |Count |
++------+---------+------+
+|1     |CARRY4   |    26|
+|2     |LUT1     |     7|
+|3     |LUT2     |    64|
+|4     |LUT3     |   260|
+|5     |LUT4     |    34|
+|6     |LUT5     |   132|
+|7     |LUT6     |   720|
+|8     |RAM64X1S |    32|
+|9     |FDCE     |   261|
+|10    |FDPE     |   256|
+|11    |LD       |     1|
+|12    |LDC      |   256|
++------+---------+------+
+
+Report Instance Areas: 
++------+-------------+---------+------+
+|      |Instance     |Module   |Cells |
++------+-------------+---------+------+
+|1     |top          |         |  2049|
+|2     |  dmem       |dmem     |    32|
+|3     |  mips       |mips     |  2017|
+|4     |    dp       |datapath |  2017|
+|5     |      alu    |alu      |    33|
+|6     |      pcadd1 |adder    |     4|
+|7     |      pcadd2 |adder_0  |     5|
+|8     |      pcreg  |flopr    |   823|
+|9     |      rf     |regfile  |   896|
++------+-------------+---------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 446.055 ; gain = 266.457
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 832 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 446.055 ; gain = 250.758
+Synthesis Optimization Complete : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 446.055 ; gain = 266.457
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 315 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 289 instances were transformed.
+  LD => LDCE: 1 instances
+  LDC => LDCE: 256 instances
+  RAM64X1S => RAM64X1S (RAMS64E): 32 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+44 Infos, 105 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:11 ; elapsed = 00:00:10 . Memory (MB): peak = 504.883 ; gain = 310.895
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+write_checkpoint: Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 943.578 ; gain = 438.695
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.062 . Memory (MB): peak = 944.262 ; gain = 0.684
+INFO: [Common 17-206] Exiting Vivado at Tue Nov 14 23:51:42 2017...

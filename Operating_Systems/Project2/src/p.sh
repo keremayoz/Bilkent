@@ -1,0 +1,1 @@
+sudo ./syn_phistogram 0 10000 7 4 test_1.txt test_2.txt test_3.txt test_4.txt poutput.txt

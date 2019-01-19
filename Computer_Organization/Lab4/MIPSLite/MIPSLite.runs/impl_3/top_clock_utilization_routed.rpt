@@ -1,0 +1,2195 @@
+Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
+-----------------------------------------------------------------------------------------
+| Tool Version      : Vivado v.2015.2 (win64) Build 1266856 Fri Jun 26 16:35:25 MDT 2015
+| Date              : Tue Nov 14 23:57:53 2017
+| Host              : EALAB01 running 64-bit Service Pack 1  (build 7601)
+| Command           : report_clock_utilization -file top_clock_utilization_routed.rpt
+| Design            : top
+| Device            : 7a35t-cpg236
+| Speed File        : -1  PRODUCTION 1.14 2014-09-11
+| Temperature Grade : C
+-----------------------------------------------------------------------------------------
+
+Clock Utilization Report
+
+Table of Contents
+-----------------
+1. Clock Primitive Utilization
+2. Details of Global Clocks
+3. Details of Regional Clocks
+4. Details of Multi-Regional Clocks
+5. Details of I/O Clocks
+6. Details of Local Clocks
+7. Clock Regions : Key Resource Utilization
+8. Net wise resources used in clock region X0Y0
+9. Net wise resources used in clock region X1Y0
+
+1. Clock Primitive Utilization
+------------------------------
+
++-------+------+-----------+-----------+
+| Type  | Used | Available | Num Fixed |
++-------+------+-----------+-----------+
+| BUFG  |    1 |        32 |         0 |
+| BUFH  |    0 |        72 |         0 |
+| BUFIO |    0 |        20 |         0 |
+| MMCM  |    0 |         5 |         0 |
+| PLL   |    0 |         5 |         0 |
+| BUFR  |    0 |        20 |         0 |
+| BUFMR |    0 |        10 |         0 |
++-------+------+-----------+-----------+
+
+
+2. Details of Global Clocks
+---------------------------
+
++-------+--------------------+---------------+--------------+-------+
+|       |                    |               |   Num Loads  |       |
++-------+--------------------+---------------+------+-------+-------+
+| Index | BUFG Cell          | Net Name      | BELs | Sites | Fixed |
++-------+--------------------+---------------+------+-------+-------+
+|     1 | clk_IBUF_BUFG_inst | clk_IBUF_BUFG |  549 |   522 |    no |
++-------+--------------------+---------------+------+-------+-------+
+
+
+3. Details of Regional Clocks
+-----------------------------
+
+4. Details of Multi-Regional Clocks
+-----------------------------------
+
+5. Details of I/O Clocks
+------------------------
+
+6. Details of Local Clocks
+--------------------------
+
++-------+-------------------------------------+-------------------------------+--------------+-------+
+|       |                                     |                               |   Num Loads  |       |
++-------+-------------------------------------+-------------------------------+------+-------+-------+
+| Index | Local Clk Src                       | Net Name                      | BELs | Sites | Fixed |
++-------+-------------------------------------+-------------------------------+------+-------+-------+
+|     1 | mips/dp/pcreg/zero_reg_i_2          | mips/dp/pcreg/q_reg[4]_0      |    1 |     1 |    no |
+|     2 | mips/dp/pcreg/rf_reg[0][0]_LDC_i_1  | mips/dp/pcreg/rf_reg[0][0]_P  |    2 |     2 |    no |
+|     3 | mips/dp/pcreg/rf_reg[0][10]_LDC_i_1 | mips/dp/pcreg/rf_reg[0][10]_P |    2 |     2 |    no |
+|     4 | mips/dp/pcreg/rf_reg[0][11]_LDC_i_1 | mips/dp/pcreg/rf_reg[0][11]_P |    2 |     2 |    no |
+|     5 | mips/dp/pcreg/rf_reg[0][12]_LDC_i_1 | mips/dp/pcreg/rf_reg[0][12]_P |    2 |     2 |    no |
+|     6 | mips/dp/pcreg/rf_reg[0][13]_LDC_i_1 | mips/dp/pcreg/rf_reg[0][13]_P |    2 |     2 |    no |
+|     7 | mips/dp/pcreg/rf_reg[0][14]_LDC_i_1 | mips/dp/pcreg/rf_reg[0][14]_P |    2 |     2 |    no |
+|     8 | mips/dp/pcreg/rf_reg[0][15]_LDC_i_1 | mips/dp/pcreg/rf_reg[0][15]_P |    2 |     2 |    no |
+|     9 | mips/dp/pcreg/rf_reg[0][16]_LDC_i_1 | mips/dp/pcreg/rf_reg[0][16]_P |    2 |     2 |    no |
+|    10 | mips/dp/pcreg/rf_reg[0][17]_LDC_i_1 | mips/dp/pcreg/rf_reg[0][17]_P |    2 |     2 |    no |
+|    11 | mips/dp/pcreg/rf_reg[0][18]_LDC_i_1 | mips/dp/pcreg/rf_reg[0][18]_P |    2 |     2 |    no |
+|    12 | mips/dp/pcreg/rf_reg[0][19]_LDC_i_1 | mips/dp/pcreg/rf_reg[0][19]_P |    2 |     2 |    no |
+|    13 | mips/dp/pcreg/rf_reg[0][1]_LDC_i_1  | mips/dp/pcreg/rf_reg[0][1]_P  |    2 |     2 |    no |
+|    14 | mips/dp/pcreg/rf_reg[0][20]_LDC_i_1 | mips/dp/pcreg/rf_reg[0][20]_P |    2 |     2 |    no |
+|    15 | mips/dp/pcreg/rf_reg[0][21]_LDC_i_1 | mips/dp/pcreg/rf_reg[0][21]_P |    2 |     2 |    no |
+|    16 | mips/dp/pcreg/rf_reg[0][22]_LDC_i_1 | mips/dp/pcreg/rf_reg[0][22]_P |    2 |     2 |    no |
+|    17 | mips/dp/pcreg/rf_reg[0][23]_LDC_i_1 | mips/dp/pcreg/rf_reg[0][23]_P |    2 |     2 |    no |
+|    18 | mips/dp/pcreg/rf_reg[0][24]_LDC_i_1 | mips/dp/pcreg/rf_reg[0][24]_P |    2 |     2 |    no |
+|    19 | mips/dp/pcreg/rf_reg[0][25]_LDC_i_1 | mips/dp/pcreg/rf_reg[0][25]_P |    2 |     2 |    no |
+|    20 | mips/dp/pcreg/rf_reg[0][26]_LDC_i_1 | mips/dp/pcreg/rf_reg[0][26]_P |    2 |     2 |    no |
+|    21 | mips/dp/pcreg/rf_reg[0][27]_LDC_i_1 | mips/dp/pcreg/rf_reg[0][27]_P |    2 |     2 |    no |
+|    22 | mips/dp/pcreg/rf_reg[0][28]_LDC_i_1 | mips/dp/pcreg/rf_reg[0][28]_P |    2 |     2 |    no |
+|    23 | mips/dp/pcreg/rf_reg[0][29]_LDC_i_1 | mips/dp/pcreg/rf_reg[0][29]_P |    2 |     2 |    no |
+|    24 | mips/dp/pcreg/rf_reg[0][2]_LDC_i_1  | mips/dp/pcreg/rf_reg[0][2]_P  |    2 |     2 |    no |
+|    25 | mips/dp/pcreg/rf_reg[0][30]_LDC_i_1 | mips/dp/pcreg/rf_reg[0][30]_P |    2 |     2 |    no |
+|    26 | mips/dp/pcreg/rf_reg[0][31]_LDC_i_1 | mips/dp/pcreg/rf_reg[0][31]_P |    2 |     2 |    no |
+|    27 | mips/dp/pcreg/rf_reg[0][3]_LDC_i_1  | mips/dp/pcreg/rf_reg[0][3]_P  |    2 |     2 |    no |
+|    28 | mips/dp/pcreg/rf_reg[0][4]_LDC_i_1  | mips/dp/pcreg/rf_reg[0][4]_P  |    2 |     2 |    no |
+|    29 | mips/dp/pcreg/rf_reg[0][5]_LDC_i_1  | mips/dp/pcreg/rf_reg[0][5]_P  |    2 |     2 |    no |
+|    30 | mips/dp/pcreg/rf_reg[0][6]_LDC_i_1  | mips/dp/pcreg/rf_reg[0][6]_P  |    2 |     2 |    no |
+|    31 | mips/dp/pcreg/rf_reg[0][7]_LDC_i_1  | mips/dp/pcreg/rf_reg[0][7]_P  |    2 |     2 |    no |
+|    32 | mips/dp/pcreg/rf_reg[0][8]_LDC_i_1  | mips/dp/pcreg/rf_reg[0][8]_P  |    2 |     2 |    no |
+|    33 | mips/dp/pcreg/rf_reg[0][9]_LDC_i_1  | mips/dp/pcreg/rf_reg[0][9]_P  |    2 |     2 |    no |
+|    34 | mips/dp/pcreg/rf_reg[1][0]_LDC_i_1  | mips/dp/pcreg/rf_reg[1][0]_P  |    2 |     2 |    no |
+|    35 | mips/dp/pcreg/rf_reg[1][10]_LDC_i_1 | mips/dp/pcreg/rf_reg[1][10]_P |    2 |     2 |    no |
+|    36 | mips/dp/pcreg/rf_reg[1][11]_LDC_i_1 | mips/dp/pcreg/rf_reg[1][11]_P |    2 |     2 |    no |
+|    37 | mips/dp/pcreg/rf_reg[1][12]_LDC_i_1 | mips/dp/pcreg/rf_reg[1][12]_P |    2 |     2 |    no |
+|    38 | mips/dp/pcreg/rf_reg[1][13]_LDC_i_1 | mips/dp/pcreg/rf_reg[1][13]_P |    2 |     2 |    no |
+|    39 | mips/dp/pcreg/rf_reg[1][14]_LDC_i_1 | mips/dp/pcreg/rf_reg[1][14]_P |    2 |     2 |    no |
+|    40 | mips/dp/pcreg/rf_reg[1][15]_LDC_i_1 | mips/dp/pcreg/rf_reg[1][15]_P |    2 |     2 |    no |
+|    41 | mips/dp/pcreg/rf_reg[1][16]_LDC_i_1 | mips/dp/pcreg/rf_reg[1][16]_P |    2 |     2 |    no |
+|    42 | mips/dp/pcreg/rf_reg[1][17]_LDC_i_1 | mips/dp/pcreg/rf_reg[1][17]_P |    2 |     2 |    no |
+|    43 | mips/dp/pcreg/rf_reg[1][18]_LDC_i_1 | mips/dp/pcreg/rf_reg[1][18]_P |    2 |     2 |    no |
+|    44 | mips/dp/pcreg/rf_reg[1][19]_LDC_i_1 | mips/dp/pcreg/rf_reg[1][19]_P |    2 |     2 |    no |
+|    45 | mips/dp/pcreg/rf_reg[1][1]_LDC_i_1  | mips/dp/pcreg/rf_reg[1][1]_P  |    2 |     2 |    no |
+|    46 | mips/dp/pcreg/rf_reg[1][20]_LDC_i_1 | mips/dp/pcreg/rf_reg[1][20]_P |    2 |     2 |    no |
+|    47 | mips/dp/pcreg/rf_reg[1][21]_LDC_i_1 | mips/dp/pcreg/rf_reg[1][21]_P |    2 |     2 |    no |
+|    48 | mips/dp/pcreg/rf_reg[1][22]_LDC_i_1 | mips/dp/pcreg/rf_reg[1][22]_P |    2 |     2 |    no |
+|    49 | mips/dp/pcreg/rf_reg[1][23]_LDC_i_1 | mips/dp/pcreg/rf_reg[1][23]_P |    2 |     2 |    no |
+|    50 | mips/dp/pcreg/rf_reg[1][24]_LDC_i_1 | mips/dp/pcreg/rf_reg[1][24]_P |    2 |     2 |    no |
+|    51 | mips/dp/pcreg/rf_reg[1][25]_LDC_i_1 | mips/dp/pcreg/rf_reg[1][25]_P |    2 |     2 |    no |
+|    52 | mips/dp/pcreg/rf_reg[1][26]_LDC_i_1 | mips/dp/pcreg/rf_reg[1][26]_P |    2 |     2 |    no |
+|    53 | mips/dp/pcreg/rf_reg[1][27]_LDC_i_1 | mips/dp/pcreg/rf_reg[1][27]_P |    2 |     2 |    no |
+|    54 | mips/dp/pcreg/rf_reg[1][28]_LDC_i_1 | mips/dp/pcreg/rf_reg[1][28]_P |    2 |     2 |    no |
+|    55 | mips/dp/pcreg/rf_reg[1][29]_LDC_i_1 | mips/dp/pcreg/rf_reg[1][29]_P |    2 |     2 |    no |
+|    56 | mips/dp/pcreg/rf_reg[1][2]_LDC_i_1  | mips/dp/pcreg/rf_reg[1][2]_P  |    2 |     2 |    no |
+|    57 | mips/dp/pcreg/rf_reg[1][30]_LDC_i_1 | mips/dp/pcreg/rf_reg[1][30]_P |    2 |     2 |    no |
+|    58 | mips/dp/pcreg/rf_reg[1][31]_LDC_i_1 | mips/dp/pcreg/rf_reg[1][31]_P |    2 |     2 |    no |
+|    59 | mips/dp/pcreg/rf_reg[1][3]_LDC_i_1  | mips/dp/pcreg/rf_reg[1][3]_P  |    2 |     2 |    no |
+|    60 | mips/dp/pcreg/rf_reg[1][4]_LDC_i_1  | mips/dp/pcreg/rf_reg[1][4]_P  |    2 |     2 |    no |
+|    61 | mips/dp/pcreg/rf_reg[1][5]_LDC_i_1  | mips/dp/pcreg/rf_reg[1][5]_P  |    2 |     2 |    no |
+|    62 | mips/dp/pcreg/rf_reg[1][6]_LDC_i_1  | mips/dp/pcreg/rf_reg[1][6]_P  |    2 |     2 |    no |
+|    63 | mips/dp/pcreg/rf_reg[1][7]_LDC_i_1  | mips/dp/pcreg/rf_reg[1][7]_P  |    2 |     2 |    no |
+|    64 | mips/dp/pcreg/rf_reg[1][8]_LDC_i_1  | mips/dp/pcreg/rf_reg[1][8]_P  |    2 |     2 |    no |
+|    65 | mips/dp/pcreg/rf_reg[1][9]_LDC_i_1  | mips/dp/pcreg/rf_reg[1][9]_P  |    2 |     2 |    no |
+|    66 | mips/dp/pcreg/rf_reg[2][0]_LDC_i_1  | mips/dp/pcreg/rf_reg[2][0]_P  |    2 |     2 |    no |
+|    67 | mips/dp/pcreg/rf_reg[2][10]_LDC_i_1 | mips/dp/pcreg/rf_reg[2][10]_P |    2 |     2 |    no |
+|    68 | mips/dp/pcreg/rf_reg[2][11]_LDC_i_1 | mips/dp/pcreg/rf_reg[2][11]_P |    2 |     2 |    no |
+|    69 | mips/dp/pcreg/rf_reg[2][12]_LDC_i_1 | mips/dp/pcreg/rf_reg[2][12]_P |    2 |     2 |    no |
+|    70 | mips/dp/pcreg/rf_reg[2][13]_LDC_i_1 | mips/dp/pcreg/rf_reg[2][13]_P |    2 |     2 |    no |
+|    71 | mips/dp/pcreg/rf_reg[2][14]_LDC_i_1 | mips/dp/pcreg/rf_reg[2][14]_P |    2 |     2 |    no |
+|    72 | mips/dp/pcreg/rf_reg[2][15]_LDC_i_1 | mips/dp/pcreg/rf_reg[2][15]_P |    2 |     2 |    no |
+|    73 | mips/dp/pcreg/rf_reg[2][16]_LDC_i_1 | mips/dp/pcreg/rf_reg[2][16]_P |    2 |     2 |    no |
+|    74 | mips/dp/pcreg/rf_reg[2][17]_LDC_i_1 | mips/dp/pcreg/rf_reg[2][17]_P |    2 |     2 |    no |
+|    75 | mips/dp/pcreg/rf_reg[2][18]_LDC_i_1 | mips/dp/pcreg/rf_reg[2][18]_P |    2 |     2 |    no |
+|    76 | mips/dp/pcreg/rf_reg[2][19]_LDC_i_1 | mips/dp/pcreg/rf_reg[2][19]_P |    2 |     2 |    no |
+|    77 | mips/dp/pcreg/rf_reg[2][1]_LDC_i_1  | mips/dp/pcreg/rf_reg[2][1]_P  |    2 |     2 |    no |
+|    78 | mips/dp/pcreg/rf_reg[2][20]_LDC_i_1 | mips/dp/pcreg/rf_reg[2][20]_P |    2 |     2 |    no |
+|    79 | mips/dp/pcreg/rf_reg[2][21]_LDC_i_1 | mips/dp/pcreg/rf_reg[2][21]_P |    2 |     2 |    no |
+|    80 | mips/dp/pcreg/rf_reg[2][22]_LDC_i_1 | mips/dp/pcreg/rf_reg[2][22]_P |    2 |     2 |    no |
+|    81 | mips/dp/pcreg/rf_reg[2][23]_LDC_i_1 | mips/dp/pcreg/rf_reg[2][23]_P |    2 |     2 |    no |
+|    82 | mips/dp/pcreg/rf_reg[2][24]_LDC_i_1 | mips/dp/pcreg/rf_reg[2][24]_P |    2 |     2 |    no |
+|    83 | mips/dp/pcreg/rf_reg[2][25]_LDC_i_1 | mips/dp/pcreg/rf_reg[2][25]_P |    2 |     2 |    no |
+|    84 | mips/dp/pcreg/rf_reg[2][26]_LDC_i_1 | mips/dp/pcreg/rf_reg[2][26]_P |    2 |     2 |    no |
+|    85 | mips/dp/pcreg/rf_reg[2][27]_LDC_i_1 | mips/dp/pcreg/rf_reg[2][27]_P |    2 |     2 |    no |
+|    86 | mips/dp/pcreg/rf_reg[2][28]_LDC_i_1 | mips/dp/pcreg/rf_reg[2][28]_P |    2 |     2 |    no |
+|    87 | mips/dp/pcreg/rf_reg[2][29]_LDC_i_1 | mips/dp/pcreg/rf_reg[2][29]_P |    2 |     2 |    no |
+|    88 | mips/dp/pcreg/rf_reg[2][2]_LDC_i_1  | mips/dp/pcreg/rf_reg[2][2]_P  |    2 |     2 |    no |
+|    89 | mips/dp/pcreg/rf_reg[2][30]_LDC_i_1 | mips/dp/pcreg/rf_reg[2][30]_P |    2 |     2 |    no |
+|    90 | mips/dp/pcreg/rf_reg[2][31]_LDC_i_1 | mips/dp/pcreg/rf_reg[2][31]_P |    2 |     2 |    no |
+|    91 | mips/dp/pcreg/rf_reg[2][3]_LDC_i_1  | mips/dp/pcreg/rf_reg[2][3]_P  |    2 |     2 |    no |
+|    92 | mips/dp/pcreg/rf_reg[2][4]_LDC_i_1  | mips/dp/pcreg/rf_reg[2][4]_P  |    2 |     2 |    no |
+|    93 | mips/dp/pcreg/rf_reg[2][5]_LDC_i_1  | mips/dp/pcreg/rf_reg[2][5]_P  |    2 |     2 |    no |
+|    94 | mips/dp/pcreg/rf_reg[2][6]_LDC_i_1  | mips/dp/pcreg/rf_reg[2][6]_P  |    2 |     2 |    no |
+|    95 | mips/dp/pcreg/rf_reg[2][7]_LDC_i_1  | mips/dp/pcreg/rf_reg[2][7]_P  |    2 |     2 |    no |
+|    96 | mips/dp/pcreg/rf_reg[2][8]_LDC_i_1  | mips/dp/pcreg/rf_reg[2][8]_P  |    2 |     2 |    no |
+|    97 | mips/dp/pcreg/rf_reg[2][9]_LDC_i_1  | mips/dp/pcreg/rf_reg[2][9]_P  |    2 |     2 |    no |
+|    98 | mips/dp/pcreg/rf_reg[3][0]_LDC_i_1  | mips/dp/pcreg/rf_reg[3][0]_P  |    2 |     2 |    no |
+|    99 | mips/dp/pcreg/rf_reg[3][10]_LDC_i_1 | mips/dp/pcreg/rf_reg[3][10]_P |    2 |     2 |    no |
+|   100 | mips/dp/pcreg/rf_reg[3][11]_LDC_i_1 | mips/dp/pcreg/rf_reg[3][11]_P |    2 |     2 |    no |
+|   101 | mips/dp/pcreg/rf_reg[3][12]_LDC_i_1 | mips/dp/pcreg/rf_reg[3][12]_P |    2 |     2 |    no |
+|   102 | mips/dp/pcreg/rf_reg[3][13]_LDC_i_1 | mips/dp/pcreg/rf_reg[3][13]_P |    2 |     2 |    no |
+|   103 | mips/dp/pcreg/rf_reg[3][14]_LDC_i_1 | mips/dp/pcreg/rf_reg[3][14]_P |    2 |     2 |    no |
+|   104 | mips/dp/pcreg/rf_reg[3][15]_LDC_i_1 | mips/dp/pcreg/rf_reg[3][15]_P |    2 |     2 |    no |
+|   105 | mips/dp/pcreg/rf_reg[3][16]_LDC_i_1 | mips/dp/pcreg/rf_reg[3][16]_P |    2 |     2 |    no |
+|   106 | mips/dp/pcreg/rf_reg[3][17]_LDC_i_1 | mips/dp/pcreg/rf_reg[3][17]_P |    2 |     2 |    no |
+|   107 | mips/dp/pcreg/rf_reg[3][18]_LDC_i_1 | mips/dp/pcreg/rf_reg[3][18]_P |    2 |     2 |    no |
+|   108 | mips/dp/pcreg/rf_reg[3][19]_LDC_i_1 | mips/dp/pcreg/rf_reg[3][19]_P |    2 |     2 |    no |
+|   109 | mips/dp/pcreg/rf_reg[3][1]_LDC_i_1  | mips/dp/pcreg/rf_reg[3][1]_P  |    2 |     2 |    no |
+|   110 | mips/dp/pcreg/rf_reg[3][20]_LDC_i_1 | mips/dp/pcreg/rf_reg[3][20]_P |    2 |     2 |    no |
+|   111 | mips/dp/pcreg/rf_reg[3][21]_LDC_i_1 | mips/dp/pcreg/rf_reg[3][21]_P |    2 |     2 |    no |
+|   112 | mips/dp/pcreg/rf_reg[3][22]_LDC_i_1 | mips/dp/pcreg/rf_reg[3][22]_P |    2 |     2 |    no |
+|   113 | mips/dp/pcreg/rf_reg[3][23]_LDC_i_1 | mips/dp/pcreg/rf_reg[3][23]_P |    2 |     2 |    no |
+|   114 | mips/dp/pcreg/rf_reg[3][24]_LDC_i_1 | mips/dp/pcreg/rf_reg[3][24]_P |    2 |     2 |    no |
+|   115 | mips/dp/pcreg/rf_reg[3][25]_LDC_i_1 | mips/dp/pcreg/rf_reg[3][25]_P |    2 |     2 |    no |
+|   116 | mips/dp/pcreg/rf_reg[3][26]_LDC_i_1 | mips/dp/pcreg/rf_reg[3][26]_P |    2 |     2 |    no |
+|   117 | mips/dp/pcreg/rf_reg[3][27]_LDC_i_1 | mips/dp/pcreg/rf_reg[3][27]_P |    2 |     2 |    no |
+|   118 | mips/dp/pcreg/rf_reg[3][28]_LDC_i_1 | mips/dp/pcreg/rf_reg[3][28]_P |    2 |     2 |    no |
+|   119 | mips/dp/pcreg/rf_reg[3][29]_LDC_i_1 | mips/dp/pcreg/rf_reg[3][29]_P |    2 |     2 |    no |
+|   120 | mips/dp/pcreg/rf_reg[3][2]_LDC_i_1  | mips/dp/pcreg/rf_reg[3][2]_P  |    2 |     2 |    no |
+|   121 | mips/dp/pcreg/rf_reg[3][30]_LDC_i_1 | mips/dp/pcreg/rf_reg[3][30]_P |    2 |     2 |    no |
+|   122 | mips/dp/pcreg/rf_reg[3][31]_LDC_i_1 | mips/dp/pcreg/rf_reg[3][31]_P |    2 |     2 |    no |
+|   123 | mips/dp/pcreg/rf_reg[3][3]_LDC_i_1  | mips/dp/pcreg/rf_reg[3][3]_P  |    2 |     2 |    no |
+|   124 | mips/dp/pcreg/rf_reg[3][4]_LDC_i_1  | mips/dp/pcreg/rf_reg[3][4]_P  |    2 |     2 |    no |
+|   125 | mips/dp/pcreg/rf_reg[3][5]_LDC_i_1  | mips/dp/pcreg/rf_reg[3][5]_P  |    2 |     2 |    no |
+|   126 | mips/dp/pcreg/rf_reg[3][6]_LDC_i_1  | mips/dp/pcreg/rf_reg[3][6]_P  |    2 |     2 |    no |
+|   127 | mips/dp/pcreg/rf_reg[3][7]_LDC_i_1  | mips/dp/pcreg/rf_reg[3][7]_P  |    2 |     2 |    no |
+|   128 | mips/dp/pcreg/rf_reg[3][8]_LDC_i_1  | mips/dp/pcreg/rf_reg[3][8]_P  |    2 |     2 |    no |
+|   129 | mips/dp/pcreg/rf_reg[3][9]_LDC_i_1  | mips/dp/pcreg/rf_reg[3][9]_P  |    2 |     2 |    no |
+|   130 | mips/dp/pcreg/rf_reg[4][0]_LDC_i_1  | mips/dp/pcreg/rf_reg[4][0]_P  |    2 |     2 |    no |
+|   131 | mips/dp/pcreg/rf_reg[4][10]_LDC_i_1 | mips/dp/pcreg/rf_reg[4][10]_P |    2 |     2 |    no |
+|   132 | mips/dp/pcreg/rf_reg[4][11]_LDC_i_1 | mips/dp/pcreg/rf_reg[4][11]_P |    2 |     2 |    no |
+|   133 | mips/dp/pcreg/rf_reg[4][12]_LDC_i_1 | mips/dp/pcreg/rf_reg[4][12]_P |    2 |     2 |    no |
+|   134 | mips/dp/pcreg/rf_reg[4][13]_LDC_i_1 | mips/dp/pcreg/rf_reg[4][13]_P |    2 |     2 |    no |
+|   135 | mips/dp/pcreg/rf_reg[4][14]_LDC_i_1 | mips/dp/pcreg/rf_reg[4][14]_P |    2 |     2 |    no |
+|   136 | mips/dp/pcreg/rf_reg[4][15]_LDC_i_1 | mips/dp/pcreg/rf_reg[4][15]_P |    2 |     2 |    no |
+|   137 | mips/dp/pcreg/rf_reg[4][16]_LDC_i_1 | mips/dp/pcreg/rf_reg[4][16]_P |    2 |     2 |    no |
+|   138 | mips/dp/pcreg/rf_reg[4][17]_LDC_i_1 | mips/dp/pcreg/rf_reg[4][17]_P |    2 |     2 |    no |
+|   139 | mips/dp/pcreg/rf_reg[4][18]_LDC_i_1 | mips/dp/pcreg/rf_reg[4][18]_P |    2 |     2 |    no |
+|   140 | mips/dp/pcreg/rf_reg[4][19]_LDC_i_1 | mips/dp/pcreg/rf_reg[4][19]_P |    2 |     2 |    no |
+|   141 | mips/dp/pcreg/rf_reg[4][1]_LDC_i_1  | mips/dp/pcreg/rf_reg[4][1]_P  |    2 |     2 |    no |
+|   142 | mips/dp/pcreg/rf_reg[4][20]_LDC_i_1 | mips/dp/pcreg/rf_reg[4][20]_P |    2 |     2 |    no |
+|   143 | mips/dp/pcreg/rf_reg[4][21]_LDC_i_1 | mips/dp/pcreg/rf_reg[4][21]_P |    2 |     2 |    no |
+|   144 | mips/dp/pcreg/rf_reg[4][22]_LDC_i_1 | mips/dp/pcreg/rf_reg[4][22]_P |    2 |     2 |    no |
+|   145 | mips/dp/pcreg/rf_reg[4][23]_LDC_i_1 | mips/dp/pcreg/rf_reg[4][23]_P |    2 |     2 |    no |
+|   146 | mips/dp/pcreg/rf_reg[4][24]_LDC_i_1 | mips/dp/pcreg/rf_reg[4][24]_P |    2 |     2 |    no |
+|   147 | mips/dp/pcreg/rf_reg[4][25]_LDC_i_1 | mips/dp/pcreg/rf_reg[4][25]_P |    2 |     2 |    no |
+|   148 | mips/dp/pcreg/rf_reg[4][26]_LDC_i_1 | mips/dp/pcreg/rf_reg[4][26]_P |    2 |     2 |    no |
+|   149 | mips/dp/pcreg/rf_reg[4][27]_LDC_i_1 | mips/dp/pcreg/rf_reg[4][27]_P |    2 |     2 |    no |
+|   150 | mips/dp/pcreg/rf_reg[4][28]_LDC_i_1 | mips/dp/pcreg/rf_reg[4][28]_P |    2 |     2 |    no |
+|   151 | mips/dp/pcreg/rf_reg[4][29]_LDC_i_1 | mips/dp/pcreg/rf_reg[4][29]_P |    2 |     2 |    no |
+|   152 | mips/dp/pcreg/rf_reg[4][2]_LDC_i_1  | mips/dp/pcreg/rf_reg[4][2]_P  |    2 |     2 |    no |
+|   153 | mips/dp/pcreg/rf_reg[4][30]_LDC_i_1 | mips/dp/pcreg/rf_reg[4][30]_P |    2 |     2 |    no |
+|   154 | mips/dp/pcreg/rf_reg[4][31]_LDC_i_1 | mips/dp/pcreg/rf_reg[4][31]_P |    2 |     2 |    no |
+|   155 | mips/dp/pcreg/rf_reg[4][3]_LDC_i_1  | mips/dp/pcreg/rf_reg[4][3]_P  |    2 |     2 |    no |
+|   156 | mips/dp/pcreg/rf_reg[4][4]_LDC_i_1  | mips/dp/pcreg/rf_reg[4][4]_P  |    2 |     2 |    no |
+|   157 | mips/dp/pcreg/rf_reg[4][5]_LDC_i_1  | mips/dp/pcreg/rf_reg[4][5]_P  |    2 |     2 |    no |
+|   158 | mips/dp/pcreg/rf_reg[4][6]_LDC_i_1  | mips/dp/pcreg/rf_reg[4][6]_P  |    2 |     2 |    no |
+|   159 | mips/dp/pcreg/rf_reg[4][7]_LDC_i_1  | mips/dp/pcreg/rf_reg[4][7]_P  |    2 |     2 |    no |
+|   160 | mips/dp/pcreg/rf_reg[4][8]_LDC_i_1  | mips/dp/pcreg/rf_reg[4][8]_P  |    2 |     2 |    no |
+|   161 | mips/dp/pcreg/rf_reg[4][9]_LDC_i_1  | mips/dp/pcreg/rf_reg[4][9]_P  |    2 |     2 |    no |
+|   162 | mips/dp/pcreg/rf_reg[5][0]_LDC_i_1  | mips/dp/pcreg/rf_reg[5][0]_P  |    2 |     2 |    no |
+|   163 | mips/dp/pcreg/rf_reg[5][10]_LDC_i_1 | mips/dp/pcreg/rf_reg[5][10]_P |    2 |     2 |    no |
+|   164 | mips/dp/pcreg/rf_reg[5][11]_LDC_i_1 | mips/dp/pcreg/rf_reg[5][11]_P |    2 |     2 |    no |
+|   165 | mips/dp/pcreg/rf_reg[5][12]_LDC_i_1 | mips/dp/pcreg/rf_reg[5][12]_P |    2 |     2 |    no |
+|   166 | mips/dp/pcreg/rf_reg[5][13]_LDC_i_1 | mips/dp/pcreg/rf_reg[5][13]_P |    2 |     2 |    no |
+|   167 | mips/dp/pcreg/rf_reg[5][14]_LDC_i_1 | mips/dp/pcreg/rf_reg[5][14]_P |    2 |     2 |    no |
+|   168 | mips/dp/pcreg/rf_reg[5][15]_LDC_i_1 | mips/dp/pcreg/rf_reg[5][15]_P |    2 |     2 |    no |
+|   169 | mips/dp/pcreg/rf_reg[5][16]_LDC_i_1 | mips/dp/pcreg/rf_reg[5][16]_P |    2 |     2 |    no |
+|   170 | mips/dp/pcreg/rf_reg[5][17]_LDC_i_1 | mips/dp/pcreg/rf_reg[5][17]_P |    2 |     2 |    no |
+|   171 | mips/dp/pcreg/rf_reg[5][18]_LDC_i_1 | mips/dp/pcreg/rf_reg[5][18]_P |    2 |     2 |    no |
+|   172 | mips/dp/pcreg/rf_reg[5][19]_LDC_i_1 | mips/dp/pcreg/rf_reg[5][19]_P |    2 |     2 |    no |
+|   173 | mips/dp/pcreg/rf_reg[5][1]_LDC_i_1  | mips/dp/pcreg/rf_reg[5][1]_P  |    2 |     2 |    no |
+|   174 | mips/dp/pcreg/rf_reg[5][20]_LDC_i_1 | mips/dp/pcreg/rf_reg[5][20]_P |    2 |     2 |    no |
+|   175 | mips/dp/pcreg/rf_reg[5][21]_LDC_i_1 | mips/dp/pcreg/rf_reg[5][21]_P |    2 |     2 |    no |
+|   176 | mips/dp/pcreg/rf_reg[5][22]_LDC_i_1 | mips/dp/pcreg/rf_reg[5][22]_P |    2 |     2 |    no |
+|   177 | mips/dp/pcreg/rf_reg[5][23]_LDC_i_1 | mips/dp/pcreg/rf_reg[5][23]_P |    2 |     2 |    no |
+|   178 | mips/dp/pcreg/rf_reg[5][24]_LDC_i_1 | mips/dp/pcreg/rf_reg[5][24]_P |    2 |     2 |    no |
+|   179 | mips/dp/pcreg/rf_reg[5][25]_LDC_i_1 | mips/dp/pcreg/rf_reg[5][25]_P |    2 |     2 |    no |
+|   180 | mips/dp/pcreg/rf_reg[5][26]_LDC_i_1 | mips/dp/pcreg/rf_reg[5][26]_P |    2 |     2 |    no |
+|   181 | mips/dp/pcreg/rf_reg[5][27]_LDC_i_1 | mips/dp/pcreg/rf_reg[5][27]_P |    2 |     2 |    no |
+|   182 | mips/dp/pcreg/rf_reg[5][28]_LDC_i_1 | mips/dp/pcreg/rf_reg[5][28]_P |    2 |     2 |    no |
+|   183 | mips/dp/pcreg/rf_reg[5][29]_LDC_i_1 | mips/dp/pcreg/rf_reg[5][29]_P |    2 |     2 |    no |
+|   184 | mips/dp/pcreg/rf_reg[5][2]_LDC_i_1  | mips/dp/pcreg/rf_reg[5][2]_P  |    2 |     2 |    no |
+|   185 | mips/dp/pcreg/rf_reg[5][30]_LDC_i_1 | mips/dp/pcreg/rf_reg[5][30]_P |    2 |     2 |    no |
+|   186 | mips/dp/pcreg/rf_reg[5][31]_LDC_i_1 | mips/dp/pcreg/rf_reg[5][31]_P |    2 |     2 |    no |
+|   187 | mips/dp/pcreg/rf_reg[5][3]_LDC_i_1  | mips/dp/pcreg/rf_reg[5][3]_P  |    2 |     2 |    no |
+|   188 | mips/dp/pcreg/rf_reg[5][4]_LDC_i_1  | mips/dp/pcreg/rf_reg[5][4]_P  |    2 |     2 |    no |
+|   189 | mips/dp/pcreg/rf_reg[5][5]_LDC_i_1  | mips/dp/pcreg/rf_reg[5][5]_P  |    2 |     2 |    no |
+|   190 | mips/dp/pcreg/rf_reg[5][6]_LDC_i_1  | mips/dp/pcreg/rf_reg[5][6]_P  |    2 |     2 |    no |
+|   191 | mips/dp/pcreg/rf_reg[5][7]_LDC_i_1  | mips/dp/pcreg/rf_reg[5][7]_P  |    2 |     2 |    no |
+|   192 | mips/dp/pcreg/rf_reg[5][8]_LDC_i_1  | mips/dp/pcreg/rf_reg[5][8]_P  |    2 |     2 |    no |
+|   193 | mips/dp/pcreg/rf_reg[5][9]_LDC_i_1  | mips/dp/pcreg/rf_reg[5][9]_P  |    2 |     2 |    no |
+|   194 | mips/dp/pcreg/rf_reg[6][0]_LDC_i_1  | mips/dp/pcreg/rf_reg[6][0]_P  |    2 |     2 |    no |
+|   195 | mips/dp/pcreg/rf_reg[6][10]_LDC_i_1 | mips/dp/pcreg/rf_reg[6][10]_P |    2 |     2 |    no |
+|   196 | mips/dp/pcreg/rf_reg[6][11]_LDC_i_1 | mips/dp/pcreg/rf_reg[6][11]_P |    2 |     2 |    no |
+|   197 | mips/dp/pcreg/rf_reg[6][12]_LDC_i_1 | mips/dp/pcreg/rf_reg[6][12]_P |    2 |     2 |    no |
+|   198 | mips/dp/pcreg/rf_reg[6][13]_LDC_i_1 | mips/dp/pcreg/rf_reg[6][13]_P |    2 |     2 |    no |
+|   199 | mips/dp/pcreg/rf_reg[6][14]_LDC_i_1 | mips/dp/pcreg/rf_reg[6][14]_P |    2 |     2 |    no |
+|   200 | mips/dp/pcreg/rf_reg[6][15]_LDC_i_1 | mips/dp/pcreg/rf_reg[6][15]_P |    2 |     2 |    no |
+|   201 | mips/dp/pcreg/rf_reg[6][16]_LDC_i_1 | mips/dp/pcreg/rf_reg[6][16]_P |    2 |     2 |    no |
+|   202 | mips/dp/pcreg/rf_reg[6][17]_LDC_i_1 | mips/dp/pcreg/rf_reg[6][17]_P |    2 |     2 |    no |
+|   203 | mips/dp/pcreg/rf_reg[6][18]_LDC_i_1 | mips/dp/pcreg/rf_reg[6][18]_P |    2 |     2 |    no |
+|   204 | mips/dp/pcreg/rf_reg[6][19]_LDC_i_1 | mips/dp/pcreg/rf_reg[6][19]_P |    2 |     2 |    no |
+|   205 | mips/dp/pcreg/rf_reg[6][1]_LDC_i_1  | mips/dp/pcreg/rf_reg[6][1]_P  |    2 |     2 |    no |
+|   206 | mips/dp/pcreg/rf_reg[6][20]_LDC_i_1 | mips/dp/pcreg/rf_reg[6][20]_P |    2 |     2 |    no |
+|   207 | mips/dp/pcreg/rf_reg[6][21]_LDC_i_1 | mips/dp/pcreg/rf_reg[6][21]_P |    2 |     2 |    no |
+|   208 | mips/dp/pcreg/rf_reg[6][22]_LDC_i_1 | mips/dp/pcreg/rf_reg[6][22]_P |    2 |     2 |    no |
+|   209 | mips/dp/pcreg/rf_reg[6][23]_LDC_i_1 | mips/dp/pcreg/rf_reg[6][23]_P |    2 |     2 |    no |
+|   210 | mips/dp/pcreg/rf_reg[6][24]_LDC_i_1 | mips/dp/pcreg/rf_reg[6][24]_P |    2 |     2 |    no |
+|   211 | mips/dp/pcreg/rf_reg[6][25]_LDC_i_1 | mips/dp/pcreg/rf_reg[6][25]_P |    2 |     2 |    no |
+|   212 | mips/dp/pcreg/rf_reg[6][26]_LDC_i_1 | mips/dp/pcreg/rf_reg[6][26]_P |    2 |     2 |    no |
+|   213 | mips/dp/pcreg/rf_reg[6][27]_LDC_i_1 | mips/dp/pcreg/rf_reg[6][27]_P |    2 |     2 |    no |
+|   214 | mips/dp/pcreg/rf_reg[6][28]_LDC_i_1 | mips/dp/pcreg/rf_reg[6][28]_P |    2 |     2 |    no |
+|   215 | mips/dp/pcreg/rf_reg[6][29]_LDC_i_1 | mips/dp/pcreg/rf_reg[6][29]_P |    2 |     2 |    no |
+|   216 | mips/dp/pcreg/rf_reg[6][2]_LDC_i_1  | mips/dp/pcreg/rf_reg[6][2]_P  |    2 |     2 |    no |
+|   217 | mips/dp/pcreg/rf_reg[6][30]_LDC_i_1 | mips/dp/pcreg/rf_reg[6][30]_P |    2 |     2 |    no |
+|   218 | mips/dp/pcreg/rf_reg[6][31]_LDC_i_1 | mips/dp/pcreg/rf_reg[6][31]_P |    2 |     2 |    no |
+|   219 | mips/dp/pcreg/rf_reg[6][3]_LDC_i_1  | mips/dp/pcreg/rf_reg[6][3]_P  |    2 |     2 |    no |
+|   220 | mips/dp/pcreg/rf_reg[6][4]_LDC_i_1  | mips/dp/pcreg/rf_reg[6][4]_P  |    2 |     2 |    no |
+|   221 | mips/dp/pcreg/rf_reg[6][5]_LDC_i_1  | mips/dp/pcreg/rf_reg[6][5]_P  |    2 |     2 |    no |
+|   222 | mips/dp/pcreg/rf_reg[6][6]_LDC_i_1  | mips/dp/pcreg/rf_reg[6][6]_P  |    2 |     2 |    no |
+|   223 | mips/dp/pcreg/rf_reg[6][7]_LDC_i_1  | mips/dp/pcreg/rf_reg[6][7]_P  |    2 |     2 |    no |
+|   224 | mips/dp/pcreg/rf_reg[6][8]_LDC_i_1  | mips/dp/pcreg/rf_reg[6][8]_P  |    2 |     2 |    no |
+|   225 | mips/dp/pcreg/rf_reg[6][9]_LDC_i_1  | mips/dp/pcreg/rf_reg[6][9]_P  |    2 |     2 |    no |
+|   226 | mips/dp/pcreg/rf_reg[7][0]_LDC_i_1  | mips/dp/pcreg/rf_reg[7][0]_P  |    2 |     2 |    no |
+|   227 | mips/dp/pcreg/rf_reg[7][10]_LDC_i_1 | mips/dp/pcreg/rf_reg[7][10]_P |    2 |     2 |    no |
+|   228 | mips/dp/pcreg/rf_reg[7][11]_LDC_i_1 | mips/dp/pcreg/rf_reg[7][11]_P |    2 |     2 |    no |
+|   229 | mips/dp/pcreg/rf_reg[7][12]_LDC_i_1 | mips/dp/pcreg/rf_reg[7][12]_P |    2 |     2 |    no |
+|   230 | mips/dp/pcreg/rf_reg[7][13]_LDC_i_1 | mips/dp/pcreg/rf_reg[7][13]_P |    2 |     2 |    no |
+|   231 | mips/dp/pcreg/rf_reg[7][14]_LDC_i_1 | mips/dp/pcreg/rf_reg[7][14]_P |    2 |     2 |    no |
+|   232 | mips/dp/pcreg/rf_reg[7][15]_LDC_i_1 | mips/dp/pcreg/rf_reg[7][15]_P |    2 |     2 |    no |
+|   233 | mips/dp/pcreg/rf_reg[7][16]_LDC_i_1 | mips/dp/pcreg/rf_reg[7][16]_P |    2 |     2 |    no |
+|   234 | mips/dp/pcreg/rf_reg[7][17]_LDC_i_1 | mips/dp/pcreg/rf_reg[7][17]_P |    2 |     2 |    no |
+|   235 | mips/dp/pcreg/rf_reg[7][18]_LDC_i_1 | mips/dp/pcreg/rf_reg[7][18]_P |    2 |     2 |    no |
+|   236 | mips/dp/pcreg/rf_reg[7][19]_LDC_i_1 | mips/dp/pcreg/rf_reg[7][19]_P |    2 |     2 |    no |
+|   237 | mips/dp/pcreg/rf_reg[7][1]_LDC_i_1  | mips/dp/pcreg/rf_reg[7][1]_P  |    2 |     2 |    no |
+|   238 | mips/dp/pcreg/rf_reg[7][20]_LDC_i_1 | mips/dp/pcreg/rf_reg[7][20]_P |    2 |     2 |    no |
+|   239 | mips/dp/pcreg/rf_reg[7][21]_LDC_i_1 | mips/dp/pcreg/rf_reg[7][21]_P |    2 |     2 |    no |
+|   240 | mips/dp/pcreg/rf_reg[7][22]_LDC_i_1 | mips/dp/pcreg/rf_reg[7][22]_P |    2 |     2 |    no |
+|   241 | mips/dp/pcreg/rf_reg[7][23]_LDC_i_1 | mips/dp/pcreg/rf_reg[7][23]_P |    2 |     2 |    no |
+|   242 | mips/dp/pcreg/rf_reg[7][24]_LDC_i_1 | mips/dp/pcreg/rf_reg[7][24]_P |    2 |     2 |    no |
+|   243 | mips/dp/pcreg/rf_reg[7][25]_LDC_i_1 | mips/dp/pcreg/rf_reg[7][25]_P |    2 |     2 |    no |
+|   244 | mips/dp/pcreg/rf_reg[7][26]_LDC_i_1 | mips/dp/pcreg/rf_reg[7][26]_P |    2 |     2 |    no |
+|   245 | mips/dp/pcreg/rf_reg[7][27]_LDC_i_1 | mips/dp/pcreg/rf_reg[7][27]_P |    2 |     2 |    no |
+|   246 | mips/dp/pcreg/rf_reg[7][28]_LDC_i_1 | mips/dp/pcreg/rf_reg[7][28]_P |    2 |     2 |    no |
+|   247 | mips/dp/pcreg/rf_reg[7][29]_LDC_i_1 | mips/dp/pcreg/rf_reg[7][29]_P |    2 |     2 |    no |
+|   248 | mips/dp/pcreg/rf_reg[7][2]_LDC_i_1  | mips/dp/pcreg/rf_reg[7][2]_P  |    2 |     2 |    no |
+|   249 | mips/dp/pcreg/rf_reg[7][30]_LDC_i_1 | mips/dp/pcreg/rf_reg[7][30]_P |    2 |     2 |    no |
+|   250 | mips/dp/pcreg/rf_reg[7][31]_LDC_i_1 | mips/dp/pcreg/rf_reg[7][31]_P |    2 |     2 |    no |
+|   251 | mips/dp/pcreg/rf_reg[7][3]_LDC_i_1  | mips/dp/pcreg/rf_reg[7][3]_P  |    2 |     2 |    no |
+|   252 | mips/dp/pcreg/rf_reg[7][4]_LDC_i_1  | mips/dp/pcreg/rf_reg[7][4]_P  |    2 |     2 |    no |
+|   253 | mips/dp/pcreg/rf_reg[7][5]_LDC_i_1  | mips/dp/pcreg/rf_reg[7][5]_P  |    2 |     2 |    no |
+|   254 | mips/dp/pcreg/rf_reg[7][6]_LDC_i_1  | mips/dp/pcreg/rf_reg[7][6]_P  |    2 |     2 |    no |
+|   255 | mips/dp/pcreg/rf_reg[7][7]_LDC_i_1  | mips/dp/pcreg/rf_reg[7][7]_P  |    2 |     2 |    no |
+|   256 | mips/dp/pcreg/rf_reg[7][8]_LDC_i_1  | mips/dp/pcreg/rf_reg[7][8]_P  |    2 |     2 |    no |
+|   257 | mips/dp/pcreg/rf_reg[7][9]_LDC_i_1  | mips/dp/pcreg/rf_reg[7][9]_P  |    2 |     2 |    no |
++-------+-------------------------------------+-------------------------------+------+-------+-------+
+
+
+7. Clock Regions : Key Resource Utilization
+-------------------------------------------
+
++-------------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+
+|                   | Global Clock |     BUFRs    |    BUFMRs    |    BUFIOs    |     MMCM     |      PLL     |      GT      |      PCI     |    ILOGIC    |    OLOGIC    |      FF      |     LUTM     |    RAMB18    |    RAMB36    |    DSP48E1   |
++-------------------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+
+| Clock Region Name | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail |
++-------------------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+
+| X0Y0              |    1 |    12 |    0 |     4 |    0 |     2 |    0 |     4 |    0 |     1 |    0 |     1 |    0 |     0 |    0 |     0 |    0 |    50 |    0 |    50 |  319 |  9600 |   16 |  1600 |    0 |    20 |    0 |    10 |    0 |    20 |
+| X1Y0              |    1 |    12 |    0 |     4 |    0 |     2 |    0 |     4 |    0 |     1 |    0 |     1 |    0 |     0 |    0 |     0 |    0 |    50 |    0 |    50 |  455 | 12000 |   16 |  1800 |    0 |    40 |    0 |    20 |    0 |    20 |
+| X0Y1              |    0 |    12 |    0 |     4 |    0 |     2 |    0 |     4 |    0 |     1 |    0 |     1 |    0 |     0 |    0 |     0 |    0 |    50 |    0 |    50 |    0 |  9600 |    0 |  1600 |    0 |    20 |    0 |    10 |    0 |    20 |
+| X1Y1              |    0 |    12 |    0 |     4 |    0 |     2 |    0 |     4 |    0 |     1 |    0 |     1 |    0 |     0 |    0 |     0 |    0 |    50 |    0 |    50 |    0 | 12000 |    0 |  1800 |    0 |    40 |    0 |    20 |    0 |    20 |
+| X0Y2              |    0 |    12 |    0 |     4 |    0 |     2 |    0 |     4 |    0 |     1 |    0 |     1 |    0 |     0 |    0 |     0 |    0 |    50 |    0 |    50 |    0 | 14400 |    0 |  1600 |    0 |    20 |    0 |    10 |    0 |    20 |
+| X1Y2              |    0 |    12 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     5 |    0 |     1 |    0 |     0 |    0 |     0 |    0 |  7600 |    0 |  1200 |    0 |    10 |    0 |     5 |    0 |    20 |
++-------------------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+
+* RAMB36 site can be used as two RAMB18/FIFO18 sites.
+
+
+8. Net wise resources used in clock region X0Y0
+-----------------------------------------------
+
++-------------+-------------+-------+-----------+----------+---------+-----------+---------+---------+-----+-------+----------+----------------+
+| Source Type | BUFHCE Site | Fixed | MMCM Pins | PLL Pins | GT Pins | BRAM Pins | ILOGICs | OLOGICs | FFs | LUTMs | DSP48E1s | Clock Net Name |
++-------------+-------------+-------+-----------+----------+---------+-----------+---------+---------+-----+-------+----------+----------------+
+| BUFG        | BUFHCE_X0Y8 |   no  |         0 |        0 |       0 |         0 |       0 |       0 | 213 |    16 |        0 | clk_IBUF_BUFG  |
++-------------+-------------+-------+-----------+----------+---------+-----------+---------+---------+-----+-------+----------+----------------+
+
+
+9. Net wise resources used in clock region X1Y0
+-----------------------------------------------
+
++-------------+-------------+-------+-----------+----------+---------+-----------+---------+---------+-----+-------+----------+----------------+
+| Source Type | BUFHCE Site | Fixed | MMCM Pins | PLL Pins | GT Pins | BRAM Pins | ILOGICs | OLOGICs | FFs | LUTMs | DSP48E1s | Clock Net Name |
++-------------+-------------+-------+-----------+----------+---------+-----------+---------+---------+-----+-------+----------+----------------+
+| BUFG        | BUFHCE_X1Y8 |   no  |         0 |        0 |       0 |         0 |       0 |       0 | 304 |    16 |        0 | clk_IBUF_BUFG  |
++-------------+-------------+-------+-----------+----------+---------+-----------+---------+---------+-----+-------+----------+----------------+
+
+
+
+# Location of BUFG Primitives 
+set_property LOC BUFGCTRL_X0Y0 [get_cells clk_IBUF_BUFG_inst]
+
+# Location of IO Clock Primitives
+
+# Location of MMCM Clock Primitives
+
+# Location of BUFH Clock Primitives
+
+# Location of BUFR Clock Primitives
+
+# Location of BUFMR Clock Primitives
+
+# Location of PLL Clock Primitives
+
+# Location of IO Primitives which is load of clock spine
+
+# Location of clock ports
+set_property LOC IOB_X0Y28 [get_ports clk]
+
+# Clock net "clk_IBUF_BUFG" driven by instance "clk_IBUF_BUFG_inst" located at site "BUFGCTRL_X0Y0"
+#startgroup
+create_pblock {CLKAG_clk_IBUF_BUFG}
+add_cells_to_pblock [get_pblocks  {CLKAG_clk_IBUF_BUFG}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="clk_IBUF_BUFG"}]]]
+resize_pblock [get_pblocks {CLKAG_clk_IBUF_BUFG}] -add {CLOCKREGION_X0Y0:CLOCKREGION_X0Y0 CLOCKREGION_X1Y0:CLOCKREGION_X1Y0}
+#endgroup
+
+# Clock net "mips/dp/pcreg/q_reg[4]_0" driven by instance "mips/dp/pcreg/zero_reg_i_2" located at site "SLICE_X36Y22"
+#startgroup
+create_pblock {CLKAG_mips/dp/pcreg/q_reg[4]_0}
+add_cells_to_pblock [get_pblocks  {CLKAG_mips/dp/pcreg/q_reg[4]_0}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="mips/dp/pcreg/q_reg[4]_0"}]]]
+resize_pblock [get_pblocks {CLKAG_mips/dp/pcreg/q_reg[4]_0}] -add {CLOCKREGION_X1Y0:CLOCKREGION_X1Y0}
+#endgroup
+
+# Clock net "mips/dp/pcreg/rf_reg[0][0]_P" driven by instance "mips/dp/pcreg/rf_reg[0][0]_LDC_i_1" located at site "SLICE_X34Y14"
+#startgroup
+create_pblock {CLKAG_mips/dp/pcreg/rf_reg[0][0]_P}
+add_cells_to_pblock [get_pblocks  {CLKAG_mips/dp/pcreg/rf_reg[0][0]_P}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="mips/dp/pcreg/rf_reg[0][0]_P"}]]]
+resize_pblock [get_pblocks {CLKAG_mips/dp/pcreg/rf_reg[0][0]_P}] -add {CLOCKREGION_X0Y0:CLOCKREGION_X0Y0}
+#endgroup
+
+# Clock net "mips/dp/pcreg/rf_reg[0][10]_P" driven by instance "mips/dp/pcreg/rf_reg[0][10]_LDC_i_1" located at site "SLICE_X49Y15"
+#startgroup
+create_pblock {CLKAG_mips/dp/pcreg/rf_reg[0][10]_P}
+add_cells_to_pblock [get_pblocks  {CLKAG_mips/dp/pcreg/rf_reg[0][10]_P}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="mips/dp/pcreg/rf_reg[0][10]_P"}]]]
+resize_pblock [get_pblocks {CLKAG_mips/dp/pcreg/rf_reg[0][10]_P}] -add {CLOCKREGION_X1Y0:CLOCKREGION_X1Y0}
+#endgroup
+
+# Clock net "mips/dp/pcreg/rf_reg[0][11]_P" driven by instance "mips/dp/pcreg/rf_reg[0][11]_LDC_i_1" located at site "SLICE_X44Y16"
+#startgroup
+create_pblock {CLKAG_mips/dp/pcreg/rf_reg[0][11]_P}
+add_cells_to_pblock [get_pblocks  {CLKAG_mips/dp/pcreg/rf_reg[0][11]_P}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="mips/dp/pcreg/rf_reg[0][11]_P"}]]]
+resize_pblock [get_pblocks {CLKAG_mips/dp/pcreg/rf_reg[0][11]_P}] -add {CLOCKREGION_X1Y0:CLOCKREGION_X1Y0}
+#endgroup
+
+# Clock net "mips/dp/pcreg/rf_reg[0][12]_P" driven by instance "mips/dp/pcreg/rf_reg[0][12]_LDC_i_1" located at site "SLICE_X52Y17"
+#startgroup
+create_pblock {CLKAG_mips/dp/pcreg/rf_reg[0][12]_P}
+add_cells_to_pblock [get_pblocks  {CLKAG_mips/dp/pcreg/rf_reg[0][12]_P}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="mips/dp/pcreg/rf_reg[0][12]_P"}]]]
+resize_pblock [get_pblocks {CLKAG_mips/dp/pcreg/rf_reg[0][12]_P}] -add {CLOCKREGION_X1Y0:CLOCKREGION_X1Y0}
+#endgroup
+
+# Clock net "mips/dp/pcreg/rf_reg[0][13]_P" driven by instance "mips/dp/pcreg/rf_reg[0][13]_LDC_i_1" located at site "SLICE_X45Y22"
+#startgroup
+create_pblock {CLKAG_mips/dp/pcreg/rf_reg[0][13]_P}
+add_cells_to_pblock [get_pblocks  {CLKAG_mips/dp/pcreg/rf_reg[0][13]_P}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="mips/dp/pcreg/rf_reg[0][13]_P"}]]]
+resize_pblock [get_pblocks {CLKAG_mips/dp/pcreg/rf_reg[0][13]_P}] -add {CLOCKREGION_X1Y0:CLOCKREGION_X1Y0}
+#endgroup
+
+# Clock net "mips/dp/pcreg/rf_reg[0][14]_P" driven by instance "mips/dp/pcreg/rf_reg[0][14]_LDC_i_1" located at site "SLICE_X51Y21"
+#startgroup
+create_pblock {CLKAG_mips/dp/pcreg/rf_reg[0][14]_P}
+add_cells_to_pblock [get_pblocks  {CLKAG_mips/dp/pcreg/rf_reg[0][14]_P}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="mips/dp/pcreg/rf_reg[0][14]_P"}]]]
+resize_pblock [get_pblocks {CLKAG_mips/dp/pcreg/rf_reg[0][14]_P}] -add {CLOCKREGION_X1Y0:CLOCKREGION_X1Y0}
+#endgroup
+
+# Clock net "mips/dp/pcreg/rf_reg[0][15]_P" driven by instance "mips/dp/pcreg/rf_reg[0][15]_LDC_i_1" located at site "SLICE_X52Y25"
+#startgroup
+create_pblock {CLKAG_mips/dp/pcreg/rf_reg[0][15]_P}
+add_cells_to_pblock [get_pblocks  {CLKAG_mips/dp/pcreg/rf_reg[0][15]_P}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="mips/dp/pcreg/rf_reg[0][15]_P"}]]]
+resize_pblock [get_pblocks {CLKAG_mips/dp/pcreg/rf_reg[0][15]_P}] -add {CLOCKREGION_X1Y0:CLOCKREGION_X1Y0}
+#endgroup
+
+# Clock net "mips/dp/pcreg/rf_reg[0][16]_P" driven by instance "mips/dp/pcreg/rf_reg[0][16]_LDC_i_1" located at site "SLICE_X43Y26"
+#startgroup
+create_pblock {CLKAG_mips/dp/pcreg/rf_reg[0][16]_P}
+add_cells_to_pblock [get_pblocks  {CLKAG_mips/dp/pcreg/rf_reg[0][16]_P}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="mips/dp/pcreg/rf_reg[0][16]_P"}]]]
+resize_pblock [get_pblocks {CLKAG_mips/dp/pcreg/rf_reg[0][16]_P}] -add {CLOCKREGION_X1Y0:CLOCKREGION_X1Y0}
+#endgroup
+
+# Clock net "mips/dp/pcreg/rf_reg[0][17]_P" driven by instance "mips/dp/pcreg/rf_reg[0][17]_LDC_i_1" located at site "SLICE_X28Y31"
+#startgroup
+create_pblock {CLKAG_mips/dp/pcreg/rf_reg[0][17]_P}
+add_cells_to_pblock [get_pblocks  {CLKAG_mips/dp/pcreg/rf_reg[0][17]_P}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="mips/dp/pcreg/rf_reg[0][17]_P"}]]]
+resize_pblock [get_pblocks {CLKAG_mips/dp/pcreg/rf_reg[0][17]_P}] -add {CLOCKREGION_X0Y0:CLOCKREGION_X0Y0}
+#endgroup
+
+# Clock net "mips/dp/pcreg/rf_reg[0][18]_P" driven by instance "mips/dp/pcreg/rf_reg[0][18]_LDC_i_1" located at site "SLICE_X30Y30"
+#startgroup
+create_pblock {CLKAG_mips/dp/pcreg/rf_reg[0][18]_P}
+add_cells_to_pblock [get_pblocks  {CLKAG_mips/dp/pcreg/rf_reg[0][18]_P}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="mips/dp/pcreg/rf_reg[0][18]_P"}]]]
+resize_pblock [get_pblocks {CLKAG_mips/dp/pcreg/rf_reg[0][18]_P}] -add {CLOCKREGION_X0Y0:CLOCKREGION_X0Y0}
+#endgroup
+
+# Clock net "mips/dp/pcreg/rf_reg[0][19]_P" driven by instance "mips/dp/pcreg/rf_reg[0][19]_LDC_i_1" located at site "SLICE_X35Y27"
+#startgroup
+create_pblock {CLKAG_mips/dp/pcreg/rf_reg[0][19]_P}
+add_cells_to_pblock [get_pblocks  {CLKAG_mips/dp/pcreg/rf_reg[0][19]_P}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="mips/dp/pcreg/rf_reg[0][19]_P"}]]]
+resize_pblock [get_pblocks {CLKAG_mips/dp/pcreg/rf_reg[0][19]_P}] -add {CLOCKREGION_X0Y0:CLOCKREGION_X0Y0}
+#endgroup
+
+# Clock net "mips/dp/pcreg/rf_reg[0][1]_P" driven by instance "mips/dp/pcreg/rf_reg[0][1]_LDC_i_1" located at site "SLICE_X36Y16"
+#startgroup
+create_pblock {CLKAG_mips/dp/pcreg/rf_reg[0][1]_P}
+add_cells_to_pblock [get_pblocks  {CLKAG_mips/dp/pcreg/rf_reg[0][1]_P}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="mips/dp/pcreg/rf_reg[0][1]_P"}]]]
+resize_pblock [get_pblocks {CLKAG_mips/dp/pcreg/rf_reg[0][1]_P}] -add {CLOCKREGION_X1Y0:CLOCKREGION_X1Y0}
+#endgroup
+
+# Clock net "mips/dp/pcreg/rf_reg[0][20]_P" driven by instance "mips/dp/pcreg/rf_reg[0][20]_LDC_i_1" located at site "SLICE_X42Y30"
+#startgroup
+create_pblock {CLKAG_mips/dp/pcreg/rf_reg[0][20]_P}
+add_cells_to_pblock [get_pblocks  {CLKAG_mips/dp/pcreg/rf_reg[0][20]_P}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="mips/dp/pcreg/rf_reg[0][20]_P"}]]]
+resize_pblock [get_pblocks {CLKAG_mips/dp/pcreg/rf_reg[0][20]_P}] -add {CLOCKREGION_X1Y0:CLOCKREGION_X1Y0}
+#endgroup
+
+# Clock net "mips/dp/pcreg/rf_reg[0][21]_P" driven by instance "mips/dp/pcreg/rf_reg[0][21]_LDC_i_1" located at site "SLICE_X46Y26"
+#startgroup
+create_pblock {CLKAG_mips/dp/pcreg/rf_reg[0][21]_P}
+add_cells_to_pblock [get_pblocks  {CLKAG_mips/dp/pcreg/rf_reg[0][21]_P}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="mips/dp/pcreg/rf_reg[0][21]_P"}]]]
+resize_pblock [get_pblocks {CLKAG_mips/dp/pcreg/rf_reg[0][21]_P}] -add {CLOCKREGION_X1Y0:CLOCKREGION_X1Y0}
+#endgroup
+
+# Clock net "mips/dp/pcreg/rf_reg[0][22]_P" driven by instance "mips/dp/pcreg/rf_reg[0][22]_LDC_i_1" located at site "SLICE_X49Y26"
+#startgroup
+create_pblock {CLKAG_mips/dp/pcreg/rf_reg[0][22]_P}
+add_cells_to_pblock [get_pblocks  {CLKAG_mips/dp/pcreg/rf_reg[0][22]_P}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="mips/dp/pcreg/rf_reg[0][22]_P"}]]]
+resize_pblock [get_pblocks {CLKAG_mips/dp/pcreg/rf_reg[0][22]_P}] -add {CLOCKREGION_X1Y0:CLOCKREGION_X1Y0}
+#endgroup
+
+# Clock net "mips/dp/pcreg/rf_reg[0][23]_P" driven by instance "mips/dp/pcreg/rf_reg[0][23]_LDC_i_1" located at site "SLICE_X49Y30"
+#startgroup
+create_pblock {CLKAG_mips/dp/pcreg/rf_reg[0][23]_P}
+add_cells_to_pblock [get_pblocks  {CLKAG_mips/dp/pcreg/rf_reg[0][23]_P}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="mips/dp/pcreg/rf_reg[0][23]_P"}]]]
+resize_pblock [get_pblocks {CLKAG_mips/dp/pcreg/rf_reg[0][23]_P}] -add {CLOCKREGION_X1Y0:CLOCKREGION_X1Y0}
+#endgroup
+
+# Clock net "mips/dp/pcreg/rf_reg[0][24]_P" driven by instance "mips/dp/pcreg/rf_reg[0][24]_LDC_i_1" located at site "SLICE_X47Y35"
+#startgroup
+create_pblock {CLKAG_mips/dp/pcreg/rf_reg[0][24]_P}
+add_cells_to_pblock [get_pblocks  {CLKAG_mips/dp/pcreg/rf_reg[0][24]_P}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="mips/dp/pcreg/rf_reg[0][24]_P"}]]]
+resize_pblock [get_pblocks {CLKAG_mips/dp/pcreg/rf_reg[0][24]_P}] -add {CLOCKREGION_X1Y0:CLOCKREGION_X1Y0}
+#endgroup
+
+# Clock net "mips/dp/pcreg/rf_reg[0][25]_P" driven by instance "mips/dp/pcreg/rf_reg[0][25]_LDC_i_1" located at site "SLICE_X42Y34"
+#startgroup
+create_pblock {CLKAG_mips/dp/pcreg/rf_reg[0][25]_P}
+add_cells_to_pblock [get_pblocks  {CLKAG_mips/dp/pcreg/rf_reg[0][25]_P}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="mips/dp/pcreg/rf_reg[0][25]_P"}]]]
+resize_pblock [get_pblocks {CLKAG_mips/dp/pcreg/rf_reg[0][25]_P}] -add {CLOCKREGION_X1Y0:CLOCKREGION_X1Y0}
+#endgroup
+
+# Clock net "mips/dp/pcreg/rf_reg[0][26]_P" driven by instance "mips/dp/pcreg/rf_reg[0][26]_LDC_i_1" located at site "SLICE_X46Y33"
+#startgroup
+create_pblock {CLKAG_mips/dp/pcreg/rf_reg[0][26]_P}
+add_cells_to_pblock [get_pblocks  {CLKAG_mips/dp/pcreg/rf_reg[0][26]_P}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="mips/dp/pcreg/rf_reg[0][26]_P"}]]]
+resize_pblock [get_pblocks {CLKAG_mips/dp/pcreg/rf_reg[0][26]_P}] -add {CLOCKREGION_X1Y0:CLOCKREGION_X1Y0}
+#endgroup
+
+# Clock net "mips/dp/pcreg/rf_reg[0][27]_P" driven by instance "mips/dp/pcreg/rf_reg[0][27]_LDC_i_1" located at site "SLICE_X40Y35"
+#startgroup
+create_pblock {CLKAG_mips/dp/pcreg/rf_reg[0][27]_P}
+add_cells_to_pblock [get_pblocks  {CLKAG_mips/dp/pcreg/rf_reg[0][27]_P}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="mips/dp/pcreg/rf_reg[0][27]_P"}]]]
+resize_pblock [get_pblocks {CLKAG_mips/dp/pcreg/rf_reg[0][27]_P}] -add {CLOCKREGION_X1Y0:CLOCKREGION_X1Y0}
+#endgroup
+
+# Clock net "mips/dp/pcreg/rf_reg[0][28]_P" driven by instance "mips/dp/pcreg/rf_reg[0][28]_LDC_i_1" located at site "SLICE_X31Y36"
+#startgroup
+create_pblock {CLKAG_mips/dp/pcreg/rf_reg[0][28]_P}
+add_cells_to_pblock [get_pblocks  {CLKAG_mips/dp/pcreg/rf_reg[0][28]_P}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="mips/dp/pcreg/rf_reg[0][28]_P"}]]]
+resize_pblock [get_pblocks {CLKAG_mips/dp/pcreg/rf_reg[0][28]_P}] -add {CLOCKREGION_X0Y0:CLOCKREGION_X0Y0}
+#endgroup
+
+# Clock net "mips/dp/pcreg/rf_reg[0][29]_P" driven by instance "mips/dp/pcreg/rf_reg[0][29]_LDC_i_1" located at site "SLICE_X32Y36"
+#startgroup
+create_pblock {CLKAG_mips/dp/pcreg/rf_reg[0][29]_P}
+add_cells_to_pblock [get_pblocks  {CLKAG_mips/dp/pcreg/rf_reg[0][29]_P}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="mips/dp/pcreg/rf_reg[0][29]_P"}]]]
+resize_pblock [get_pblocks {CLKAG_mips/dp/pcreg/rf_reg[0][29]_P}] -add {CLOCKREGION_X0Y0:CLOCKREGION_X0Y0}
+#endgroup
+
+# Clock net "mips/dp/pcreg/rf_reg[0][2]_P" driven by instance "mips/dp/pcreg/rf_reg[0][2]_LDC_i_1" located at site "SLICE_X32Y15"
+#startgroup
+create_pblock {CLKAG_mips/dp/pcreg/rf_reg[0][2]_P}
+add_cells_to_pblock [get_pblocks  {CLKAG_mips/dp/pcreg/rf_reg[0][2]_P}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="mips/dp/pcreg/rf_reg[0][2]_P"}]]]
+resize_pblock [get_pblocks {CLKAG_mips/dp/pcreg/rf_reg[0][2]_P}] -add {CLOCKREGION_X0Y0:CLOCKREGION_X0Y0}
+#endgroup
+
+# Clock net "mips/dp/pcreg/rf_reg[0][30]_P" driven by instance "mips/dp/pcreg/rf_reg[0][30]_LDC_i_1" located at site "SLICE_X35Y33"
+#startgroup
+create_pblock {CLKAG_mips/dp/pcreg/rf_reg[0][30]_P}
+add_cells_to_pblock [get_pblocks  {CLKAG_mips/dp/pcreg/rf_reg[0][30]_P}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="mips/dp/pcreg/rf_reg[0][30]_P"}]]]
+resize_pblock [get_pblocks {CLKAG_mips/dp/pcreg/rf_reg[0][30]_P}] -add {CLOCKREGION_X0Y0:CLOCKREGION_X0Y0 CLOCKREGION_X1Y0:CLOCKREGION_X1Y0}
+#endgroup
+
+# Clock net "mips/dp/pcreg/rf_reg[0][31]_P" driven by instance "mips/dp/pcreg/rf_reg[0][31]_LDC_i_1" located at site "SLICE_X33Y31"
+#startgroup
+create_pblock {CLKAG_mips/dp/pcreg/rf_reg[0][31]_P}
+add_cells_to_pblock [get_pblocks  {CLKAG_mips/dp/pcreg/rf_reg[0][31]_P}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="mips/dp/pcreg/rf_reg[0][31]_P"}]]]
+resize_pblock [get_pblocks {CLKAG_mips/dp/pcreg/rf_reg[0][31]_P}] -add {CLOCKREGION_X0Y0:CLOCKREGION_X0Y0}
+#endgroup
+
+# Clock net "mips/dp/pcreg/rf_reg[0][3]_P" driven by instance "mips/dp/pcreg/rf_reg[0][3]_LDC_i_1" located at site "SLICE_X33Y14"
+#startgroup
+create_pblock {CLKAG_mips/dp/pcreg/rf_reg[0][3]_P}
+add_cells_to_pblock [get_pblocks  {CLKAG_mips/dp/pcreg/rf_reg[0][3]_P}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="mips/dp/pcreg/rf_reg[0][3]_P"}]]]
+resize_pblock [get_pblocks {CLKAG_mips/dp/pcreg/rf_reg[0][3]_P}] -add {CLOCKREGION_X0Y0:CLOCKREGION_X0Y0}
+#endgroup
+
+# Clock net "mips/dp/pcreg/rf_reg[0][4]_P" driven by instance "mips/dp/pcreg/rf_reg[0][4]_LDC_i_1" located at site "SLICE_X28Y21"
+#startgroup
+create_pblock {CLKAG_mips/dp/pcreg/rf_reg[0][4]_P}
+add_cells_to_pblock [get_pblocks  {CLKAG_mips/dp/pcreg/rf_reg[0][4]_P}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="mips/dp/pcreg/rf_reg[0][4]_P"}]]]
+resize_pblock [get_pblocks {CLKAG_mips/dp/pcreg/rf_reg[0][4]_P}] -add {CLOCKREGION_X0Y0:CLOCKREGION_X0Y0}
+#endgroup
+
+# Clock net "mips/dp/pcreg/rf_reg[0][5]_P" driven by instance "mips/dp/pcreg/rf_reg[0][5]_LDC_i_1" located at site "SLICE_X33Y19"
+#startgroup
+create_pblock {CLKAG_mips/dp/pcreg/rf_reg[0][5]_P}
+add_cells_to_pblock [get_pblocks  {CLKAG_mips/dp/pcreg/rf_reg[0][5]_P}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="mips/dp/pcreg/rf_reg[0][5]_P"}]]]
+resize_pblock [get_pblocks {CLKAG_mips/dp/pcreg/rf_reg[0][5]_P}] -add {CLOCKREGION_X0Y0:CLOCKREGION_X0Y0}
+#endgroup
+
+# Clock net "mips/dp/pcreg/rf_reg[0][6]_P" driven by instance "mips/dp/pcreg/rf_reg[0][6]_LDC_i_1" located at site "SLICE_X31Y14"
+#startgroup
+create_pblock {CLKAG_mips/dp/pcreg/rf_reg[0][6]_P}
+add_cells_to_pblock [get_pblocks  {CLKAG_mips/dp/pcreg/rf_reg[0][6]_P}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="mips/dp/pcreg/rf_reg[0][6]_P"}]]]
+resize_pblock [get_pblocks {CLKAG_mips/dp/pcreg/rf_reg[0][6]_P}] -add {CLOCKREGION_X0Y0:CLOCKREGION_X0Y0}
+#endgroup
+
+# Clock net "mips/dp/pcreg/rf_reg[0][7]_P" driven by instance "mips/dp/pcreg/rf_reg[0][7]_LDC_i_1" located at site "SLICE_X28Y14"
+#startgroup
+create_pblock {CLKAG_mips/dp/pcreg/rf_reg[0][7]_P}
+add_cells_to_pblock [get_pblocks  {CLKAG_mips/dp/pcreg/rf_reg[0][7]_P}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="mips/dp/pcreg/rf_reg[0][7]_P"}]]]
+resize_pblock [get_pblocks {CLKAG_mips/dp/pcreg/rf_reg[0][7]_P}] -add {CLOCKREGION_X0Y0:CLOCKREGION_X0Y0}
+#endgroup
+
+# Clock net "mips/dp/pcreg/rf_reg[0][8]_P" driven by instance "mips/dp/pcreg/rf_reg[0][8]_LDC_i_1" located at site "SLICE_X44Y15"
+#startgroup
+create_pblock {CLKAG_mips/dp/pcreg/rf_reg[0][8]_P}
+add_cells_to_pblock [get_pblocks  {CLKAG_mips/dp/pcreg/rf_reg[0][8]_P}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="mips/dp/pcreg/rf_reg[0][8]_P"}]]]
+resize_pblock [get_pblocks {CLKAG_mips/dp/pcreg/rf_reg[0][8]_P}] -add {CLOCKREGION_X1Y0:CLOCKREGION_X1Y0}
+#endgroup
+
+# Clock net "mips/dp/pcreg/rf_reg[0][9]_P" driven by instance "mips/dp/pcreg/rf_reg[0][9]_LDC_i_1" located at site "SLICE_X48Y19"
+#startgroup
+create_pblock {CLKAG_mips/dp/pcreg/rf_reg[0][9]_P}
+add_cells_to_pblock [get_pblocks  {CLKAG_mips/dp/pcreg/rf_reg[0][9]_P}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="mips/dp/pcreg/rf_reg[0][9]_P"}]]]
+resize_pblock [get_pblocks {CLKAG_mips/dp/pcreg/rf_reg[0][9]_P}] -add {CLOCKREGION_X1Y0:CLOCKREGION_X1Y0}
+#endgroup
+
+# Clock net "mips/dp/pcreg/rf_reg[1][0]_P" driven by instance "mips/dp/pcreg/rf_reg[1][0]_LDC_i_1" located at site "SLICE_X37Y16"
+#startgroup
+create_pblock {CLKAG_mips/dp/pcreg/rf_reg[1][0]_P}
+add_cells_to_pblock [get_pblocks  {CLKAG_mips/dp/pcreg/rf_reg[1][0]_P}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="mips/dp/pcreg/rf_reg[1][0]_P"}]]]
+resize_pblock [get_pblocks {CLKAG_mips/dp/pcreg/rf_reg[1][0]_P}] -add {CLOCKREGION_X1Y0:CLOCKREGION_X1Y0}
+#endgroup
+
+# Clock net "mips/dp/pcreg/rf_reg[1][10]_P" driven by instance "mips/dp/pcreg/rf_reg[1][10]_LDC_i_1" located at site "SLICE_X49Y14"
+#startgroup
+create_pblock {CLKAG_mips/dp/pcreg/rf_reg[1][10]_P}
+add_cells_to_pblock [get_pblocks  {CLKAG_mips/dp/pcreg/rf_reg[1][10]_P}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="mips/dp/pcreg/rf_reg[1][10]_P"}]]]
+resize_pblock [get_pblocks {CLKAG_mips/dp/pcreg/rf_reg[1][10]_P}] -add {CLOCKREGION_X1Y0:CLOCKREGION_X1Y0}
+#endgroup
+
+# Clock net "mips/dp/pcreg/rf_reg[1][11]_P" driven by instance "mips/dp/pcreg/rf_reg[1][11]_LDC_i_1" located at site "SLICE_X43Y17"
+#startgroup
+create_pblock {CLKAG_mips/dp/pcreg/rf_reg[1][11]_P}
+add_cells_to_pblock [get_pblocks  {CLKAG_mips/dp/pcreg/rf_reg[1][11]_P}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="mips/dp/pcreg/rf_reg[1][11]_P"}]]]
+resize_pblock [get_pblocks {CLKAG_mips/dp/pcreg/rf_reg[1][11]_P}] -add {CLOCKREGION_X1Y0:CLOCKREGION_X1Y0}
+#endgroup
+
+# Clock net "mips/dp/pcreg/rf_reg[1][12]_P" driven by instance "mips/dp/pcreg/rf_reg[1][12]_LDC_i_1" located at site "SLICE_X50Y16"
+#startgroup
+create_pblock {CLKAG_mips/dp/pcreg/rf_reg[1][12]_P}
+add_cells_to_pblock [get_pblocks  {CLKAG_mips/dp/pcreg/rf_reg[1][12]_P}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="mips/dp/pcreg/rf_reg[1][12]_P"}]]]
+resize_pblock [get_pblocks {CLKAG_mips/dp/pcreg/rf_reg[1][12]_P}] -add {CLOCKREGION_X1Y0:CLOCKREGION_X1Y0}
+#endgroup
+
+# Clock net "mips/dp/pcreg/rf_reg[1][13]_P" driven by instance "mips/dp/pcreg/rf_reg[1][13]_LDC_i_1" located at site "SLICE_X47Y24"
+#startgroup
+create_pblock {CLKAG_mips/dp/pcreg/rf_reg[1][13]_P}
+add_cells_to_pblock [get_pblocks  {CLKAG_mips/dp/pcreg/rf_reg[1][13]_P}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="mips/dp/pcreg/rf_reg[1][13]_P"}]]]
+resize_pblock [get_pblocks {CLKAG_mips/dp/pcreg/rf_reg[1][13]_P}] -add {CLOCKREGION_X1Y0:CLOCKREGION_X1Y0}
+#endgroup
+
+# Clock net "mips/dp/pcreg/rf_reg[1][14]_P" driven by instance "mips/dp/pcreg/rf_reg[1][14]_LDC_i_1" located at site "SLICE_X52Y20"
+#startgroup
+create_pblock {CLKAG_mips/dp/pcreg/rf_reg[1][14]_P}
+add_cells_to_pblock [get_pblocks  {CLKAG_mips/dp/pcreg/rf_reg[1][14]_P}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="mips/dp/pcreg/rf_reg[1][14]_P"}]]]
+resize_pblock [get_pblocks {CLKAG_mips/dp/pcreg/rf_reg[1][14]_P}] -add {CLOCKREGION_X1Y0:CLOCKREGION_X1Y0}
+#endgroup
+
+# Clock net "mips/dp/pcreg/rf_reg[1][15]_P" driven by instance "mips/dp/pcreg/rf_reg[1][15]_LDC_i_1" located at site "SLICE_X52Y24"
+#startgroup
+create_pblock {CLKAG_mips/dp/pcreg/rf_reg[1][15]_P}
+add_cells_to_pblock [get_pblocks  {CLKAG_mips/dp/pcreg/rf_reg[1][15]_P}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="mips/dp/pcreg/rf_reg[1][15]_P"}]]]
+resize_pblock [get_pblocks {CLKAG_mips/dp/pcreg/rf_reg[1][15]_P}] -add {CLOCKREGION_X1Y0:CLOCKREGION_X1Y0}
+#endgroup
+
+# Clock net "mips/dp/pcreg/rf_reg[1][16]_P" driven by instance "mips/dp/pcreg/rf_reg[1][16]_LDC_i_1" located at site "SLICE_X40Y28"
+#startgroup
+create_pblock {CLKAG_mips/dp/pcreg/rf_reg[1][16]_P}
+add_cells_to_pblock [get_pblocks  {CLKAG_mips/dp/pcreg/rf_reg[1][16]_P}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="mips/dp/pcreg/rf_reg[1][16]_P"}]]]
+resize_pblock [get_pblocks {CLKAG_mips/dp/pcreg/rf_reg[1][16]_P}] -add {CLOCKREGION_X1Y0:CLOCKREGION_X1Y0}
+#endgroup
+
+# Clock net "mips/dp/pcreg/rf_reg[1][17]_P" driven by instance "mips/dp/pcreg/rf_reg[1][17]_LDC_i_1" located at site "SLICE_X28Y29"
+#startgroup
+create_pblock {CLKAG_mips/dp/pcreg/rf_reg[1][17]_P}
+add_cells_to_pblock [get_pblocks  {CLKAG_mips/dp/pcreg/rf_reg[1][17]_P}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="mips/dp/pcreg/rf_reg[1][17]_P"}]]]
+resize_pblock [get_pblocks {CLKAG_mips/dp/pcreg/rf_reg[1][17]_P}] -add {CLOCKREGION_X0Y0:CLOCKREGION_X0Y0}
+#endgroup
+
+# Clock net "mips/dp/pcreg/rf_reg[1][18]_P" driven by instance "mips/dp/pcreg/rf_reg[1][18]_LDC_i_1" located at site "SLICE_X30Y31"
+#startgroup
+create_pblock {CLKAG_mips/dp/pcreg/rf_reg[1][18]_P}
+add_cells_to_pblock [get_pblocks  {CLKAG_mips/dp/pcreg/rf_reg[1][18]_P}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="mips/dp/pcreg/rf_reg[1][18]_P"}]]]
+resize_pblock [get_pblocks {CLKAG_mips/dp/pcreg/rf_reg[1][18]_P}] -add {CLOCKREGION_X0Y0:CLOCKREGION_X0Y0}
+#endgroup
+
+# Clock net "mips/dp/pcreg/rf_reg[1][19]_P" driven by instance "mips/dp/pcreg/rf_reg[1][19]_LDC_i_1" located at site "SLICE_X32Y28"
+#startgroup
+create_pblock {CLKAG_mips/dp/pcreg/rf_reg[1][19]_P}
+add_cells_to_pblock [get_pblocks  {CLKAG_mips/dp/pcreg/rf_reg[1][19]_P}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="mips/dp/pcreg/rf_reg[1][19]_P"}]]]
+resize_pblock [get_pblocks {CLKAG_mips/dp/pcreg/rf_reg[1][19]_P}] -add {CLOCKREGION_X0Y0:CLOCKREGION_X0Y0}
+#endgroup
+
+# Clock net "mips/dp/pcreg/rf_reg[1][1]_P" driven by instance "mips/dp/pcreg/rf_reg[1][1]_LDC_i_1" located at site "SLICE_X39Y16"
+#startgroup
+create_pblock {CLKAG_mips/dp/pcreg/rf_reg[1][1]_P}
+add_cells_to_pblock [get_pblocks  {CLKAG_mips/dp/pcreg/rf_reg[1][1]_P}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="mips/dp/pcreg/rf_reg[1][1]_P"}]]]
+resize_pblock [get_pblocks {CLKAG_mips/dp/pcreg/rf_reg[1][1]_P}] -add {CLOCKREGION_X1Y0:CLOCKREGION_X1Y0}
+#endgroup
+
+# Clock net "mips/dp/pcreg/rf_reg[1][20]_P" driven by instance "mips/dp/pcreg/rf_reg[1][20]_LDC_i_1" located at site "SLICE_X43Y31"
+#startgroup
+create_pblock {CLKAG_mips/dp/pcreg/rf_reg[1][20]_P}
+add_cells_to_pblock [get_pblocks  {CLKAG_mips/dp/pcreg/rf_reg[1][20]_P}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="mips/dp/pcreg/rf_reg[1][20]_P"}]]]
+resize_pblock [get_pblocks {CLKAG_mips/dp/pcreg/rf_reg[1][20]_P}] -add {CLOCKREGION_X1Y0:CLOCKREGION_X1Y0}
+#endgroup
+
+# Clock net "mips/dp/pcreg/rf_reg[1][21]_P" driven by instance "mips/dp/pcreg/rf_reg[1][21]_LDC_i_1" located at site "SLICE_X46Y31"
+#startgroup
+create_pblock {CLKAG_mips/dp/pcreg/rf_reg[1][21]_P}
+add_cells_to_pblock [get_pblocks  {CLKAG_mips/dp/pcreg/rf_reg[1][21]_P}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="mips/dp/pcreg/rf_reg[1][21]_P"}]]]
+resize_pblock [get_pblocks {CLKAG_mips/dp/pcreg/rf_reg[1][21]_P}] -add {CLOCKREGION_X1Y0:CLOCKREGION_X1Y0}
+#endgroup
+
+# Clock net "mips/dp/pcreg/rf_reg[1][22]_P" driven by instance "mips/dp/pcreg/rf_reg[1][22]_LDC_i_1" located at site "SLICE_X52Y29"
+#startgroup
+create_pblock {CLKAG_mips/dp/pcreg/rf_reg[1][22]_P}
+add_cells_to_pblock [get_pblocks  {CLKAG_mips/dp/pcreg/rf_reg[1][22]_P}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="mips/dp/pcreg/rf_reg[1][22]_P"}]]]
+resize_pblock [get_pblocks {CLKAG_mips/dp/pcreg/rf_reg[1][22]_P}] -add {CLOCKREGION_X1Y0:CLOCKREGION_X1Y0}
+#endgroup
+
+# Clock net "mips/dp/pcreg/rf_reg[1][23]_P" driven by instance "mips/dp/pcreg/rf_reg[1][23]_LDC_i_1" located at site "SLICE_X48Y32"
+#startgroup
+create_pblock {CLKAG_mips/dp/pcreg/rf_reg[1][23]_P}
+add_cells_to_pblock [get_pblocks  {CLKAG_mips/dp/pcreg/rf_reg[1][23]_P}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="mips/dp/pcreg/rf_reg[1][23]_P"}]]]
+resize_pblock [get_pblocks {CLKAG_mips/dp/pcreg/rf_reg[1][23]_P}] -add {CLOCKREGION_X1Y0:CLOCKREGION_X1Y0}
+#endgroup
+
+# Clock net "mips/dp/pcreg/rf_reg[1][24]_P" driven by instance "mips/dp/pcreg/rf_reg[1][24]_LDC_i_1" located at site "SLICE_X45Y34"
+#startgroup
+create_pblock {CLKAG_mips/dp/pcreg/rf_reg[1][24]_P}
+add_cells_to_pblock [get_pblocks  {CLKAG_mips/dp/pcreg/rf_reg[1][24]_P}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="mips/dp/pcreg/rf_reg[1][24]_P"}]]]
+resize_pblock [get_pblocks {CLKAG_mips/dp/pcreg/rf_reg[1][24]_P}] -add {CLOCKREGION_X1Y0:CLOCKREGION_X1Y0}
+#endgroup
+
+# Clock net "mips/dp/pcreg/rf_reg[1][25]_P" driven by instance "mips/dp/pcreg/rf_reg[1][25]_LDC_i_1" located at site "SLICE_X42Y33"
+#startgroup
+create_pblock {CLKAG_mips/dp/pcreg/rf_reg[1][25]_P}
+add_cells_to_pblock [get_pblocks  {CLKAG_mips/dp/pcreg/rf_reg[1][25]_P}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="mips/dp/pcreg/rf_reg[1][25]_P"}]]]
+resize_pblock [get_pblocks {CLKAG_mips/dp/pcreg/rf_reg[1][25]_P}] -add {CLOCKREGION_X1Y0:CLOCKREGION_X1Y0}
+#endgroup
+
+# Clock net "mips/dp/pcreg/rf_reg[1][26]_P" driven by instance "mips/dp/pcreg/rf_reg[1][26]_LDC_i_1" located at site "SLICE_X45Y31"
+#startgroup
+create_pblock {CLKAG_mips/dp/pcreg/rf_reg[1][26]_P}
+add_cells_to_pblock [get_pblocks  {CLKAG_mips/dp/pcreg/rf_reg[1][26]_P}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="mips/dp/pcreg/rf_reg[1][26]_P"}]]]
+resize_pblock [get_pblocks {CLKAG_mips/dp/pcreg/rf_reg[1][26]_P}] -add {CLOCKREGION_X1Y0:CLOCKREGION_X1Y0}
+#endgroup
+
+# Clock net "mips/dp/pcreg/rf_reg[1][27]_P" driven by instance "mips/dp/pcreg/rf_reg[1][27]_LDC_i_1" located at site "SLICE_X40Y35"
+#startgroup
+create_pblock {CLKAG_mips/dp/pcreg/rf_reg[1][27]_P}
+add_cells_to_pblock [get_pblocks  {CLKAG_mips/dp/pcreg/rf_reg[1][27]_P}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="mips/dp/pcreg/rf_reg[1][27]_P"}]]]
+resize_pblock [get_pblocks {CLKAG_mips/dp/pcreg/rf_reg[1][27]_P}] -add {CLOCKREGION_X1Y0:CLOCKREGION_X1Y0}
+#endgroup
+
+# Clock net "mips/dp/pcreg/rf_reg[1][28]_P" driven by instance "mips/dp/pcreg/rf_reg[1][28]_LDC_i_1" located at site "SLICE_X31Y35"
+#startgroup
+create_pblock {CLKAG_mips/dp/pcreg/rf_reg[1][28]_P}
+add_cells_to_pblock [get_pblocks  {CLKAG_mips/dp/pcreg/rf_reg[1][28]_P}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="mips/dp/pcreg/rf_reg[1][28]_P"}]]]
+resize_pblock [get_pblocks {CLKAG_mips/dp/pcreg/rf_reg[1][28]_P}] -add {CLOCKREGION_X0Y0:CLOCKREGION_X0Y0}
+#endgroup
+
+# Clock net "mips/dp/pcreg/rf_reg[1][29]_P" driven by instance "mips/dp/pcreg/rf_reg[1][29]_LDC_i_1" located at site "SLICE_X32Y34"
+#startgroup
+create_pblock {CLKAG_mips/dp/pcreg/rf_reg[1][29]_P}
+add_cells_to_pblock [get_pblocks  {CLKAG_mips/dp/pcreg/rf_reg[1][29]_P}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="mips/dp/pcreg/rf_reg[1][29]_P"}]]]
+resize_pblock [get_pblocks {CLKAG_mips/dp/pcreg/rf_reg[1][29]_P}] -add {CLOCKREGION_X0Y0:CLOCKREGION_X0Y0}
+#endgroup
+
+# Clock net "mips/dp/pcreg/rf_reg[1][2]_P" driven by instance "mips/dp/pcreg/rf_reg[1][2]_LDC_i_1" located at site "SLICE_X30Y20"
+#startgroup
+create_pblock {CLKAG_mips/dp/pcreg/rf_reg[1][2]_P}
+add_cells_to_pblock [get_pblocks  {CLKAG_mips/dp/pcreg/rf_reg[1][2]_P}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="mips/dp/pcreg/rf_reg[1][2]_P"}]]]
+resize_pblock [get_pblocks {CLKAG_mips/dp/pcreg/rf_reg[1][2]_P}] -add {CLOCKREGION_X0Y0:CLOCKREGION_X0Y0}
+#endgroup
+
+# Clock net "mips/dp/pcreg/rf_reg[1][30]_P" driven by instance "mips/dp/pcreg/rf_reg[1][30]_LDC_i_1" located at site "SLICE_X35Y31"
+#startgroup
+create_pblock {CLKAG_mips/dp/pcreg/rf_reg[1][30]_P}
+add_cells_to_pblock [get_pblocks  {CLKAG_mips/dp/pcreg/rf_reg[1][30]_P}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="mips/dp/pcreg/rf_reg[1][30]_P"}]]]
+resize_pblock [get_pblocks {CLKAG_mips/dp/pcreg/rf_reg[1][30]_P}] -add {CLOCKREGION_X0Y0:CLOCKREGION_X0Y0}
+#endgroup
+
+# Clock net "mips/dp/pcreg/rf_reg[1][31]_P" driven by instance "mips/dp/pcreg/rf_reg[1][31]_LDC_i_1" located at site "SLICE_X29Y29"
+#startgroup
+create_pblock {CLKAG_mips/dp/pcreg/rf_reg[1][31]_P}
+add_cells_to_pblock [get_pblocks  {CLKAG_mips/dp/pcreg/rf_reg[1][31]_P}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="mips/dp/pcreg/rf_reg[1][31]_P"}]]]
+resize_pblock [get_pblocks {CLKAG_mips/dp/pcreg/rf_reg[1][31]_P}] -add {CLOCKREGION_X0Y0:CLOCKREGION_X0Y0}
+#endgroup
+
+# Clock net "mips/dp/pcreg/rf_reg[1][3]_P" driven by instance "mips/dp/pcreg/rf_reg[1][3]_LDC_i_1" located at site "SLICE_X34Y14"
+#startgroup
+create_pblock {CLKAG_mips/dp/pcreg/rf_reg[1][3]_P}
+add_cells_to_pblock [get_pblocks  {CLKAG_mips/dp/pcreg/rf_reg[1][3]_P}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="mips/dp/pcreg/rf_reg[1][3]_P"}]]]
+resize_pblock [get_pblocks {CLKAG_mips/dp/pcreg/rf_reg[1][3]_P}] -add {CLOCKREGION_X0Y0:CLOCKREGION_X0Y0}
+#endgroup
+
+# Clock net "mips/dp/pcreg/rf_reg[1][4]_P" driven by instance "mips/dp/pcreg/rf_reg[1][4]_LDC_i_1" located at site "SLICE_X29Y21"
+#startgroup
+create_pblock {CLKAG_mips/dp/pcreg/rf_reg[1][4]_P}
+add_cells_to_pblock [get_pblocks  {CLKAG_mips/dp/pcreg/rf_reg[1][4]_P}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="mips/dp/pcreg/rf_reg[1][4]_P"}]]]
+resize_pblock [get_pblocks {CLKAG_mips/dp/pcreg/rf_reg[1][4]_P}] -add {CLOCKREGION_X0Y0:CLOCKREGION_X0Y0}
+#endgroup
+
+# Clock net "mips/dp/pcreg/rf_reg[1][5]_P" driven by instance "mips/dp/pcreg/rf_reg[1][5]_LDC_i_1" located at site "SLICE_X35Y22"
+#startgroup
+create_pblock {CLKAG_mips/dp/pcreg/rf_reg[1][5]_P}
+add_cells_to_pblock [get_pblocks  {CLKAG_mips/dp/pcreg/rf_reg[1][5]_P}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="mips/dp/pcreg/rf_reg[1][5]_P"}]]]
+resize_pblock [get_pblocks {CLKAG_mips/dp/pcreg/rf_reg[1][5]_P}] -add {CLOCKREGION_X0Y0:CLOCKREGION_X0Y0}
+#endgroup
+
+# Clock net "mips/dp/pcreg/rf_reg[1][6]_P" driven by instance "mips/dp/pcreg/rf_reg[1][6]_LDC_i_1" located at site "SLICE_X30Y15"
+#startgroup
+create_pblock {CLKAG_mips/dp/pcreg/rf_reg[1][6]_P}
+add_cells_to_pblock [get_pblocks  {CLKAG_mips/dp/pcreg/rf_reg[1][6]_P}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="mips/dp/pcreg/rf_reg[1][6]_P"}]]]
+resize_pblock [get_pblocks {CLKAG_mips/dp/pcreg/rf_reg[1][6]_P}] -add {CLOCKREGION_X0Y0:CLOCKREGION_X0Y0}
+#endgroup
+
+# Clock net "mips/dp/pcreg/rf_reg[1][7]_P" driven by instance "mips/dp/pcreg/rf_reg[1][7]_LDC_i_1" located at site "SLICE_X34Y19"
+#startgroup
+create_pblock {CLKAG_mips/dp/pcreg/rf_reg[1][7]_P}
+add_cells_to_pblock [get_pblocks  {CLKAG_mips/dp/pcreg/rf_reg[1][7]_P}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="mips/dp/pcreg/rf_reg[1][7]_P"}]]]
+resize_pblock [get_pblocks {CLKAG_mips/dp/pcreg/rf_reg[1][7]_P}] -add {CLOCKREGION_X0Y0:CLOCKREGION_X0Y0}
+#endgroup
+
+# Clock net "mips/dp/pcreg/rf_reg[1][8]_P" driven by instance "mips/dp/pcreg/rf_reg[1][8]_LDC_i_1" located at site "SLICE_X45Y14"
+#startgroup
+create_pblock {CLKAG_mips/dp/pcreg/rf_reg[1][8]_P}
+add_cells_to_pblock [get_pblocks  {CLKAG_mips/dp/pcreg/rf_reg[1][8]_P}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="mips/dp/pcreg/rf_reg[1][8]_P"}]]]
+resize_pblock [get_pblocks {CLKAG_mips/dp/pcreg/rf_reg[1][8]_P}] -add {CLOCKREGION_X1Y0:CLOCKREGION_X1Y0}
+#endgroup
+
+# Clock net "mips/dp/pcreg/rf_reg[1][9]_P" driven by instance "mips/dp/pcreg/rf_reg[1][9]_LDC_i_1" located at site "SLICE_X49Y19"
+#startgroup
+create_pblock {CLKAG_mips/dp/pcreg/rf_reg[1][9]_P}
+add_cells_to_pblock [get_pblocks  {CLKAG_mips/dp/pcreg/rf_reg[1][9]_P}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="mips/dp/pcreg/rf_reg[1][9]_P"}]]]
+resize_pblock [get_pblocks {CLKAG_mips/dp/pcreg/rf_reg[1][9]_P}] -add {CLOCKREGION_X1Y0:CLOCKREGION_X1Y0}
+#endgroup
+
+# Clock net "mips/dp/pcreg/rf_reg[2][0]_P" driven by instance "mips/dp/pcreg/rf_reg[2][0]_LDC_i_1" located at site "SLICE_X37Y14"
+#startgroup
+create_pblock {CLKAG_mips/dp/pcreg/rf_reg[2][0]_P}
+add_cells_to_pblock [get_pblocks  {CLKAG_mips/dp/pcreg/rf_reg[2][0]_P}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="mips/dp/pcreg/rf_reg[2][0]_P"}]]]
+resize_pblock [get_pblocks {CLKAG_mips/dp/pcreg/rf_reg[2][0]_P}] -add {CLOCKREGION_X1Y0:CLOCKREGION_X1Y0}
+#endgroup
+
+# Clock net "mips/dp/pcreg/rf_reg[2][10]_P" driven by instance "mips/dp/pcreg/rf_reg[2][10]_LDC_i_1" located at site "SLICE_X49Y15"
+#startgroup
+create_pblock {CLKAG_mips/dp/pcreg/rf_reg[2][10]_P}
+add_cells_to_pblock [get_pblocks  {CLKAG_mips/dp/pcreg/rf_reg[2][10]_P}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="mips/dp/pcreg/rf_reg[2][10]_P"}]]]
+resize_pblock [get_pblocks {CLKAG_mips/dp/pcreg/rf_reg[2][10]_P}] -add {CLOCKREGION_X1Y0:CLOCKREGION_X1Y0}
+#endgroup
+
+# Clock net "mips/dp/pcreg/rf_reg[2][11]_P" driven by instance "mips/dp/pcreg/rf_reg[2][11]_LDC_i_1" located at site "SLICE_X42Y16"
+#startgroup
+create_pblock {CLKAG_mips/dp/pcreg/rf_reg[2][11]_P}
+add_cells_to_pblock [get_pblocks  {CLKAG_mips/dp/pcreg/rf_reg[2][11]_P}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="mips/dp/pcreg/rf_reg[2][11]_P"}]]]
+resize_pblock [get_pblocks {CLKAG_mips/dp/pcreg/rf_reg[2][11]_P}] -add {CLOCKREGION_X1Y0:CLOCKREGION_X1Y0}
+#endgroup
+
+# Clock net "mips/dp/pcreg/rf_reg[2][12]_P" driven by instance "mips/dp/pcreg/rf_reg[2][12]_LDC_i_1" located at site "SLICE_X51Y15"
+#startgroup
+create_pblock {CLKAG_mips/dp/pcreg/rf_reg[2][12]_P}
+add_cells_to_pblock [get_pblocks  {CLKAG_mips/dp/pcreg/rf_reg[2][12]_P}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="mips/dp/pcreg/rf_reg[2][12]_P"}]]]
+resize_pblock [get_pblocks {CLKAG_mips/dp/pcreg/rf_reg[2][12]_P}] -add {CLOCKREGION_X1Y0:CLOCKREGION_X1Y0}
+#endgroup
+
+# Clock net "mips/dp/pcreg/rf_reg[2][13]_P" driven by instance "mips/dp/pcreg/rf_reg[2][13]_LDC_i_1" located at site "SLICE_X46Y25"
+#startgroup
+create_pblock {CLKAG_mips/dp/pcreg/rf_reg[2][13]_P}
+add_cells_to_pblock [get_pblocks  {CLKAG_mips/dp/pcreg/rf_reg[2][13]_P}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="mips/dp/pcreg/rf_reg[2][13]_P"}]]]
+resize_pblock [get_pblocks {CLKAG_mips/dp/pcreg/rf_reg[2][13]_P}] -add {CLOCKREGION_X1Y0:CLOCKREGION_X1Y0}
+#endgroup
+
+# Clock net "mips/dp/pcreg/rf_reg[2][14]_P" driven by instance "mips/dp/pcreg/rf_reg[2][14]_LDC_i_1" located at site "SLICE_X53Y20"
+#startgroup
+create_pblock {CLKAG_mips/dp/pcreg/rf_reg[2][14]_P}
+add_cells_to_pblock [get_pblocks  {CLKAG_mips/dp/pcreg/rf_reg[2][14]_P}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="mips/dp/pcreg/rf_reg[2][14]_P"}]]]
+resize_pblock [get_pblocks {CLKAG_mips/dp/pcreg/rf_reg[2][14]_P}] -add {CLOCKREGION_X1Y0:CLOCKREGION_X1Y0}
+#endgroup
+
+# Clock net "mips/dp/pcreg/rf_reg[2][15]_P" driven by instance "mips/dp/pcreg/rf_reg[2][15]_LDC_i_1" located at site "SLICE_X52Y25"
+#startgroup
+create_pblock {CLKAG_mips/dp/pcreg/rf_reg[2][15]_P}
+add_cells_to_pblock [get_pblocks  {CLKAG_mips/dp/pcreg/rf_reg[2][15]_P}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="mips/dp/pcreg/rf_reg[2][15]_P"}]]]
+resize_pblock [get_pblocks {CLKAG_mips/dp/pcreg/rf_reg[2][15]_P}] -add {CLOCKREGION_X1Y0:CLOCKREGION_X1Y0}
+#endgroup
+
+# Clock net "mips/dp/pcreg/rf_reg[2][16]_P" driven by instance "mips/dp/pcreg/rf_reg[2][16]_LDC_i_1" located at site "SLICE_X41Y26"
+#startgroup
+create_pblock {CLKAG_mips/dp/pcreg/rf_reg[2][16]_P}
+add_cells_to_pblock [get_pblocks  {CLKAG_mips/dp/pcreg/rf_reg[2][16]_P}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="mips/dp/pcreg/rf_reg[2][16]_P"}]]]
+resize_pblock [get_pblocks {CLKAG_mips/dp/pcreg/rf_reg[2][16]_P}] -add {CLOCKREGION_X1Y0:CLOCKREGION_X1Y0}
+#endgroup
+
+# Clock net "mips/dp/pcreg/rf_reg[2][17]_P" driven by instance "mips/dp/pcreg/rf_reg[2][17]_LDC_i_1" located at site "SLICE_X28Y28"
+#startgroup
+create_pblock {CLKAG_mips/dp/pcreg/rf_reg[2][17]_P}
+add_cells_to_pblock [get_pblocks  {CLKAG_mips/dp/pcreg/rf_reg[2][17]_P}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="mips/dp/pcreg/rf_reg[2][17]_P"}]]]
+resize_pblock [get_pblocks {CLKAG_mips/dp/pcreg/rf_reg[2][17]_P}] -add {CLOCKREGION_X0Y0:CLOCKREGION_X0Y0}
+#endgroup
+
+# Clock net "mips/dp/pcreg/rf_reg[2][18]_P" driven by instance "mips/dp/pcreg/rf_reg[2][18]_LDC_i_1" located at site "SLICE_X29Y31"
+#startgroup
+create_pblock {CLKAG_mips/dp/pcreg/rf_reg[2][18]_P}
+add_cells_to_pblock [get_pblocks  {CLKAG_mips/dp/pcreg/rf_reg[2][18]_P}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="mips/dp/pcreg/rf_reg[2][18]_P"}]]]
+resize_pblock [get_pblocks {CLKAG_mips/dp/pcreg/rf_reg[2][18]_P}] -add {CLOCKREGION_X0Y0:CLOCKREGION_X0Y0}
+#endgroup
+
+# Clock net "mips/dp/pcreg/rf_reg[2][19]_P" driven by instance "mips/dp/pcreg/rf_reg[2][19]_LDC_i_1" located at site "SLICE_X32Y29"
+#startgroup
+create_pblock {CLKAG_mips/dp/pcreg/rf_reg[2][19]_P}
+add_cells_to_pblock [get_pblocks  {CLKAG_mips/dp/pcreg/rf_reg[2][19]_P}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="mips/dp/pcreg/rf_reg[2][19]_P"}]]]
+resize_pblock [get_pblocks {CLKAG_mips/dp/pcreg/rf_reg[2][19]_P}] -add {CLOCKREGION_X0Y0:CLOCKREGION_X0Y0}
+#endgroup
+
+# Clock net "mips/dp/pcreg/rf_reg[2][1]_P" driven by instance "mips/dp/pcreg/rf_reg[2][1]_LDC_i_1" located at site "SLICE_X39Y17"
+#startgroup
+create_pblock {CLKAG_mips/dp/pcreg/rf_reg[2][1]_P}
+add_cells_to_pblock [get_pblocks  {CLKAG_mips/dp/pcreg/rf_reg[2][1]_P}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="mips/dp/pcreg/rf_reg[2][1]_P"}]]]
+resize_pblock [get_pblocks {CLKAG_mips/dp/pcreg/rf_reg[2][1]_P}] -add {CLOCKREGION_X1Y0:CLOCKREGION_X1Y0}
+#endgroup
+
+# Clock net "mips/dp/pcreg/rf_reg[2][20]_P" driven by instance "mips/dp/pcreg/rf_reg[2][20]_LDC_i_1" located at site "SLICE_X43Y31"
+#startgroup
+create_pblock {CLKAG_mips/dp/pcreg/rf_reg[2][20]_P}
+add_cells_to_pblock [get_pblocks  {CLKAG_mips/dp/pcreg/rf_reg[2][20]_P}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="mips/dp/pcreg/rf_reg[2][20]_P"}]]]
+resize_pblock [get_pblocks {CLKAG_mips/dp/pcreg/rf_reg[2][20]_P}] -add {CLOCKREGION_X1Y0:CLOCKREGION_X1Y0}
+#endgroup
+
+# Clock net "mips/dp/pcreg/rf_reg[2][21]_P" driven by instance "mips/dp/pcreg/rf_reg[2][21]_LDC_i_1" located at site "SLICE_X45Y26"
+#startgroup
+create_pblock {CLKAG_mips/dp/pcreg/rf_reg[2][21]_P}
+add_cells_to_pblock [get_pblocks  {CLKAG_mips/dp/pcreg/rf_reg[2][21]_P}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="mips/dp/pcreg/rf_reg[2][21]_P"}]]]
+resize_pblock [get_pblocks {CLKAG_mips/dp/pcreg/rf_reg[2][21]_P}] -add {CLOCKREGION_X1Y0:CLOCKREGION_X1Y0}
+#endgroup
+
+# Clock net "mips/dp/pcreg/rf_reg[2][22]_P" driven by instance "mips/dp/pcreg/rf_reg[2][22]_LDC_i_1" located at site "SLICE_X50Y29"
+#startgroup
+create_pblock {CLKAG_mips/dp/pcreg/rf_reg[2][22]_P}
+add_cells_to_pblock [get_pblocks  {CLKAG_mips/dp/pcreg/rf_reg[2][22]_P}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="mips/dp/pcreg/rf_reg[2][22]_P"}]]]
+resize_pblock [get_pblocks {CLKAG_mips/dp/pcreg/rf_reg[2][22]_P}] -add {CLOCKREGION_X1Y0:CLOCKREGION_X1Y0}
+#endgroup
+
+# Clock net "mips/dp/pcreg/rf_reg[2][23]_P" driven by instance "mips/dp/pcreg/rf_reg[2][23]_LDC_i_1" located at site "SLICE_X47Y29"
+#startgroup
+create_pblock {CLKAG_mips/dp/pcreg/rf_reg[2][23]_P}
+add_cells_to_pblock [get_pblocks  {CLKAG_mips/dp/pcreg/rf_reg[2][23]_P}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="mips/dp/pcreg/rf_reg[2][23]_P"}]]]
+resize_pblock [get_pblocks {CLKAG_mips/dp/pcreg/rf_reg[2][23]_P}] -add {CLOCKREGION_X1Y0:CLOCKREGION_X1Y0}
+#endgroup
+
+# Clock net "mips/dp/pcreg/rf_reg[2][24]_P" driven by instance "mips/dp/pcreg/rf_reg[2][24]_LDC_i_1" located at site "SLICE_X47Y35"
+#startgroup
+create_pblock {CLKAG_mips/dp/pcreg/rf_reg[2][24]_P}
+add_cells_to_pblock [get_pblocks  {CLKAG_mips/dp/pcreg/rf_reg[2][24]_P}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="mips/dp/pcreg/rf_reg[2][24]_P"}]]]
+resize_pblock [get_pblocks {CLKAG_mips/dp/pcreg/rf_reg[2][24]_P}] -add {CLOCKREGION_X1Y0:CLOCKREGION_X1Y0}
+#endgroup
+
+# Clock net "mips/dp/pcreg/rf_reg[2][25]_P" driven by instance "mips/dp/pcreg/rf_reg[2][25]_LDC_i_1" located at site "SLICE_X41Y32"
+#startgroup
+create_pblock {CLKAG_mips/dp/pcreg/rf_reg[2][25]_P}
+add_cells_to_pblock [get_pblocks  {CLKAG_mips/dp/pcreg/rf_reg[2][25]_P}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="mips/dp/pcreg/rf_reg[2][25]_P"}]]]
+resize_pblock [get_pblocks {CLKAG_mips/dp/pcreg/rf_reg[2][25]_P}] -add {CLOCKREGION_X1Y0:CLOCKREGION_X1Y0}
+#endgroup
+
+# Clock net "mips/dp/pcreg/rf_reg[2][26]_P" driven by instance "mips/dp/pcreg/rf_reg[2][26]_LDC_i_1" located at site "SLICE_X44Y33"
+#startgroup
+create_pblock {CLKAG_mips/dp/pcreg/rf_reg[2][26]_P}
+add_cells_to_pblock [get_pblocks  {CLKAG_mips/dp/pcreg/rf_reg[2][26]_P}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="mips/dp/pcreg/rf_reg[2][26]_P"}]]]
+resize_pblock [get_pblocks {CLKAG_mips/dp/pcreg/rf_reg[2][26]_P}] -add {CLOCKREGION_X1Y0:CLOCKREGION_X1Y0}
+#endgroup
+
+# Clock net "mips/dp/pcreg/rf_reg[2][27]_P" driven by instance "mips/dp/pcreg/rf_reg[2][27]_LDC_i_1" located at site "SLICE_X42Y35"
+#startgroup
+create_pblock {CLKAG_mips/dp/pcreg/rf_reg[2][27]_P}
+add_cells_to_pblock [get_pblocks  {CLKAG_mips/dp/pcreg/rf_reg[2][27]_P}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="mips/dp/pcreg/rf_reg[2][27]_P"}]]]
+resize_pblock [get_pblocks {CLKAG_mips/dp/pcreg/rf_reg[2][27]_P}] -add {CLOCKREGION_X1Y0:CLOCKREGION_X1Y0}
+#endgroup
+
+# Clock net "mips/dp/pcreg/rf_reg[2][28]_P" driven by instance "mips/dp/pcreg/rf_reg[2][28]_LDC_i_1" located at site "SLICE_X30Y36"
+#startgroup
+create_pblock {CLKAG_mips/dp/pcreg/rf_reg[2][28]_P}
+add_cells_to_pblock [get_pblocks  {CLKAG_mips/dp/pcreg/rf_reg[2][28]_P}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="mips/dp/pcreg/rf_reg[2][28]_P"}]]]
+resize_pblock [get_pblocks {CLKAG_mips/dp/pcreg/rf_reg[2][28]_P}] -add {CLOCKREGION_X0Y0:CLOCKREGION_X0Y0}
+#endgroup
+
+# Clock net "mips/dp/pcreg/rf_reg[2][29]_P" driven by instance "mips/dp/pcreg/rf_reg[2][29]_LDC_i_1" located at site "SLICE_X33Y33"
+#startgroup
+create_pblock {CLKAG_mips/dp/pcreg/rf_reg[2][29]_P}
+add_cells_to_pblock [get_pblocks  {CLKAG_mips/dp/pcreg/rf_reg[2][29]_P}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="mips/dp/pcreg/rf_reg[2][29]_P"}]]]
+resize_pblock [get_pblocks {CLKAG_mips/dp/pcreg/rf_reg[2][29]_P}] -add {CLOCKREGION_X0Y0:CLOCKREGION_X0Y0}
+#endgroup
+
+# Clock net "mips/dp/pcreg/rf_reg[2][2]_P" driven by instance "mips/dp/pcreg/rf_reg[2][2]_LDC_i_1" located at site "SLICE_X28Y17"
+#startgroup
+create_pblock {CLKAG_mips/dp/pcreg/rf_reg[2][2]_P}
+add_cells_to_pblock [get_pblocks  {CLKAG_mips/dp/pcreg/rf_reg[2][2]_P}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="mips/dp/pcreg/rf_reg[2][2]_P"}]]]
+resize_pblock [get_pblocks {CLKAG_mips/dp/pcreg/rf_reg[2][2]_P}] -add {CLOCKREGION_X0Y0:CLOCKREGION_X0Y0}
+#endgroup
+
+# Clock net "mips/dp/pcreg/rf_reg[2][30]_P" driven by instance "mips/dp/pcreg/rf_reg[2][30]_LDC_i_1" located at site "SLICE_X34Y35"
+#startgroup
+create_pblock {CLKAG_mips/dp/pcreg/rf_reg[2][30]_P}
+add_cells_to_pblock [get_pblocks  {CLKAG_mips/dp/pcreg/rf_reg[2][30]_P}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="mips/dp/pcreg/rf_reg[2][30]_P"}]]]
+resize_pblock [get_pblocks {CLKAG_mips/dp/pcreg/rf_reg[2][30]_P}] -add {CLOCKREGION_X0Y0:CLOCKREGION_X0Y0}
+#endgroup
+
+# Clock net "mips/dp/pcreg/rf_reg[2][31]_P" driven by instance "mips/dp/pcreg/rf_reg[2][31]_LDC_i_1" located at site "SLICE_X30Y35"
+#startgroup
+create_pblock {CLKAG_mips/dp/pcreg/rf_reg[2][31]_P}
+add_cells_to_pblock [get_pblocks  {CLKAG_mips/dp/pcreg/rf_reg[2][31]_P}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="mips/dp/pcreg/rf_reg[2][31]_P"}]]]
+resize_pblock [get_pblocks {CLKAG_mips/dp/pcreg/rf_reg[2][31]_P}] -add {CLOCKREGION_X0Y0:CLOCKREGION_X0Y0}
+#endgroup
+
+# Clock net "mips/dp/pcreg/rf_reg[2][3]_P" driven by instance "mips/dp/pcreg/rf_reg[2][3]_LDC_i_1" located at site "SLICE_X34Y15"
+#startgroup
+create_pblock {CLKAG_mips/dp/pcreg/rf_reg[2][3]_P}
+add_cells_to_pblock [get_pblocks  {CLKAG_mips/dp/pcreg/rf_reg[2][3]_P}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="mips/dp/pcreg/rf_reg[2][3]_P"}]]]
+resize_pblock [get_pblocks {CLKAG_mips/dp/pcreg/rf_reg[2][3]_P}] -add {CLOCKREGION_X0Y0:CLOCKREGION_X0Y0}
+#endgroup
+
+# Clock net "mips/dp/pcreg/rf_reg[2][4]_P" driven by instance "mips/dp/pcreg/rf_reg[2][4]_LDC_i_1" located at site "SLICE_X31Y22"
+#startgroup
+create_pblock {CLKAG_mips/dp/pcreg/rf_reg[2][4]_P}
+add_cells_to_pblock [get_pblocks  {CLKAG_mips/dp/pcreg/rf_reg[2][4]_P}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="mips/dp/pcreg/rf_reg[2][4]_P"}]]]
+resize_pblock [get_pblocks {CLKAG_mips/dp/pcreg/rf_reg[2][4]_P}] -add {CLOCKREGION_X0Y0:CLOCKREGION_X0Y0}
+#endgroup
+
+# Clock net "mips/dp/pcreg/rf_reg[2][5]_P" driven by instance "mips/dp/pcreg/rf_reg[2][5]_LDC_i_1" located at site "SLICE_X32Y22"
+#startgroup
+create_pblock {CLKAG_mips/dp/pcreg/rf_reg[2][5]_P}
+add_cells_to_pblock [get_pblocks  {CLKAG_mips/dp/pcreg/rf_reg[2][5]_P}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="mips/dp/pcreg/rf_reg[2][5]_P"}]]]
+resize_pblock [get_pblocks {CLKAG_mips/dp/pcreg/rf_reg[2][5]_P}] -add {CLOCKREGION_X0Y0:CLOCKREGION_X0Y0}
+#endgroup
+
+# Clock net "mips/dp/pcreg/rf_reg[2][6]_P" driven by instance "mips/dp/pcreg/rf_reg[2][6]_LDC_i_1" located at site "SLICE_X28Y15"
+#startgroup
+create_pblock {CLKAG_mips/dp/pcreg/rf_reg[2][6]_P}
+add_cells_to_pblock [get_pblocks  {CLKAG_mips/dp/pcreg/rf_reg[2][6]_P}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="mips/dp/pcreg/rf_reg[2][6]_P"}]]]
+resize_pblock [get_pblocks {CLKAG_mips/dp/pcreg/rf_reg[2][6]_P}] -add {CLOCKREGION_X0Y0:CLOCKREGION_X0Y0}
+#endgroup
+
+# Clock net "mips/dp/pcreg/rf_reg[2][7]_P" driven by instance "mips/dp/pcreg/rf_reg[2][7]_LDC_i_1" located at site "SLICE_X32Y20"
+#startgroup
+create_pblock {CLKAG_mips/dp/pcreg/rf_reg[2][7]_P}
+add_cells_to_pblock [get_pblocks  {CLKAG_mips/dp/pcreg/rf_reg[2][7]_P}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="mips/dp/pcreg/rf_reg[2][7]_P"}]]]
+resize_pblock [get_pblocks {CLKAG_mips/dp/pcreg/rf_reg[2][7]_P}] -add {CLOCKREGION_X0Y0:CLOCKREGION_X0Y0}
+#endgroup
+
+# Clock net "mips/dp/pcreg/rf_reg[2][8]_P" driven by instance "mips/dp/pcreg/rf_reg[2][8]_LDC_i_1" located at site "SLICE_X44Y14"
+#startgroup
+create_pblock {CLKAG_mips/dp/pcreg/rf_reg[2][8]_P}
+add_cells_to_pblock [get_pblocks  {CLKAG_mips/dp/pcreg/rf_reg[2][8]_P}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="mips/dp/pcreg/rf_reg[2][8]_P"}]]]
+resize_pblock [get_pblocks {CLKAG_mips/dp/pcreg/rf_reg[2][8]_P}] -add {CLOCKREGION_X1Y0:CLOCKREGION_X1Y0}
+#endgroup
+
+# Clock net "mips/dp/pcreg/rf_reg[2][9]_P" driven by instance "mips/dp/pcreg/rf_reg[2][9]_LDC_i_1" located at site "SLICE_X46Y20"
+#startgroup
+create_pblock {CLKAG_mips/dp/pcreg/rf_reg[2][9]_P}
+add_cells_to_pblock [get_pblocks  {CLKAG_mips/dp/pcreg/rf_reg[2][9]_P}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="mips/dp/pcreg/rf_reg[2][9]_P"}]]]
+resize_pblock [get_pblocks {CLKAG_mips/dp/pcreg/rf_reg[2][9]_P}] -add {CLOCKREGION_X1Y0:CLOCKREGION_X1Y0}
+#endgroup
+
+# Clock net "mips/dp/pcreg/rf_reg[3][0]_P" driven by instance "mips/dp/pcreg/rf_reg[3][0]_LDC_i_1" located at site "SLICE_X35Y14"
+#startgroup
+create_pblock {CLKAG_mips/dp/pcreg/rf_reg[3][0]_P}
+add_cells_to_pblock [get_pblocks  {CLKAG_mips/dp/pcreg/rf_reg[3][0]_P}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="mips/dp/pcreg/rf_reg[3][0]_P"}]]]
+resize_pblock [get_pblocks {CLKAG_mips/dp/pcreg/rf_reg[3][0]_P}] -add {CLOCKREGION_X0Y0:CLOCKREGION_X0Y0}
+#endgroup
+
+# Clock net "mips/dp/pcreg/rf_reg[3][10]_P" driven by instance "mips/dp/pcreg/rf_reg[3][10]_LDC_i_1" located at site "SLICE_X48Y18"
+#startgroup
+create_pblock {CLKAG_mips/dp/pcreg/rf_reg[3][10]_P}
+add_cells_to_pblock [get_pblocks  {CLKAG_mips/dp/pcreg/rf_reg[3][10]_P}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="mips/dp/pcreg/rf_reg[3][10]_P"}]]]
+resize_pblock [get_pblocks {CLKAG_mips/dp/pcreg/rf_reg[3][10]_P}] -add {CLOCKREGION_X1Y0:CLOCKREGION_X1Y0}
+#endgroup
+
+# Clock net "mips/dp/pcreg/rf_reg[3][11]_P" driven by instance "mips/dp/pcreg/rf_reg[3][11]_LDC_i_1" located at site "SLICE_X44Y18"
+#startgroup
+create_pblock {CLKAG_mips/dp/pcreg/rf_reg[3][11]_P}
+add_cells_to_pblock [get_pblocks  {CLKAG_mips/dp/pcreg/rf_reg[3][11]_P}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="mips/dp/pcreg/rf_reg[3][11]_P"}]]]
+resize_pblock [get_pblocks {CLKAG_mips/dp/pcreg/rf_reg[3][11]_P}] -add {CLOCKREGION_X1Y0:CLOCKREGION_X1Y0}
+#endgroup
+
+# Clock net "mips/dp/pcreg/rf_reg[3][12]_P" driven by instance "mips/dp/pcreg/rf_reg[3][12]_LDC_i_1" located at site "SLICE_X52Y15"
+#startgroup
+create_pblock {CLKAG_mips/dp/pcreg/rf_reg[3][12]_P}
+add_cells_to_pblock [get_pblocks  {CLKAG_mips/dp/pcreg/rf_reg[3][12]_P}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="mips/dp/pcreg/rf_reg[3][12]_P"}]]]
+resize_pblock [get_pblocks {CLKAG_mips/dp/pcreg/rf_reg[3][12]_P}] -add {CLOCKREGION_X1Y0:CLOCKREGION_X1Y0}
+#endgroup
+
+# Clock net "mips/dp/pcreg/rf_reg[3][13]_P" driven by instance "mips/dp/pcreg/rf_reg[3][13]_LDC_i_1" located at site "SLICE_X47Y25"
+#startgroup
+create_pblock {CLKAG_mips/dp/pcreg/rf_reg[3][13]_P}
+add_cells_to_pblock [get_pblocks  {CLKAG_mips/dp/pcreg/rf_reg[3][13]_P}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="mips/dp/pcreg/rf_reg[3][13]_P"}]]]
+resize_pblock [get_pblocks {CLKAG_mips/dp/pcreg/rf_reg[3][13]_P}] -add {CLOCKREGION_X1Y0:CLOCKREGION_X1Y0}
+#endgroup
+
+# Clock net "mips/dp/pcreg/rf_reg[3][14]_P" driven by instance "mips/dp/pcreg/rf_reg[3][14]_LDC_i_1" located at site "SLICE_X52Y23"
+#startgroup
+create_pblock {CLKAG_mips/dp/pcreg/rf_reg[3][14]_P}
+add_cells_to_pblock [get_pblocks  {CLKAG_mips/dp/pcreg/rf_reg[3][14]_P}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="mips/dp/pcreg/rf_reg[3][14]_P"}]]]
+resize_pblock [get_pblocks {CLKAG_mips/dp/pcreg/rf_reg[3][14]_P}] -add {CLOCKREGION_X1Y0:CLOCKREGION_X1Y0}
+#endgroup
+
+# Clock net "mips/dp/pcreg/rf_reg[3][15]_P" driven by instance "mips/dp/pcreg/rf_reg[3][15]_LDC_i_1" located at site "SLICE_X51Y25"
+#startgroup
+create_pblock {CLKAG_mips/dp/pcreg/rf_reg[3][15]_P}
+add_cells_to_pblock [get_pblocks  {CLKAG_mips/dp/pcreg/rf_reg[3][15]_P}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="mips/dp/pcreg/rf_reg[3][15]_P"}]]]
+resize_pblock [get_pblocks {CLKAG_mips/dp/pcreg/rf_reg[3][15]_P}] -add {CLOCKREGION_X1Y0:CLOCKREGION_X1Y0}
+#endgroup
+
+# Clock net "mips/dp/pcreg/rf_reg[3][16]_P" driven by instance "mips/dp/pcreg/rf_reg[3][16]_LDC_i_1" located at site "SLICE_X37Y27"
+#startgroup
+create_pblock {CLKAG_mips/dp/pcreg/rf_reg[3][16]_P}
+add_cells_to_pblock [get_pblocks  {CLKAG_mips/dp/pcreg/rf_reg[3][16]_P}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="mips/dp/pcreg/rf_reg[3][16]_P"}]]]
+resize_pblock [get_pblocks {CLKAG_mips/dp/pcreg/rf_reg[3][16]_P}] -add {CLOCKREGION_X1Y0:CLOCKREGION_X1Y0}
+#endgroup
+
+# Clock net "mips/dp/pcreg/rf_reg[3][17]_P" driven by instance "mips/dp/pcreg/rf_reg[3][17]_LDC_i_1" located at site "SLICE_X31Y28"
+#startgroup
+create_pblock {CLKAG_mips/dp/pcreg/rf_reg[3][17]_P}
+add_cells_to_pblock [get_pblocks  {CLKAG_mips/dp/pcreg/rf_reg[3][17]_P}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="mips/dp/pcreg/rf_reg[3][17]_P"}]]]
+resize_pblock [get_pblocks {CLKAG_mips/dp/pcreg/rf_reg[3][17]_P}] -add {CLOCKREGION_X0Y0:CLOCKREGION_X0Y0}
+#endgroup
+
+# Clock net "mips/dp/pcreg/rf_reg[3][18]_P" driven by instance "mips/dp/pcreg/rf_reg[3][18]_LDC_i_1" located at site "SLICE_X30Y31"
+#startgroup
+create_pblock {CLKAG_mips/dp/pcreg/rf_reg[3][18]_P}
+add_cells_to_pblock [get_pblocks  {CLKAG_mips/dp/pcreg/rf_reg[3][18]_P}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="mips/dp/pcreg/rf_reg[3][18]_P"}]]]
+resize_pblock [get_pblocks {CLKAG_mips/dp/pcreg/rf_reg[3][18]_P}] -add {CLOCKREGION_X0Y0:CLOCKREGION_X0Y0}
+#endgroup
+
+# Clock net "mips/dp/pcreg/rf_reg[3][19]_P" driven by instance "mips/dp/pcreg/rf_reg[3][19]_LDC_i_1" located at site "SLICE_X34Y28"
+#startgroup
+create_pblock {CLKAG_mips/dp/pcreg/rf_reg[3][19]_P}
+add_cells_to_pblock [get_pblocks  {CLKAG_mips/dp/pcreg/rf_reg[3][19]_P}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="mips/dp/pcreg/rf_reg[3][19]_P"}]]]
+resize_pblock [get_pblocks {CLKAG_mips/dp/pcreg/rf_reg[3][19]_P}] -add {CLOCKREGION_X0Y0:CLOCKREGION_X0Y0}
+#endgroup
+
+# Clock net "mips/dp/pcreg/rf_reg[3][1]_P" driven by instance "mips/dp/pcreg/rf_reg[3][1]_LDC_i_1" located at site "SLICE_X39Y19"
+#startgroup
+create_pblock {CLKAG_mips/dp/pcreg/rf_reg[3][1]_P}
+add_cells_to_pblock [get_pblocks  {CLKAG_mips/dp/pcreg/rf_reg[3][1]_P}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="mips/dp/pcreg/rf_reg[3][1]_P"}]]]
+resize_pblock [get_pblocks {CLKAG_mips/dp/pcreg/rf_reg[3][1]_P}] -add {CLOCKREGION_X1Y0:CLOCKREGION_X1Y0}
+#endgroup
+
+# Clock net "mips/dp/pcreg/rf_reg[3][20]_P" driven by instance "mips/dp/pcreg/rf_reg[3][20]_LDC_i_1" located at site "SLICE_X42Y31"
+#startgroup
+create_pblock {CLKAG_mips/dp/pcreg/rf_reg[3][20]_P}
+add_cells_to_pblock [get_pblocks  {CLKAG_mips/dp/pcreg/rf_reg[3][20]_P}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="mips/dp/pcreg/rf_reg[3][20]_P"}]]]
+resize_pblock [get_pblocks {CLKAG_mips/dp/pcreg/rf_reg[3][20]_P}] -add {CLOCKREGION_X1Y0:CLOCKREGION_X1Y0}
+#endgroup
+
+# Clock net "mips/dp/pcreg/rf_reg[3][21]_P" driven by instance "mips/dp/pcreg/rf_reg[3][21]_LDC_i_1" located at site "SLICE_X49Y28"
+#startgroup
+create_pblock {CLKAG_mips/dp/pcreg/rf_reg[3][21]_P}
+add_cells_to_pblock [get_pblocks  {CLKAG_mips/dp/pcreg/rf_reg[3][21]_P}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="mips/dp/pcreg/rf_reg[3][21]_P"}]]]
+resize_pblock [get_pblocks {CLKAG_mips/dp/pcreg/rf_reg[3][21]_P}] -add {CLOCKREGION_X1Y0:CLOCKREGION_X1Y0}
+#endgroup
+
+# Clock net "mips/dp/pcreg/rf_reg[3][22]_P" driven by instance "mips/dp/pcreg/rf_reg[3][22]_LDC_i_1" located at site "SLICE_X49Y28"
+#startgroup
+create_pblock {CLKAG_mips/dp/pcreg/rf_reg[3][22]_P}
+add_cells_to_pblock [get_pblocks  {CLKAG_mips/dp/pcreg/rf_reg[3][22]_P}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="mips/dp/pcreg/rf_reg[3][22]_P"}]]]
+resize_pblock [get_pblocks {CLKAG_mips/dp/pcreg/rf_reg[3][22]_P}] -add {CLOCKREGION_X1Y0:CLOCKREGION_X1Y0}
+#endgroup
+
+# Clock net "mips/dp/pcreg/rf_reg[3][23]_P" driven by instance "mips/dp/pcreg/rf_reg[3][23]_LDC_i_1" located at site "SLICE_X47Y32"
+#startgroup
+create_pblock {CLKAG_mips/dp/pcreg/rf_reg[3][23]_P}
+add_cells_to_pblock [get_pblocks  {CLKAG_mips/dp/pcreg/rf_reg[3][23]_P}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="mips/dp/pcreg/rf_reg[3][23]_P"}]]]
+resize_pblock [get_pblocks {CLKAG_mips/dp/pcreg/rf_reg[3][23]_P}] -add {CLOCKREGION_X1Y0:CLOCKREGION_X1Y0}
+#endgroup
+
+# Clock net "mips/dp/pcreg/rf_reg[3][24]_P" driven by instance "mips/dp/pcreg/rf_reg[3][24]_LDC_i_1" located at site "SLICE_X46Y35"
+#startgroup
+create_pblock {CLKAG_mips/dp/pcreg/rf_reg[3][24]_P}
+add_cells_to_pblock [get_pblocks  {CLKAG_mips/dp/pcreg/rf_reg[3][24]_P}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="mips/dp/pcreg/rf_reg[3][24]_P"}]]]
+resize_pblock [get_pblocks {CLKAG_mips/dp/pcreg/rf_reg[3][24]_P}] -add {CLOCKREGION_X1Y0:CLOCKREGION_X1Y0}
+#endgroup
+
+# Clock net "mips/dp/pcreg/rf_reg[3][25]_P" driven by instance "mips/dp/pcreg/rf_reg[3][25]_LDC_i_1" located at site "SLICE_X42Y34"
+#startgroup
+create_pblock {CLKAG_mips/dp/pcreg/rf_reg[3][25]_P}
+add_cells_to_pblock [get_pblocks  {CLKAG_mips/dp/pcreg/rf_reg[3][25]_P}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="mips/dp/pcreg/rf_reg[3][25]_P"}]]]
+resize_pblock [get_pblocks {CLKAG_mips/dp/pcreg/rf_reg[3][25]_P}] -add {CLOCKREGION_X1Y0:CLOCKREGION_X1Y0}
+#endgroup
+
+# Clock net "mips/dp/pcreg/rf_reg[3][26]_P" driven by instance "mips/dp/pcreg/rf_reg[3][26]_LDC_i_1" located at site "SLICE_X47Y31"
+#startgroup
+create_pblock {CLKAG_mips/dp/pcreg/rf_reg[3][26]_P}
+add_cells_to_pblock [get_pblocks  {CLKAG_mips/dp/pcreg/rf_reg[3][26]_P}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="mips/dp/pcreg/rf_reg[3][26]_P"}]]]
+resize_pblock [get_pblocks {CLKAG_mips/dp/pcreg/rf_reg[3][26]_P}] -add {CLOCKREGION_X1Y0:CLOCKREGION_X1Y0}
+#endgroup
+
+# Clock net "mips/dp/pcreg/rf_reg[3][27]_P" driven by instance "mips/dp/pcreg/rf_reg[3][27]_LDC_i_1" located at site "SLICE_X41Y35"
+#startgroup
+create_pblock {CLKAG_mips/dp/pcreg/rf_reg[3][27]_P}
+add_cells_to_pblock [get_pblocks  {CLKAG_mips/dp/pcreg/rf_reg[3][27]_P}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="mips/dp/pcreg/rf_reg[3][27]_P"}]]]
+resize_pblock [get_pblocks {CLKAG_mips/dp/pcreg/rf_reg[3][27]_P}] -add {CLOCKREGION_X1Y0:CLOCKREGION_X1Y0}
+#endgroup
+
+# Clock net "mips/dp/pcreg/rf_reg[3][28]_P" driven by instance "mips/dp/pcreg/rf_reg[3][28]_LDC_i_1" located at site "SLICE_X31Y36"
+#startgroup
+create_pblock {CLKAG_mips/dp/pcreg/rf_reg[3][28]_P}
+add_cells_to_pblock [get_pblocks  {CLKAG_mips/dp/pcreg/rf_reg[3][28]_P}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="mips/dp/pcreg/rf_reg[3][28]_P"}]]]
+resize_pblock [get_pblocks {CLKAG_mips/dp/pcreg/rf_reg[3][28]_P}] -add {CLOCKREGION_X0Y0:CLOCKREGION_X0Y0}
+#endgroup
+
+# Clock net "mips/dp/pcreg/rf_reg[3][29]_P" driven by instance "mips/dp/pcreg/rf_reg[3][29]_LDC_i_1" located at site "SLICE_X33Y36"
+#startgroup
+create_pblock {CLKAG_mips/dp/pcreg/rf_reg[3][29]_P}
+add_cells_to_pblock [get_pblocks  {CLKAG_mips/dp/pcreg/rf_reg[3][29]_P}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="mips/dp/pcreg/rf_reg[3][29]_P"}]]]
+resize_pblock [get_pblocks {CLKAG_mips/dp/pcreg/rf_reg[3][29]_P}] -add {CLOCKREGION_X0Y0:CLOCKREGION_X0Y0}
+#endgroup
+
+# Clock net "mips/dp/pcreg/rf_reg[3][2]_P" driven by instance "mips/dp/pcreg/rf_reg[3][2]_LDC_i_1" located at site "SLICE_X29Y14"
+#startgroup
+create_pblock {CLKAG_mips/dp/pcreg/rf_reg[3][2]_P}
+add_cells_to_pblock [get_pblocks  {CLKAG_mips/dp/pcreg/rf_reg[3][2]_P}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="mips/dp/pcreg/rf_reg[3][2]_P"}]]]
+resize_pblock [get_pblocks {CLKAG_mips/dp/pcreg/rf_reg[3][2]_P}] -add {CLOCKREGION_X0Y0:CLOCKREGION_X0Y0}
+#endgroup
+
+# Clock net "mips/dp/pcreg/rf_reg[3][30]_P" driven by instance "mips/dp/pcreg/rf_reg[3][30]_LDC_i_1" located at site "SLICE_X35Y36"
+#startgroup
+create_pblock {CLKAG_mips/dp/pcreg/rf_reg[3][30]_P}
+add_cells_to_pblock [get_pblocks  {CLKAG_mips/dp/pcreg/rf_reg[3][30]_P}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="mips/dp/pcreg/rf_reg[3][30]_P"}]]]
+resize_pblock [get_pblocks {CLKAG_mips/dp/pcreg/rf_reg[3][30]_P}] -add {CLOCKREGION_X0Y0:CLOCKREGION_X0Y0}
+#endgroup
+
+# Clock net "mips/dp/pcreg/rf_reg[3][31]_P" driven by instance "mips/dp/pcreg/rf_reg[3][31]_LDC_i_1" located at site "SLICE_X32Y35"
+#startgroup
+create_pblock {CLKAG_mips/dp/pcreg/rf_reg[3][31]_P}
+add_cells_to_pblock [get_pblocks  {CLKAG_mips/dp/pcreg/rf_reg[3][31]_P}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="mips/dp/pcreg/rf_reg[3][31]_P"}]]]
+resize_pblock [get_pblocks {CLKAG_mips/dp/pcreg/rf_reg[3][31]_P}] -add {CLOCKREGION_X0Y0:CLOCKREGION_X0Y0}
+#endgroup
+
+# Clock net "mips/dp/pcreg/rf_reg[3][3]_P" driven by instance "mips/dp/pcreg/rf_reg[3][3]_LDC_i_1" located at site "SLICE_X32Y14"
+#startgroup
+create_pblock {CLKAG_mips/dp/pcreg/rf_reg[3][3]_P}
+add_cells_to_pblock [get_pblocks  {CLKAG_mips/dp/pcreg/rf_reg[3][3]_P}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="mips/dp/pcreg/rf_reg[3][3]_P"}]]]
+resize_pblock [get_pblocks {CLKAG_mips/dp/pcreg/rf_reg[3][3]_P}] -add {CLOCKREGION_X0Y0:CLOCKREGION_X0Y0}
+#endgroup
+
+# Clock net "mips/dp/pcreg/rf_reg[3][4]_P" driven by instance "mips/dp/pcreg/rf_reg[3][4]_LDC_i_1" located at site "SLICE_X30Y21"
+#startgroup
+create_pblock {CLKAG_mips/dp/pcreg/rf_reg[3][4]_P}
+add_cells_to_pblock [get_pblocks  {CLKAG_mips/dp/pcreg/rf_reg[3][4]_P}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="mips/dp/pcreg/rf_reg[3][4]_P"}]]]
+resize_pblock [get_pblocks {CLKAG_mips/dp/pcreg/rf_reg[3][4]_P}] -add {CLOCKREGION_X0Y0:CLOCKREGION_X0Y0}
+#endgroup
+
+# Clock net "mips/dp/pcreg/rf_reg[3][5]_P" driven by instance "mips/dp/pcreg/rf_reg[3][5]_LDC_i_1" located at site "SLICE_X33Y19"
+#startgroup
+create_pblock {CLKAG_mips/dp/pcreg/rf_reg[3][5]_P}
+add_cells_to_pblock [get_pblocks  {CLKAG_mips/dp/pcreg/rf_reg[3][5]_P}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="mips/dp/pcreg/rf_reg[3][5]_P"}]]]
+resize_pblock [get_pblocks {CLKAG_mips/dp/pcreg/rf_reg[3][5]_P}] -add {CLOCKREGION_X0Y0:CLOCKREGION_X0Y0}
+#endgroup
+
+# Clock net "mips/dp/pcreg/rf_reg[3][6]_P" driven by instance "mips/dp/pcreg/rf_reg[3][6]_LDC_i_1" located at site "SLICE_X30Y14"
+#startgroup
+create_pblock {CLKAG_mips/dp/pcreg/rf_reg[3][6]_P}
+add_cells_to_pblock [get_pblocks  {CLKAG_mips/dp/pcreg/rf_reg[3][6]_P}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="mips/dp/pcreg/rf_reg[3][6]_P"}]]]
+resize_pblock [get_pblocks {CLKAG_mips/dp/pcreg/rf_reg[3][6]_P}] -add {CLOCKREGION_X0Y0:CLOCKREGION_X0Y0}
+#endgroup
+
+# Clock net "mips/dp/pcreg/rf_reg[3][7]_P" driven by instance "mips/dp/pcreg/rf_reg[3][7]_LDC_i_1" located at site "SLICE_X29Y18"
+#startgroup
+create_pblock {CLKAG_mips/dp/pcreg/rf_reg[3][7]_P}
+add_cells_to_pblock [get_pblocks  {CLKAG_mips/dp/pcreg/rf_reg[3][7]_P}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="mips/dp/pcreg/rf_reg[3][7]_P"}]]]
+resize_pblock [get_pblocks {CLKAG_mips/dp/pcreg/rf_reg[3][7]_P}] -add {CLOCKREGION_X0Y0:CLOCKREGION_X0Y0}
+#endgroup
+
+# Clock net "mips/dp/pcreg/rf_reg[3][8]_P" driven by instance "mips/dp/pcreg/rf_reg[3][8]_LDC_i_1" located at site "SLICE_X44Y17"
+#startgroup
+create_pblock {CLKAG_mips/dp/pcreg/rf_reg[3][8]_P}
+add_cells_to_pblock [get_pblocks  {CLKAG_mips/dp/pcreg/rf_reg[3][8]_P}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="mips/dp/pcreg/rf_reg[3][8]_P"}]]]
+resize_pblock [get_pblocks {CLKAG_mips/dp/pcreg/rf_reg[3][8]_P}] -add {CLOCKREGION_X1Y0:CLOCKREGION_X1Y0}
+#endgroup
+
+# Clock net "mips/dp/pcreg/rf_reg[3][9]_P" driven by instance "mips/dp/pcreg/rf_reg[3][9]_LDC_i_1" located at site "SLICE_X49Y18"
+#startgroup
+create_pblock {CLKAG_mips/dp/pcreg/rf_reg[3][9]_P}
+add_cells_to_pblock [get_pblocks  {CLKAG_mips/dp/pcreg/rf_reg[3][9]_P}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="mips/dp/pcreg/rf_reg[3][9]_P"}]]]
+resize_pblock [get_pblocks {CLKAG_mips/dp/pcreg/rf_reg[3][9]_P}] -add {CLOCKREGION_X1Y0:CLOCKREGION_X1Y0}
+#endgroup
+
+# Clock net "mips/dp/pcreg/rf_reg[4][0]_P" driven by instance "mips/dp/pcreg/rf_reg[4][0]_LDC_i_1" located at site "SLICE_X33Y14"
+#startgroup
+create_pblock {CLKAG_mips/dp/pcreg/rf_reg[4][0]_P}
+add_cells_to_pblock [get_pblocks  {CLKAG_mips/dp/pcreg/rf_reg[4][0]_P}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="mips/dp/pcreg/rf_reg[4][0]_P"}]]]
+resize_pblock [get_pblocks {CLKAG_mips/dp/pcreg/rf_reg[4][0]_P}] -add {CLOCKREGION_X0Y0:CLOCKREGION_X0Y0}
+#endgroup
+
+# Clock net "mips/dp/pcreg/rf_reg[4][10]_P" driven by instance "mips/dp/pcreg/rf_reg[4][10]_LDC_i_1" located at site "SLICE_X43Y14"
+#startgroup
+create_pblock {CLKAG_mips/dp/pcreg/rf_reg[4][10]_P}
+add_cells_to_pblock [get_pblocks  {CLKAG_mips/dp/pcreg/rf_reg[4][10]_P}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="mips/dp/pcreg/rf_reg[4][10]_P"}]]]
+resize_pblock [get_pblocks {CLKAG_mips/dp/pcreg/rf_reg[4][10]_P}] -add {CLOCKREGION_X1Y0:CLOCKREGION_X1Y0}
+#endgroup
+
+# Clock net "mips/dp/pcreg/rf_reg[4][11]_P" driven by instance "mips/dp/pcreg/rf_reg[4][11]_LDC_i_1" located at site "SLICE_X40Y16"
+#startgroup
+create_pblock {CLKAG_mips/dp/pcreg/rf_reg[4][11]_P}
+add_cells_to_pblock [get_pblocks  {CLKAG_mips/dp/pcreg/rf_reg[4][11]_P}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="mips/dp/pcreg/rf_reg[4][11]_P"}]]]
+resize_pblock [get_pblocks {CLKAG_mips/dp/pcreg/rf_reg[4][11]_P}] -add {CLOCKREGION_X1Y0:CLOCKREGION_X1Y0}
+#endgroup
+
+# Clock net "mips/dp/pcreg/rf_reg[4][12]_P" driven by instance "mips/dp/pcreg/rf_reg[4][12]_LDC_i_1" located at site "SLICE_X50Y15"
+#startgroup
+create_pblock {CLKAG_mips/dp/pcreg/rf_reg[4][12]_P}
+add_cells_to_pblock [get_pblocks  {CLKAG_mips/dp/pcreg/rf_reg[4][12]_P}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="mips/dp/pcreg/rf_reg[4][12]_P"}]]]
+resize_pblock [get_pblocks {CLKAG_mips/dp/pcreg/rf_reg[4][12]_P}] -add {CLOCKREGION_X1Y0:CLOCKREGION_X1Y0}
+#endgroup
+
+# Clock net "mips/dp/pcreg/rf_reg[4][13]_P" driven by instance "mips/dp/pcreg/rf_reg[4][13]_LDC_i_1" located at site "SLICE_X43Y22"
+#startgroup
+create_pblock {CLKAG_mips/dp/pcreg/rf_reg[4][13]_P}
+add_cells_to_pblock [get_pblocks  {CLKAG_mips/dp/pcreg/rf_reg[4][13]_P}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="mips/dp/pcreg/rf_reg[4][13]_P"}]]]
+resize_pblock [get_pblocks {CLKAG_mips/dp/pcreg/rf_reg[4][13]_P}] -add {CLOCKREGION_X1Y0:CLOCKREGION_X1Y0}
+#endgroup
+
+# Clock net "mips/dp/pcreg/rf_reg[4][14]_P" driven by instance "mips/dp/pcreg/rf_reg[4][14]_LDC_i_1" located at site "SLICE_X50Y23"
+#startgroup
+create_pblock {CLKAG_mips/dp/pcreg/rf_reg[4][14]_P}
+add_cells_to_pblock [get_pblocks  {CLKAG_mips/dp/pcreg/rf_reg[4][14]_P}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="mips/dp/pcreg/rf_reg[4][14]_P"}]]]
+resize_pblock [get_pblocks {CLKAG_mips/dp/pcreg/rf_reg[4][14]_P}] -add {CLOCKREGION_X1Y0:CLOCKREGION_X1Y0}
+#endgroup
+
+# Clock net "mips/dp/pcreg/rf_reg[4][15]_P" driven by instance "mips/dp/pcreg/rf_reg[4][15]_LDC_i_1" located at site "SLICE_X50Y22"
+#startgroup
+create_pblock {CLKAG_mips/dp/pcreg/rf_reg[4][15]_P}
+add_cells_to_pblock [get_pblocks  {CLKAG_mips/dp/pcreg/rf_reg[4][15]_P}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="mips/dp/pcreg/rf_reg[4][15]_P"}]]]
+resize_pblock [get_pblocks {CLKAG_mips/dp/pcreg/rf_reg[4][15]_P}] -add {CLOCKREGION_X1Y0:CLOCKREGION_X1Y0}
+#endgroup
+
+# Clock net "mips/dp/pcreg/rf_reg[4][16]_P" driven by instance "mips/dp/pcreg/rf_reg[4][16]_LDC_i_1" located at site "SLICE_X37Y28"
+#startgroup
+create_pblock {CLKAG_mips/dp/pcreg/rf_reg[4][16]_P}
+add_cells_to_pblock [get_pblocks  {CLKAG_mips/dp/pcreg/rf_reg[4][16]_P}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="mips/dp/pcreg/rf_reg[4][16]_P"}]]]
+resize_pblock [get_pblocks {CLKAG_mips/dp/pcreg/rf_reg[4][16]_P}] -add {CLOCKREGION_X1Y0:CLOCKREGION_X1Y0}
+#endgroup
+
+# Clock net "mips/dp/pcreg/rf_reg[4][17]_P" driven by instance "mips/dp/pcreg/rf_reg[4][17]_LDC_i_1" located at site "SLICE_X31Y27"
+#startgroup
+create_pblock {CLKAG_mips/dp/pcreg/rf_reg[4][17]_P}
+add_cells_to_pblock [get_pblocks  {CLKAG_mips/dp/pcreg/rf_reg[4][17]_P}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="mips/dp/pcreg/rf_reg[4][17]_P"}]]]
+resize_pblock [get_pblocks {CLKAG_mips/dp/pcreg/rf_reg[4][17]_P}] -add {CLOCKREGION_X0Y0:CLOCKREGION_X0Y0}
+#endgroup
+
+# Clock net "mips/dp/pcreg/rf_reg[4][18]_P" driven by instance "mips/dp/pcreg/rf_reg[4][18]_LDC_i_1" located at site "SLICE_X33Y31"
+#startgroup
+create_pblock {CLKAG_mips/dp/pcreg/rf_reg[4][18]_P}
+add_cells_to_pblock [get_pblocks  {CLKAG_mips/dp/pcreg/rf_reg[4][18]_P}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="mips/dp/pcreg/rf_reg[4][18]_P"}]]]
+resize_pblock [get_pblocks {CLKAG_mips/dp/pcreg/rf_reg[4][18]_P}] -add {CLOCKREGION_X0Y0:CLOCKREGION_X0Y0}
+#endgroup
+
+# Clock net "mips/dp/pcreg/rf_reg[4][19]_P" driven by instance "mips/dp/pcreg/rf_reg[4][19]_LDC_i_1" located at site "SLICE_X35Y30"
+#startgroup
+create_pblock {CLKAG_mips/dp/pcreg/rf_reg[4][19]_P}
+add_cells_to_pblock [get_pblocks  {CLKAG_mips/dp/pcreg/rf_reg[4][19]_P}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="mips/dp/pcreg/rf_reg[4][19]_P"}]]]
+resize_pblock [get_pblocks {CLKAG_mips/dp/pcreg/rf_reg[4][19]_P}] -add {CLOCKREGION_X0Y0:CLOCKREGION_X0Y0}
+#endgroup
+
+# Clock net "mips/dp/pcreg/rf_reg[4][1]_P" driven by instance "mips/dp/pcreg/rf_reg[4][1]_LDC_i_1" located at site "SLICE_X38Y19"
+#startgroup
+create_pblock {CLKAG_mips/dp/pcreg/rf_reg[4][1]_P}
+add_cells_to_pblock [get_pblocks  {CLKAG_mips/dp/pcreg/rf_reg[4][1]_P}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="mips/dp/pcreg/rf_reg[4][1]_P"}]]]
+resize_pblock [get_pblocks {CLKAG_mips/dp/pcreg/rf_reg[4][1]_P}] -add {CLOCKREGION_X1Y0:CLOCKREGION_X1Y0}
+#endgroup
+
+# Clock net "mips/dp/pcreg/rf_reg[4][20]_P" driven by instance "mips/dp/pcreg/rf_reg[4][20]_LDC_i_1" located at site "SLICE_X43Y28"
+#startgroup
+create_pblock {CLKAG_mips/dp/pcreg/rf_reg[4][20]_P}
+add_cells_to_pblock [get_pblocks  {CLKAG_mips/dp/pcreg/rf_reg[4][20]_P}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="mips/dp/pcreg/rf_reg[4][20]_P"}]]]
+resize_pblock [get_pblocks {CLKAG_mips/dp/pcreg/rf_reg[4][20]_P}] -add {CLOCKREGION_X1Y0:CLOCKREGION_X1Y0}
+#endgroup
+
+# Clock net "mips/dp/pcreg/rf_reg[4][21]_P" driven by instance "mips/dp/pcreg/rf_reg[4][21]_LDC_i_1" located at site "SLICE_X51Y27"
+#startgroup
+create_pblock {CLKAG_mips/dp/pcreg/rf_reg[4][21]_P}
+add_cells_to_pblock [get_pblocks  {CLKAG_mips/dp/pcreg/rf_reg[4][21]_P}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="mips/dp/pcreg/rf_reg[4][21]_P"}]]]
+resize_pblock [get_pblocks {CLKAG_mips/dp/pcreg/rf_reg[4][21]_P}] -add {CLOCKREGION_X1Y0:CLOCKREGION_X1Y0}
+#endgroup
+
+# Clock net "mips/dp/pcreg/rf_reg[4][22]_P" driven by instance "mips/dp/pcreg/rf_reg[4][22]_LDC_i_1" located at site "SLICE_X48Y29"
+#startgroup
+create_pblock {CLKAG_mips/dp/pcreg/rf_reg[4][22]_P}
+add_cells_to_pblock [get_pblocks  {CLKAG_mips/dp/pcreg/rf_reg[4][22]_P}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="mips/dp/pcreg/rf_reg[4][22]_P"}]]]
+resize_pblock [get_pblocks {CLKAG_mips/dp/pcreg/rf_reg[4][22]_P}] -add {CLOCKREGION_X1Y0:CLOCKREGION_X1Y0}
+#endgroup
+
+# Clock net "mips/dp/pcreg/rf_reg[4][23]_P" driven by instance "mips/dp/pcreg/rf_reg[4][23]_LDC_i_1" located at site "SLICE_X50Y32"
+#startgroup
+create_pblock {CLKAG_mips/dp/pcreg/rf_reg[4][23]_P}
+add_cells_to_pblock [get_pblocks  {CLKAG_mips/dp/pcreg/rf_reg[4][23]_P}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="mips/dp/pcreg/rf_reg[4][23]_P"}]]]
+resize_pblock [get_pblocks {CLKAG_mips/dp/pcreg/rf_reg[4][23]_P}] -add {CLOCKREGION_X1Y0:CLOCKREGION_X1Y0}
+#endgroup
+
+# Clock net "mips/dp/pcreg/rf_reg[4][24]_P" driven by instance "mips/dp/pcreg/rf_reg[4][24]_LDC_i_1" located at site "SLICE_X44Y35"
+#startgroup
+create_pblock {CLKAG_mips/dp/pcreg/rf_reg[4][24]_P}
+add_cells_to_pblock [get_pblocks  {CLKAG_mips/dp/pcreg/rf_reg[4][24]_P}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="mips/dp/pcreg/rf_reg[4][24]_P"}]]]
+resize_pblock [get_pblocks {CLKAG_mips/dp/pcreg/rf_reg[4][24]_P}] -add {CLOCKREGION_X1Y0:CLOCKREGION_X1Y0}
+#endgroup
+
+# Clock net "mips/dp/pcreg/rf_reg[4][25]_P" driven by instance "mips/dp/pcreg/rf_reg[4][25]_LDC_i_1" located at site "SLICE_X38Y32"
+#startgroup
+create_pblock {CLKAG_mips/dp/pcreg/rf_reg[4][25]_P}
+add_cells_to_pblock [get_pblocks  {CLKAG_mips/dp/pcreg/rf_reg[4][25]_P}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="mips/dp/pcreg/rf_reg[4][25]_P"}]]]
+resize_pblock [get_pblocks {CLKAG_mips/dp/pcreg/rf_reg[4][25]_P}] -add {CLOCKREGION_X1Y0:CLOCKREGION_X1Y0}
+#endgroup
+
+# Clock net "mips/dp/pcreg/rf_reg[4][26]_P" driven by instance "mips/dp/pcreg/rf_reg[4][26]_LDC_i_1" located at site "SLICE_X47Y34"
+#startgroup
+create_pblock {CLKAG_mips/dp/pcreg/rf_reg[4][26]_P}
+add_cells_to_pblock [get_pblocks  {CLKAG_mips/dp/pcreg/rf_reg[4][26]_P}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="mips/dp/pcreg/rf_reg[4][26]_P"}]]]
+resize_pblock [get_pblocks {CLKAG_mips/dp/pcreg/rf_reg[4][26]_P}] -add {CLOCKREGION_X1Y0:CLOCKREGION_X1Y0}
+#endgroup
+
+# Clock net "mips/dp/pcreg/rf_reg[4][27]_P" driven by instance "mips/dp/pcreg/rf_reg[4][27]_LDC_i_1" located at site "SLICE_X38Y35"
+#startgroup
+create_pblock {CLKAG_mips/dp/pcreg/rf_reg[4][27]_P}
+add_cells_to_pblock [get_pblocks  {CLKAG_mips/dp/pcreg/rf_reg[4][27]_P}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="mips/dp/pcreg/rf_reg[4][27]_P"}]]]
+resize_pblock [get_pblocks {CLKAG_mips/dp/pcreg/rf_reg[4][27]_P}] -add {CLOCKREGION_X1Y0:CLOCKREGION_X1Y0}
+#endgroup
+
+# Clock net "mips/dp/pcreg/rf_reg[4][28]_P" driven by instance "mips/dp/pcreg/rf_reg[4][28]_LDC_i_1" located at site "SLICE_X34Y36"
+#startgroup
+create_pblock {CLKAG_mips/dp/pcreg/rf_reg[4][28]_P}
+add_cells_to_pblock [get_pblocks  {CLKAG_mips/dp/pcreg/rf_reg[4][28]_P}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="mips/dp/pcreg/rf_reg[4][28]_P"}]]]
+resize_pblock [get_pblocks {CLKAG_mips/dp/pcreg/rf_reg[4][28]_P}] -add {CLOCKREGION_X0Y0:CLOCKREGION_X0Y0}
+#endgroup
+
+# Clock net "mips/dp/pcreg/rf_reg[4][29]_P" driven by instance "mips/dp/pcreg/rf_reg[4][29]_LDC_i_1" located at site "SLICE_X30Y35"
+#startgroup
+create_pblock {CLKAG_mips/dp/pcreg/rf_reg[4][29]_P}
+add_cells_to_pblock [get_pblocks  {CLKAG_mips/dp/pcreg/rf_reg[4][29]_P}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="mips/dp/pcreg/rf_reg[4][29]_P"}]]]
+resize_pblock [get_pblocks {CLKAG_mips/dp/pcreg/rf_reg[4][29]_P}] -add {CLOCKREGION_X0Y0:CLOCKREGION_X0Y0}
+#endgroup
+
+# Clock net "mips/dp/pcreg/rf_reg[4][2]_P" driven by instance "mips/dp/pcreg/rf_reg[4][2]_LDC_i_1" located at site "SLICE_X33Y18"
+#startgroup
+create_pblock {CLKAG_mips/dp/pcreg/rf_reg[4][2]_P}
+add_cells_to_pblock [get_pblocks  {CLKAG_mips/dp/pcreg/rf_reg[4][2]_P}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="mips/dp/pcreg/rf_reg[4][2]_P"}]]]
+resize_pblock [get_pblocks {CLKAG_mips/dp/pcreg/rf_reg[4][2]_P}] -add {CLOCKREGION_X0Y0:CLOCKREGION_X0Y0}
+#endgroup
+
+# Clock net "mips/dp/pcreg/rf_reg[4][30]_P" driven by instance "mips/dp/pcreg/rf_reg[4][30]_LDC_i_1" located at site "SLICE_X37Y36"
+#startgroup
+create_pblock {CLKAG_mips/dp/pcreg/rf_reg[4][30]_P}
+add_cells_to_pblock [get_pblocks  {CLKAG_mips/dp/pcreg/rf_reg[4][30]_P}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="mips/dp/pcreg/rf_reg[4][30]_P"}]]]
+resize_pblock [get_pblocks {CLKAG_mips/dp/pcreg/rf_reg[4][30]_P}] -add {CLOCKREGION_X1Y0:CLOCKREGION_X1Y0}
+#endgroup
+
+# Clock net "mips/dp/pcreg/rf_reg[4][31]_P" driven by instance "mips/dp/pcreg/rf_reg[4][31]_LDC_i_1" located at site "SLICE_X29Y35"
+#startgroup
+create_pblock {CLKAG_mips/dp/pcreg/rf_reg[4][31]_P}
+add_cells_to_pblock [get_pblocks  {CLKAG_mips/dp/pcreg/rf_reg[4][31]_P}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="mips/dp/pcreg/rf_reg[4][31]_P"}]]]
+resize_pblock [get_pblocks {CLKAG_mips/dp/pcreg/rf_reg[4][31]_P}] -add {CLOCKREGION_X0Y0:CLOCKREGION_X0Y0}
+#endgroup
+
+# Clock net "mips/dp/pcreg/rf_reg[4][3]_P" driven by instance "mips/dp/pcreg/rf_reg[4][3]_LDC_i_1" located at site "SLICE_X31Y14"
+#startgroup
+create_pblock {CLKAG_mips/dp/pcreg/rf_reg[4][3]_P}
+add_cells_to_pblock [get_pblocks  {CLKAG_mips/dp/pcreg/rf_reg[4][3]_P}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="mips/dp/pcreg/rf_reg[4][3]_P"}]]]
+resize_pblock [get_pblocks {CLKAG_mips/dp/pcreg/rf_reg[4][3]_P}] -add {CLOCKREGION_X0Y0:CLOCKREGION_X0Y0}
+#endgroup
+
+# Clock net "mips/dp/pcreg/rf_reg[4][4]_P" driven by instance "mips/dp/pcreg/rf_reg[4][4]_LDC_i_1" located at site "SLICE_X31Y24"
+#startgroup
+create_pblock {CLKAG_mips/dp/pcreg/rf_reg[4][4]_P}
+add_cells_to_pblock [get_pblocks  {CLKAG_mips/dp/pcreg/rf_reg[4][4]_P}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="mips/dp/pcreg/rf_reg[4][4]_P"}]]]
+resize_pblock [get_pblocks {CLKAG_mips/dp/pcreg/rf_reg[4][4]_P}] -add {CLOCKREGION_X0Y0:CLOCKREGION_X0Y0}
+#endgroup
+
+# Clock net "mips/dp/pcreg/rf_reg[4][5]_P" driven by instance "mips/dp/pcreg/rf_reg[4][5]_LDC_i_1" located at site "SLICE_X32Y25"
+#startgroup
+create_pblock {CLKAG_mips/dp/pcreg/rf_reg[4][5]_P}
+add_cells_to_pblock [get_pblocks  {CLKAG_mips/dp/pcreg/rf_reg[4][5]_P}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="mips/dp/pcreg/rf_reg[4][5]_P"}]]]
+resize_pblock [get_pblocks {CLKAG_mips/dp/pcreg/rf_reg[4][5]_P}] -add {CLOCKREGION_X0Y0:CLOCKREGION_X0Y0}
+#endgroup
+
+# Clock net "mips/dp/pcreg/rf_reg[4][6]_P" driven by instance "mips/dp/pcreg/rf_reg[4][6]_LDC_i_1" located at site "SLICE_X31Y15"
+#startgroup
+create_pblock {CLKAG_mips/dp/pcreg/rf_reg[4][6]_P}
+add_cells_to_pblock [get_pblocks  {CLKAG_mips/dp/pcreg/rf_reg[4][6]_P}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="mips/dp/pcreg/rf_reg[4][6]_P"}]]]
+resize_pblock [get_pblocks {CLKAG_mips/dp/pcreg/rf_reg[4][6]_P}] -add {CLOCKREGION_X0Y0:CLOCKREGION_X0Y0}
+#endgroup
+
+# Clock net "mips/dp/pcreg/rf_reg[4][7]_P" driven by instance "mips/dp/pcreg/rf_reg[4][7]_LDC_i_1" located at site "SLICE_X31Y18"
+#startgroup
+create_pblock {CLKAG_mips/dp/pcreg/rf_reg[4][7]_P}
+add_cells_to_pblock [get_pblocks  {CLKAG_mips/dp/pcreg/rf_reg[4][7]_P}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="mips/dp/pcreg/rf_reg[4][7]_P"}]]]
+resize_pblock [get_pblocks {CLKAG_mips/dp/pcreg/rf_reg[4][7]_P}] -add {CLOCKREGION_X0Y0:CLOCKREGION_X0Y0}
+#endgroup
+
+# Clock net "mips/dp/pcreg/rf_reg[4][8]_P" driven by instance "mips/dp/pcreg/rf_reg[4][8]_LDC_i_1" located at site "SLICE_X43Y19"
+#startgroup
+create_pblock {CLKAG_mips/dp/pcreg/rf_reg[4][8]_P}
+add_cells_to_pblock [get_pblocks  {CLKAG_mips/dp/pcreg/rf_reg[4][8]_P}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="mips/dp/pcreg/rf_reg[4][8]_P"}]]]
+resize_pblock [get_pblocks {CLKAG_mips/dp/pcreg/rf_reg[4][8]_P}] -add {CLOCKREGION_X1Y0:CLOCKREGION_X1Y0}
+#endgroup
+
+# Clock net "mips/dp/pcreg/rf_reg[4][9]_P" driven by instance "mips/dp/pcreg/rf_reg[4][9]_LDC_i_1" located at site "SLICE_X49Y20"
+#startgroup
+create_pblock {CLKAG_mips/dp/pcreg/rf_reg[4][9]_P}
+add_cells_to_pblock [get_pblocks  {CLKAG_mips/dp/pcreg/rf_reg[4][9]_P}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="mips/dp/pcreg/rf_reg[4][9]_P"}]]]
+resize_pblock [get_pblocks {CLKAG_mips/dp/pcreg/rf_reg[4][9]_P}] -add {CLOCKREGION_X1Y0:CLOCKREGION_X1Y0}
+#endgroup
+
+# Clock net "mips/dp/pcreg/rf_reg[5][0]_P" driven by instance "mips/dp/pcreg/rf_reg[5][0]_LDC_i_1" located at site "SLICE_X34Y15"
+#startgroup
+create_pblock {CLKAG_mips/dp/pcreg/rf_reg[5][0]_P}
+add_cells_to_pblock [get_pblocks  {CLKAG_mips/dp/pcreg/rf_reg[5][0]_P}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="mips/dp/pcreg/rf_reg[5][0]_P"}]]]
+resize_pblock [get_pblocks {CLKAG_mips/dp/pcreg/rf_reg[5][0]_P}] -add {CLOCKREGION_X0Y0:CLOCKREGION_X0Y0}
+#endgroup
+
+# Clock net "mips/dp/pcreg/rf_reg[5][10]_P" driven by instance "mips/dp/pcreg/rf_reg[5][10]_LDC_i_1" located at site "SLICE_X47Y16"
+#startgroup
+create_pblock {CLKAG_mips/dp/pcreg/rf_reg[5][10]_P}
+add_cells_to_pblock [get_pblocks  {CLKAG_mips/dp/pcreg/rf_reg[5][10]_P}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="mips/dp/pcreg/rf_reg[5][10]_P"}]]]
+resize_pblock [get_pblocks {CLKAG_mips/dp/pcreg/rf_reg[5][10]_P}] -add {CLOCKREGION_X1Y0:CLOCKREGION_X1Y0}
+#endgroup
+
+# Clock net "mips/dp/pcreg/rf_reg[5][11]_P" driven by instance "mips/dp/pcreg/rf_reg[5][11]_LDC_i_1" located at site "SLICE_X40Y16"
+#startgroup
+create_pblock {CLKAG_mips/dp/pcreg/rf_reg[5][11]_P}
+add_cells_to_pblock [get_pblocks  {CLKAG_mips/dp/pcreg/rf_reg[5][11]_P}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="mips/dp/pcreg/rf_reg[5][11]_P"}]]]
+resize_pblock [get_pblocks {CLKAG_mips/dp/pcreg/rf_reg[5][11]_P}] -add {CLOCKREGION_X1Y0:CLOCKREGION_X1Y0}
+#endgroup
+
+# Clock net "mips/dp/pcreg/rf_reg[5][12]_P" driven by instance "mips/dp/pcreg/rf_reg[5][12]_LDC_i_1" located at site "SLICE_X50Y15"
+#startgroup
+create_pblock {CLKAG_mips/dp/pcreg/rf_reg[5][12]_P}
+add_cells_to_pblock [get_pblocks  {CLKAG_mips/dp/pcreg/rf_reg[5][12]_P}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="mips/dp/pcreg/rf_reg[5][12]_P"}]]]
+resize_pblock [get_pblocks {CLKAG_mips/dp/pcreg/rf_reg[5][12]_P}] -add {CLOCKREGION_X1Y0:CLOCKREGION_X1Y0}
+#endgroup
+
+# Clock net "mips/dp/pcreg/rf_reg[5][13]_P" driven by instance "mips/dp/pcreg/rf_reg[5][13]_LDC_i_1" located at site "SLICE_X44Y22"
+#startgroup
+create_pblock {CLKAG_mips/dp/pcreg/rf_reg[5][13]_P}
+add_cells_to_pblock [get_pblocks  {CLKAG_mips/dp/pcreg/rf_reg[5][13]_P}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="mips/dp/pcreg/rf_reg[5][13]_P"}]]]
+resize_pblock [get_pblocks {CLKAG_mips/dp/pcreg/rf_reg[5][13]_P}] -add {CLOCKREGION_X1Y0:CLOCKREGION_X1Y0}
+#endgroup
+
+# Clock net "mips/dp/pcreg/rf_reg[5][14]_P" driven by instance "mips/dp/pcreg/rf_reg[5][14]_LDC_i_1" located at site "SLICE_X52Y23"
+#startgroup
+create_pblock {CLKAG_mips/dp/pcreg/rf_reg[5][14]_P}
+add_cells_to_pblock [get_pblocks  {CLKAG_mips/dp/pcreg/rf_reg[5][14]_P}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="mips/dp/pcreg/rf_reg[5][14]_P"}]]]
+resize_pblock [get_pblocks {CLKAG_mips/dp/pcreg/rf_reg[5][14]_P}] -add {CLOCKREGION_X1Y0:CLOCKREGION_X1Y0}
+#endgroup
+
+# Clock net "mips/dp/pcreg/rf_reg[5][15]_P" driven by instance "mips/dp/pcreg/rf_reg[5][15]_LDC_i_1" located at site "SLICE_X49Y23"
+#startgroup
+create_pblock {CLKAG_mips/dp/pcreg/rf_reg[5][15]_P}
+add_cells_to_pblock [get_pblocks  {CLKAG_mips/dp/pcreg/rf_reg[5][15]_P}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="mips/dp/pcreg/rf_reg[5][15]_P"}]]]
+resize_pblock [get_pblocks {CLKAG_mips/dp/pcreg/rf_reg[5][15]_P}] -add {CLOCKREGION_X1Y0:CLOCKREGION_X1Y0}
+#endgroup
+
+# Clock net "mips/dp/pcreg/rf_reg[5][16]_P" driven by instance "mips/dp/pcreg/rf_reg[5][16]_LDC_i_1" located at site "SLICE_X42Y24"
+#startgroup
+create_pblock {CLKAG_mips/dp/pcreg/rf_reg[5][16]_P}
+add_cells_to_pblock [get_pblocks  {CLKAG_mips/dp/pcreg/rf_reg[5][16]_P}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="mips/dp/pcreg/rf_reg[5][16]_P"}]]]
+resize_pblock [get_pblocks {CLKAG_mips/dp/pcreg/rf_reg[5][16]_P}] -add {CLOCKREGION_X1Y0:CLOCKREGION_X1Y0}
+#endgroup
+
+# Clock net "mips/dp/pcreg/rf_reg[5][17]_P" driven by instance "mips/dp/pcreg/rf_reg[5][17]_LDC_i_1" located at site "SLICE_X28Y25"
+#startgroup
+create_pblock {CLKAG_mips/dp/pcreg/rf_reg[5][17]_P}
+add_cells_to_pblock [get_pblocks  {CLKAG_mips/dp/pcreg/rf_reg[5][17]_P}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="mips/dp/pcreg/rf_reg[5][17]_P"}]]]
+resize_pblock [get_pblocks {CLKAG_mips/dp/pcreg/rf_reg[5][17]_P}] -add {CLOCKREGION_X0Y0:CLOCKREGION_X0Y0}
+#endgroup
+
+# Clock net "mips/dp/pcreg/rf_reg[5][18]_P" driven by instance "mips/dp/pcreg/rf_reg[5][18]_LDC_i_1" located at site "SLICE_X31Y31"
+#startgroup
+create_pblock {CLKAG_mips/dp/pcreg/rf_reg[5][18]_P}
+add_cells_to_pblock [get_pblocks  {CLKAG_mips/dp/pcreg/rf_reg[5][18]_P}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="mips/dp/pcreg/rf_reg[5][18]_P"}]]]
+resize_pblock [get_pblocks {CLKAG_mips/dp/pcreg/rf_reg[5][18]_P}] -add {CLOCKREGION_X0Y0:CLOCKREGION_X0Y0}
+#endgroup
+
+# Clock net "mips/dp/pcreg/rf_reg[5][19]_P" driven by instance "mips/dp/pcreg/rf_reg[5][19]_LDC_i_1" located at site "SLICE_X32Y31"
+#startgroup
+create_pblock {CLKAG_mips/dp/pcreg/rf_reg[5][19]_P}
+add_cells_to_pblock [get_pblocks  {CLKAG_mips/dp/pcreg/rf_reg[5][19]_P}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="mips/dp/pcreg/rf_reg[5][19]_P"}]]]
+resize_pblock [get_pblocks {CLKAG_mips/dp/pcreg/rf_reg[5][19]_P}] -add {CLOCKREGION_X0Y0:CLOCKREGION_X0Y0}
+#endgroup
+
+# Clock net "mips/dp/pcreg/rf_reg[5][1]_P" driven by instance "mips/dp/pcreg/rf_reg[5][1]_LDC_i_1" located at site "SLICE_X38Y15"
+#startgroup
+create_pblock {CLKAG_mips/dp/pcreg/rf_reg[5][1]_P}
+add_cells_to_pblock [get_pblocks  {CLKAG_mips/dp/pcreg/rf_reg[5][1]_P}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="mips/dp/pcreg/rf_reg[5][1]_P"}]]]
+resize_pblock [get_pblocks {CLKAG_mips/dp/pcreg/rf_reg[5][1]_P}] -add {CLOCKREGION_X1Y0:CLOCKREGION_X1Y0}
+#endgroup
+
+# Clock net "mips/dp/pcreg/rf_reg[5][20]_P" driven by instance "mips/dp/pcreg/rf_reg[5][20]_LDC_i_1" located at site "SLICE_X43Y28"
+#startgroup
+create_pblock {CLKAG_mips/dp/pcreg/rf_reg[5][20]_P}
+add_cells_to_pblock [get_pblocks  {CLKAG_mips/dp/pcreg/rf_reg[5][20]_P}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="mips/dp/pcreg/rf_reg[5][20]_P"}]]]
+resize_pblock [get_pblocks {CLKAG_mips/dp/pcreg/rf_reg[5][20]_P}] -add {CLOCKREGION_X1Y0:CLOCKREGION_X1Y0}
+#endgroup
+
+# Clock net "mips/dp/pcreg/rf_reg[5][21]_P" driven by instance "mips/dp/pcreg/rf_reg[5][21]_LDC_i_1" located at site "SLICE_X52Y31"
+#startgroup
+create_pblock {CLKAG_mips/dp/pcreg/rf_reg[5][21]_P}
+add_cells_to_pblock [get_pblocks  {CLKAG_mips/dp/pcreg/rf_reg[5][21]_P}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="mips/dp/pcreg/rf_reg[5][21]_P"}]]]
+resize_pblock [get_pblocks {CLKAG_mips/dp/pcreg/rf_reg[5][21]_P}] -add {CLOCKREGION_X1Y0:CLOCKREGION_X1Y0}
+#endgroup
+
+# Clock net "mips/dp/pcreg/rf_reg[5][22]_P" driven by instance "mips/dp/pcreg/rf_reg[5][22]_LDC_i_1" located at site "SLICE_X49Y25"
+#startgroup
+create_pblock {CLKAG_mips/dp/pcreg/rf_reg[5][22]_P}
+add_cells_to_pblock [get_pblocks  {CLKAG_mips/dp/pcreg/rf_reg[5][22]_P}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="mips/dp/pcreg/rf_reg[5][22]_P"}]]]
+resize_pblock [get_pblocks {CLKAG_mips/dp/pcreg/rf_reg[5][22]_P}] -add {CLOCKREGION_X1Y0:CLOCKREGION_X1Y0}
+#endgroup
+
+# Clock net "mips/dp/pcreg/rf_reg[5][23]_P" driven by instance "mips/dp/pcreg/rf_reg[5][23]_LDC_i_1" located at site "SLICE_X49Y31"
+#startgroup
+create_pblock {CLKAG_mips/dp/pcreg/rf_reg[5][23]_P}
+add_cells_to_pblock [get_pblocks  {CLKAG_mips/dp/pcreg/rf_reg[5][23]_P}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="mips/dp/pcreg/rf_reg[5][23]_P"}]]]
+resize_pblock [get_pblocks {CLKAG_mips/dp/pcreg/rf_reg[5][23]_P}] -add {CLOCKREGION_X1Y0:CLOCKREGION_X1Y0}
+#endgroup
+
+# Clock net "mips/dp/pcreg/rf_reg[5][24]_P" driven by instance "mips/dp/pcreg/rf_reg[5][24]_LDC_i_1" located at site "SLICE_X41Y35"
+#startgroup
+create_pblock {CLKAG_mips/dp/pcreg/rf_reg[5][24]_P}
+add_cells_to_pblock [get_pblocks  {CLKAG_mips/dp/pcreg/rf_reg[5][24]_P}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="mips/dp/pcreg/rf_reg[5][24]_P"}]]]
+resize_pblock [get_pblocks {CLKAG_mips/dp/pcreg/rf_reg[5][24]_P}] -add {CLOCKREGION_X1Y0:CLOCKREGION_X1Y0}
+#endgroup
+
+# Clock net "mips/dp/pcreg/rf_reg[5][25]_P" driven by instance "mips/dp/pcreg/rf_reg[5][25]_LDC_i_1" located at site "SLICE_X41Y29"
+#startgroup
+create_pblock {CLKAG_mips/dp/pcreg/rf_reg[5][25]_P}
+add_cells_to_pblock [get_pblocks  {CLKAG_mips/dp/pcreg/rf_reg[5][25]_P}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="mips/dp/pcreg/rf_reg[5][25]_P"}]]]
+resize_pblock [get_pblocks {CLKAG_mips/dp/pcreg/rf_reg[5][25]_P}] -add {CLOCKREGION_X1Y0:CLOCKREGION_X1Y0}
+#endgroup
+
+# Clock net "mips/dp/pcreg/rf_reg[5][26]_P" driven by instance "mips/dp/pcreg/rf_reg[5][26]_LDC_i_1" located at site "SLICE_X43Y34"
+#startgroup
+create_pblock {CLKAG_mips/dp/pcreg/rf_reg[5][26]_P}
+add_cells_to_pblock [get_pblocks  {CLKAG_mips/dp/pcreg/rf_reg[5][26]_P}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="mips/dp/pcreg/rf_reg[5][26]_P"}]]]
+resize_pblock [get_pblocks {CLKAG_mips/dp/pcreg/rf_reg[5][26]_P}] -add {CLOCKREGION_X1Y0:CLOCKREGION_X1Y0}
+#endgroup
+
+# Clock net "mips/dp/pcreg/rf_reg[5][27]_P" driven by instance "mips/dp/pcreg/rf_reg[5][27]_LDC_i_1" located at site "SLICE_X39Y33"
+#startgroup
+create_pblock {CLKAG_mips/dp/pcreg/rf_reg[5][27]_P}
+add_cells_to_pblock [get_pblocks  {CLKAG_mips/dp/pcreg/rf_reg[5][27]_P}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="mips/dp/pcreg/rf_reg[5][27]_P"}]]]
+resize_pblock [get_pblocks {CLKAG_mips/dp/pcreg/rf_reg[5][27]_P}] -add {CLOCKREGION_X1Y0:CLOCKREGION_X1Y0}
+#endgroup
+
+# Clock net "mips/dp/pcreg/rf_reg[5][28]_P" driven by instance "mips/dp/pcreg/rf_reg[5][28]_LDC_i_1" located at site "SLICE_X33Y36"
+#startgroup
+create_pblock {CLKAG_mips/dp/pcreg/rf_reg[5][28]_P}
+add_cells_to_pblock [get_pblocks  {CLKAG_mips/dp/pcreg/rf_reg[5][28]_P}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="mips/dp/pcreg/rf_reg[5][28]_P"}]]]
+resize_pblock [get_pblocks {CLKAG_mips/dp/pcreg/rf_reg[5][28]_P}] -add {CLOCKREGION_X0Y0:CLOCKREGION_X0Y0}
+#endgroup
+
+# Clock net "mips/dp/pcreg/rf_reg[5][29]_P" driven by instance "mips/dp/pcreg/rf_reg[5][29]_LDC_i_1" located at site "SLICE_X29Y36"
+#startgroup
+create_pblock {CLKAG_mips/dp/pcreg/rf_reg[5][29]_P}
+add_cells_to_pblock [get_pblocks  {CLKAG_mips/dp/pcreg/rf_reg[5][29]_P}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="mips/dp/pcreg/rf_reg[5][29]_P"}]]]
+resize_pblock [get_pblocks {CLKAG_mips/dp/pcreg/rf_reg[5][29]_P}] -add {CLOCKREGION_X0Y0:CLOCKREGION_X0Y0}
+#endgroup
+
+# Clock net "mips/dp/pcreg/rf_reg[5][2]_P" driven by instance "mips/dp/pcreg/rf_reg[5][2]_LDC_i_1" located at site "SLICE_X29Y22"
+#startgroup
+create_pblock {CLKAG_mips/dp/pcreg/rf_reg[5][2]_P}
+add_cells_to_pblock [get_pblocks  {CLKAG_mips/dp/pcreg/rf_reg[5][2]_P}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="mips/dp/pcreg/rf_reg[5][2]_P"}]]]
+resize_pblock [get_pblocks {CLKAG_mips/dp/pcreg/rf_reg[5][2]_P}] -add {CLOCKREGION_X0Y0:CLOCKREGION_X0Y0}
+#endgroup
+
+# Clock net "mips/dp/pcreg/rf_reg[5][30]_P" driven by instance "mips/dp/pcreg/rf_reg[5][30]_LDC_i_1" located at site "SLICE_X37Y36"
+#startgroup
+create_pblock {CLKAG_mips/dp/pcreg/rf_reg[5][30]_P}
+add_cells_to_pblock [get_pblocks  {CLKAG_mips/dp/pcreg/rf_reg[5][30]_P}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="mips/dp/pcreg/rf_reg[5][30]_P"}]]]
+resize_pblock [get_pblocks {CLKAG_mips/dp/pcreg/rf_reg[5][30]_P}] -add {CLOCKREGION_X1Y0:CLOCKREGION_X1Y0}
+#endgroup
+
+# Clock net "mips/dp/pcreg/rf_reg[5][31]_P" driven by instance "mips/dp/pcreg/rf_reg[5][31]_LDC_i_1" located at site "SLICE_X31Y35"
+#startgroup
+create_pblock {CLKAG_mips/dp/pcreg/rf_reg[5][31]_P}
+add_cells_to_pblock [get_pblocks  {CLKAG_mips/dp/pcreg/rf_reg[5][31]_P}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="mips/dp/pcreg/rf_reg[5][31]_P"}]]]
+resize_pblock [get_pblocks {CLKAG_mips/dp/pcreg/rf_reg[5][31]_P}] -add {CLOCKREGION_X0Y0:CLOCKREGION_X0Y0}
+#endgroup
+
+# Clock net "mips/dp/pcreg/rf_reg[5][3]_P" driven by instance "mips/dp/pcreg/rf_reg[5][3]_LDC_i_1" located at site "SLICE_X33Y15"
+#startgroup
+create_pblock {CLKAG_mips/dp/pcreg/rf_reg[5][3]_P}
+add_cells_to_pblock [get_pblocks  {CLKAG_mips/dp/pcreg/rf_reg[5][3]_P}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="mips/dp/pcreg/rf_reg[5][3]_P"}]]]
+resize_pblock [get_pblocks {CLKAG_mips/dp/pcreg/rf_reg[5][3]_P}] -add {CLOCKREGION_X0Y0:CLOCKREGION_X0Y0}
+#endgroup
+
+# Clock net "mips/dp/pcreg/rf_reg[5][4]_P" driven by instance "mips/dp/pcreg/rf_reg[5][4]_LDC_i_1" located at site "SLICE_X28Y24"
+#startgroup
+create_pblock {CLKAG_mips/dp/pcreg/rf_reg[5][4]_P}
+add_cells_to_pblock [get_pblocks  {CLKAG_mips/dp/pcreg/rf_reg[5][4]_P}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="mips/dp/pcreg/rf_reg[5][4]_P"}]]]
+resize_pblock [get_pblocks {CLKAG_mips/dp/pcreg/rf_reg[5][4]_P}] -add {CLOCKREGION_X0Y0:CLOCKREGION_X0Y0}
+#endgroup
+
+# Clock net "mips/dp/pcreg/rf_reg[5][5]_P" driven by instance "mips/dp/pcreg/rf_reg[5][5]_LDC_i_1" located at site "SLICE_X33Y19"
+#startgroup
+create_pblock {CLKAG_mips/dp/pcreg/rf_reg[5][5]_P}
+add_cells_to_pblock [get_pblocks  {CLKAG_mips/dp/pcreg/rf_reg[5][5]_P}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="mips/dp/pcreg/rf_reg[5][5]_P"}]]]
+resize_pblock [get_pblocks {CLKAG_mips/dp/pcreg/rf_reg[5][5]_P}] -add {CLOCKREGION_X0Y0:CLOCKREGION_X0Y0}
+#endgroup
+
+# Clock net "mips/dp/pcreg/rf_reg[5][6]_P" driven by instance "mips/dp/pcreg/rf_reg[5][6]_LDC_i_1" located at site "SLICE_X29Y15"
+#startgroup
+create_pblock {CLKAG_mips/dp/pcreg/rf_reg[5][6]_P}
+add_cells_to_pblock [get_pblocks  {CLKAG_mips/dp/pcreg/rf_reg[5][6]_P}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="mips/dp/pcreg/rf_reg[5][6]_P"}]]]
+resize_pblock [get_pblocks {CLKAG_mips/dp/pcreg/rf_reg[5][6]_P}] -add {CLOCKREGION_X0Y0:CLOCKREGION_X0Y0}
+#endgroup
+
+# Clock net "mips/dp/pcreg/rf_reg[5][7]_P" driven by instance "mips/dp/pcreg/rf_reg[5][7]_LDC_i_1" located at site "SLICE_X29Y16"
+#startgroup
+create_pblock {CLKAG_mips/dp/pcreg/rf_reg[5][7]_P}
+add_cells_to_pblock [get_pblocks  {CLKAG_mips/dp/pcreg/rf_reg[5][7]_P}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="mips/dp/pcreg/rf_reg[5][7]_P"}]]]
+resize_pblock [get_pblocks {CLKAG_mips/dp/pcreg/rf_reg[5][7]_P}] -add {CLOCKREGION_X0Y0:CLOCKREGION_X0Y0}
+#endgroup
+
+# Clock net "mips/dp/pcreg/rf_reg[5][8]_P" driven by instance "mips/dp/pcreg/rf_reg[5][8]_LDC_i_1" located at site "SLICE_X46Y17"
+#startgroup
+create_pblock {CLKAG_mips/dp/pcreg/rf_reg[5][8]_P}
+add_cells_to_pblock [get_pblocks  {CLKAG_mips/dp/pcreg/rf_reg[5][8]_P}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="mips/dp/pcreg/rf_reg[5][8]_P"}]]]
+resize_pblock [get_pblocks {CLKAG_mips/dp/pcreg/rf_reg[5][8]_P}] -add {CLOCKREGION_X1Y0:CLOCKREGION_X1Y0}
+#endgroup
+
+# Clock net "mips/dp/pcreg/rf_reg[5][9]_P" driven by instance "mips/dp/pcreg/rf_reg[5][9]_LDC_i_1" located at site "SLICE_X47Y17"
+#startgroup
+create_pblock {CLKAG_mips/dp/pcreg/rf_reg[5][9]_P}
+add_cells_to_pblock [get_pblocks  {CLKAG_mips/dp/pcreg/rf_reg[5][9]_P}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="mips/dp/pcreg/rf_reg[5][9]_P"}]]]
+resize_pblock [get_pblocks {CLKAG_mips/dp/pcreg/rf_reg[5][9]_P}] -add {CLOCKREGION_X1Y0:CLOCKREGION_X1Y0}
+#endgroup
+
+# Clock net "mips/dp/pcreg/rf_reg[6][0]_P" driven by instance "mips/dp/pcreg/rf_reg[6][0]_LDC_i_1" located at site "SLICE_X34Y16"
+#startgroup
+create_pblock {CLKAG_mips/dp/pcreg/rf_reg[6][0]_P}
+add_cells_to_pblock [get_pblocks  {CLKAG_mips/dp/pcreg/rf_reg[6][0]_P}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="mips/dp/pcreg/rf_reg[6][0]_P"}]]]
+resize_pblock [get_pblocks {CLKAG_mips/dp/pcreg/rf_reg[6][0]_P}] -add {CLOCKREGION_X0Y0:CLOCKREGION_X0Y0}
+#endgroup
+
+# Clock net "mips/dp/pcreg/rf_reg[6][10]_P" driven by instance "mips/dp/pcreg/rf_reg[6][10]_LDC_i_1" located at site "SLICE_X46Y14"
+#startgroup
+create_pblock {CLKAG_mips/dp/pcreg/rf_reg[6][10]_P}
+add_cells_to_pblock [get_pblocks  {CLKAG_mips/dp/pcreg/rf_reg[6][10]_P}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="mips/dp/pcreg/rf_reg[6][10]_P"}]]]
+resize_pblock [get_pblocks {CLKAG_mips/dp/pcreg/rf_reg[6][10]_P}] -add {CLOCKREGION_X1Y0:CLOCKREGION_X1Y0}
+#endgroup
+
+# Clock net "mips/dp/pcreg/rf_reg[6][11]_P" driven by instance "mips/dp/pcreg/rf_reg[6][11]_LDC_i_1" located at site "SLICE_X41Y18"
+#startgroup
+create_pblock {CLKAG_mips/dp/pcreg/rf_reg[6][11]_P}
+add_cells_to_pblock [get_pblocks  {CLKAG_mips/dp/pcreg/rf_reg[6][11]_P}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="mips/dp/pcreg/rf_reg[6][11]_P"}]]]
+resize_pblock [get_pblocks {CLKAG_mips/dp/pcreg/rf_reg[6][11]_P}] -add {CLOCKREGION_X1Y0:CLOCKREGION_X1Y0}
+#endgroup
+
+# Clock net "mips/dp/pcreg/rf_reg[6][12]_P" driven by instance "mips/dp/pcreg/rf_reg[6][12]_LDC_i_1" located at site "SLICE_X53Y20"
+#startgroup
+create_pblock {CLKAG_mips/dp/pcreg/rf_reg[6][12]_P}
+add_cells_to_pblock [get_pblocks  {CLKAG_mips/dp/pcreg/rf_reg[6][12]_P}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="mips/dp/pcreg/rf_reg[6][12]_P"}]]]
+resize_pblock [get_pblocks {CLKAG_mips/dp/pcreg/rf_reg[6][12]_P}] -add {CLOCKREGION_X1Y0:CLOCKREGION_X1Y0}
+#endgroup
+
+# Clock net "mips/dp/pcreg/rf_reg[6][13]_P" driven by instance "mips/dp/pcreg/rf_reg[6][13]_LDC_i_1" located at site "SLICE_X45Y23"
+#startgroup
+create_pblock {CLKAG_mips/dp/pcreg/rf_reg[6][13]_P}
+add_cells_to_pblock [get_pblocks  {CLKAG_mips/dp/pcreg/rf_reg[6][13]_P}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="mips/dp/pcreg/rf_reg[6][13]_P"}]]]
+resize_pblock [get_pblocks {CLKAG_mips/dp/pcreg/rf_reg[6][13]_P}] -add {CLOCKREGION_X1Y0:CLOCKREGION_X1Y0}
+#endgroup
+
+# Clock net "mips/dp/pcreg/rf_reg[6][14]_P" driven by instance "mips/dp/pcreg/rf_reg[6][14]_LDC_i_1" located at site "SLICE_X47Y22"
+#startgroup
+create_pblock {CLKAG_mips/dp/pcreg/rf_reg[6][14]_P}
+add_cells_to_pblock [get_pblocks  {CLKAG_mips/dp/pcreg/rf_reg[6][14]_P}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="mips/dp/pcreg/rf_reg[6][14]_P"}]]]
+resize_pblock [get_pblocks {CLKAG_mips/dp/pcreg/rf_reg[6][14]_P}] -add {CLOCKREGION_X1Y0:CLOCKREGION_X1Y0}
+#endgroup
+
+# Clock net "mips/dp/pcreg/rf_reg[6][15]_P" driven by instance "mips/dp/pcreg/rf_reg[6][15]_LDC_i_1" located at site "SLICE_X50Y22"
+#startgroup
+create_pblock {CLKAG_mips/dp/pcreg/rf_reg[6][15]_P}
+add_cells_to_pblock [get_pblocks  {CLKAG_mips/dp/pcreg/rf_reg[6][15]_P}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="mips/dp/pcreg/rf_reg[6][15]_P"}]]]
+resize_pblock [get_pblocks {CLKAG_mips/dp/pcreg/rf_reg[6][15]_P}] -add {CLOCKREGION_X1Y0:CLOCKREGION_X1Y0}
+#endgroup
+
+# Clock net "mips/dp/pcreg/rf_reg[6][16]_P" driven by instance "mips/dp/pcreg/rf_reg[6][16]_LDC_i_1" located at site "SLICE_X42Y24"
+#startgroup
+create_pblock {CLKAG_mips/dp/pcreg/rf_reg[6][16]_P}
+add_cells_to_pblock [get_pblocks  {CLKAG_mips/dp/pcreg/rf_reg[6][16]_P}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="mips/dp/pcreg/rf_reg[6][16]_P"}]]]
+resize_pblock [get_pblocks {CLKAG_mips/dp/pcreg/rf_reg[6][16]_P}] -add {CLOCKREGION_X1Y0:CLOCKREGION_X1Y0}
+#endgroup
+
+# Clock net "mips/dp/pcreg/rf_reg[6][17]_P" driven by instance "mips/dp/pcreg/rf_reg[6][17]_LDC_i_1" located at site "SLICE_X28Y25"
+#startgroup
+create_pblock {CLKAG_mips/dp/pcreg/rf_reg[6][17]_P}
+add_cells_to_pblock [get_pblocks  {CLKAG_mips/dp/pcreg/rf_reg[6][17]_P}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="mips/dp/pcreg/rf_reg[6][17]_P"}]]]
+resize_pblock [get_pblocks {CLKAG_mips/dp/pcreg/rf_reg[6][17]_P}] -add {CLOCKREGION_X0Y0:CLOCKREGION_X0Y0}
+#endgroup
+
+# Clock net "mips/dp/pcreg/rf_reg[6][18]_P" driven by instance "mips/dp/pcreg/rf_reg[6][18]_LDC_i_1" located at site "SLICE_X28Y31"
+#startgroup
+create_pblock {CLKAG_mips/dp/pcreg/rf_reg[6][18]_P}
+add_cells_to_pblock [get_pblocks  {CLKAG_mips/dp/pcreg/rf_reg[6][18]_P}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="mips/dp/pcreg/rf_reg[6][18]_P"}]]]
+resize_pblock [get_pblocks {CLKAG_mips/dp/pcreg/rf_reg[6][18]_P}] -add {CLOCKREGION_X0Y0:CLOCKREGION_X0Y0}
+#endgroup
+
+# Clock net "mips/dp/pcreg/rf_reg[6][19]_P" driven by instance "mips/dp/pcreg/rf_reg[6][19]_LDC_i_1" located at site "SLICE_X32Y26"
+#startgroup
+create_pblock {CLKAG_mips/dp/pcreg/rf_reg[6][19]_P}
+add_cells_to_pblock [get_pblocks  {CLKAG_mips/dp/pcreg/rf_reg[6][19]_P}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="mips/dp/pcreg/rf_reg[6][19]_P"}]]]
+resize_pblock [get_pblocks {CLKAG_mips/dp/pcreg/rf_reg[6][19]_P}] -add {CLOCKREGION_X0Y0:CLOCKREGION_X0Y0}
+#endgroup
+
+# Clock net "mips/dp/pcreg/rf_reg[6][1]_P" driven by instance "mips/dp/pcreg/rf_reg[6][1]_LDC_i_1" located at site "SLICE_X36Y19"
+#startgroup
+create_pblock {CLKAG_mips/dp/pcreg/rf_reg[6][1]_P}
+add_cells_to_pblock [get_pblocks  {CLKAG_mips/dp/pcreg/rf_reg[6][1]_P}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="mips/dp/pcreg/rf_reg[6][1]_P"}]]]
+resize_pblock [get_pblocks {CLKAG_mips/dp/pcreg/rf_reg[6][1]_P}] -add {CLOCKREGION_X1Y0:CLOCKREGION_X1Y0}
+#endgroup
+
+# Clock net "mips/dp/pcreg/rf_reg[6][20]_P" driven by instance "mips/dp/pcreg/rf_reg[6][20]_LDC_i_1" located at site "SLICE_X44Y32"
+#startgroup
+create_pblock {CLKAG_mips/dp/pcreg/rf_reg[6][20]_P}
+add_cells_to_pblock [get_pblocks  {CLKAG_mips/dp/pcreg/rf_reg[6][20]_P}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="mips/dp/pcreg/rf_reg[6][20]_P"}]]]
+resize_pblock [get_pblocks {CLKAG_mips/dp/pcreg/rf_reg[6][20]_P}] -add {CLOCKREGION_X1Y0:CLOCKREGION_X1Y0}
+#endgroup
+
+# Clock net "mips/dp/pcreg/rf_reg[6][21]_P" driven by instance "mips/dp/pcreg/rf_reg[6][21]_LDC_i_1" located at site "SLICE_X52Y32"
+#startgroup
+create_pblock {CLKAG_mips/dp/pcreg/rf_reg[6][21]_P}
+add_cells_to_pblock [get_pblocks  {CLKAG_mips/dp/pcreg/rf_reg[6][21]_P}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="mips/dp/pcreg/rf_reg[6][21]_P"}]]]
+resize_pblock [get_pblocks {CLKAG_mips/dp/pcreg/rf_reg[6][21]_P}] -add {CLOCKREGION_X1Y0:CLOCKREGION_X1Y0}
+#endgroup
+
+# Clock net "mips/dp/pcreg/rf_reg[6][22]_P" driven by instance "mips/dp/pcreg/rf_reg[6][22]_LDC_i_1" located at site "SLICE_X52Y29"
+#startgroup
+create_pblock {CLKAG_mips/dp/pcreg/rf_reg[6][22]_P}
+add_cells_to_pblock [get_pblocks  {CLKAG_mips/dp/pcreg/rf_reg[6][22]_P}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="mips/dp/pcreg/rf_reg[6][22]_P"}]]]
+resize_pblock [get_pblocks {CLKAG_mips/dp/pcreg/rf_reg[6][22]_P}] -add {CLOCKREGION_X1Y0:CLOCKREGION_X1Y0}
+#endgroup
+
+# Clock net "mips/dp/pcreg/rf_reg[6][23]_P" driven by instance "mips/dp/pcreg/rf_reg[6][23]_LDC_i_1" located at site "SLICE_X50Y31"
+#startgroup
+create_pblock {CLKAG_mips/dp/pcreg/rf_reg[6][23]_P}
+add_cells_to_pblock [get_pblocks  {CLKAG_mips/dp/pcreg/rf_reg[6][23]_P}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="mips/dp/pcreg/rf_reg[6][23]_P"}]]]
+resize_pblock [get_pblocks {CLKAG_mips/dp/pcreg/rf_reg[6][23]_P}] -add {CLOCKREGION_X1Y0:CLOCKREGION_X1Y0}
+#endgroup
+
+# Clock net "mips/dp/pcreg/rf_reg[6][24]_P" driven by instance "mips/dp/pcreg/rf_reg[6][24]_LDC_i_1" located at site "SLICE_X43Y34"
+#startgroup
+create_pblock {CLKAG_mips/dp/pcreg/rf_reg[6][24]_P}
+add_cells_to_pblock [get_pblocks  {CLKAG_mips/dp/pcreg/rf_reg[6][24]_P}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="mips/dp/pcreg/rf_reg[6][24]_P"}]]]
+resize_pblock [get_pblocks {CLKAG_mips/dp/pcreg/rf_reg[6][24]_P}] -add {CLOCKREGION_X1Y0:CLOCKREGION_X1Y0}
+#endgroup
+
+# Clock net "mips/dp/pcreg/rf_reg[6][25]_P" driven by instance "mips/dp/pcreg/rf_reg[6][25]_LDC_i_1" located at site "SLICE_X41Y30"
+#startgroup
+create_pblock {CLKAG_mips/dp/pcreg/rf_reg[6][25]_P}
+add_cells_to_pblock [get_pblocks  {CLKAG_mips/dp/pcreg/rf_reg[6][25]_P}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="mips/dp/pcreg/rf_reg[6][25]_P"}]]]
+resize_pblock [get_pblocks {CLKAG_mips/dp/pcreg/rf_reg[6][25]_P}] -add {CLOCKREGION_X1Y0:CLOCKREGION_X1Y0}
+#endgroup
+
+# Clock net "mips/dp/pcreg/rf_reg[6][26]_P" driven by instance "mips/dp/pcreg/rf_reg[6][26]_LDC_i_1" located at site "SLICE_X45Y34"
+#startgroup
+create_pblock {CLKAG_mips/dp/pcreg/rf_reg[6][26]_P}
+add_cells_to_pblock [get_pblocks  {CLKAG_mips/dp/pcreg/rf_reg[6][26]_P}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="mips/dp/pcreg/rf_reg[6][26]_P"}]]]
+resize_pblock [get_pblocks {CLKAG_mips/dp/pcreg/rf_reg[6][26]_P}] -add {CLOCKREGION_X1Y0:CLOCKREGION_X1Y0}
+#endgroup
+
+# Clock net "mips/dp/pcreg/rf_reg[6][27]_P" driven by instance "mips/dp/pcreg/rf_reg[6][27]_LDC_i_1" located at site "SLICE_X40Y32"
+#startgroup
+create_pblock {CLKAG_mips/dp/pcreg/rf_reg[6][27]_P}
+add_cells_to_pblock [get_pblocks  {CLKAG_mips/dp/pcreg/rf_reg[6][27]_P}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="mips/dp/pcreg/rf_reg[6][27]_P"}]]]
+resize_pblock [get_pblocks {CLKAG_mips/dp/pcreg/rf_reg[6][27]_P}] -add {CLOCKREGION_X1Y0:CLOCKREGION_X1Y0}
+#endgroup
+
+# Clock net "mips/dp/pcreg/rf_reg[6][28]_P" driven by instance "mips/dp/pcreg/rf_reg[6][28]_LDC_i_1" located at site "SLICE_X35Y34"
+#startgroup
+create_pblock {CLKAG_mips/dp/pcreg/rf_reg[6][28]_P}
+add_cells_to_pblock [get_pblocks  {CLKAG_mips/dp/pcreg/rf_reg[6][28]_P}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="mips/dp/pcreg/rf_reg[6][28]_P"}]]]
+resize_pblock [get_pblocks {CLKAG_mips/dp/pcreg/rf_reg[6][28]_P}] -add {CLOCKREGION_X0Y0:CLOCKREGION_X0Y0}
+#endgroup
+
+# Clock net "mips/dp/pcreg/rf_reg[6][29]_P" driven by instance "mips/dp/pcreg/rf_reg[6][29]_LDC_i_1" located at site "SLICE_X33Y32"
+#startgroup
+create_pblock {CLKAG_mips/dp/pcreg/rf_reg[6][29]_P}
+add_cells_to_pblock [get_pblocks  {CLKAG_mips/dp/pcreg/rf_reg[6][29]_P}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="mips/dp/pcreg/rf_reg[6][29]_P"}]]]
+resize_pblock [get_pblocks {CLKAG_mips/dp/pcreg/rf_reg[6][29]_P}] -add {CLOCKREGION_X0Y0:CLOCKREGION_X0Y0}
+#endgroup
+
+# Clock net "mips/dp/pcreg/rf_reg[6][2]_P" driven by instance "mips/dp/pcreg/rf_reg[6][2]_LDC_i_1" located at site "SLICE_X33Y20"
+#startgroup
+create_pblock {CLKAG_mips/dp/pcreg/rf_reg[6][2]_P}
+add_cells_to_pblock [get_pblocks  {CLKAG_mips/dp/pcreg/rf_reg[6][2]_P}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="mips/dp/pcreg/rf_reg[6][2]_P"}]]]
+resize_pblock [get_pblocks {CLKAG_mips/dp/pcreg/rf_reg[6][2]_P}] -add {CLOCKREGION_X0Y0:CLOCKREGION_X0Y0}
+#endgroup
+
+# Clock net "mips/dp/pcreg/rf_reg[6][30]_P" driven by instance "mips/dp/pcreg/rf_reg[6][30]_LDC_i_1" located at site "SLICE_X37Y33"
+#startgroup
+create_pblock {CLKAG_mips/dp/pcreg/rf_reg[6][30]_P}
+add_cells_to_pblock [get_pblocks  {CLKAG_mips/dp/pcreg/rf_reg[6][30]_P}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="mips/dp/pcreg/rf_reg[6][30]_P"}]]]
+resize_pblock [get_pblocks {CLKAG_mips/dp/pcreg/rf_reg[6][30]_P}] -add {CLOCKREGION_X1Y0:CLOCKREGION_X1Y0}
+#endgroup
+
+# Clock net "mips/dp/pcreg/rf_reg[6][31]_P" driven by instance "mips/dp/pcreg/rf_reg[6][31]_LDC_i_1" located at site "SLICE_X29Y30"
+#startgroup
+create_pblock {CLKAG_mips/dp/pcreg/rf_reg[6][31]_P}
+add_cells_to_pblock [get_pblocks  {CLKAG_mips/dp/pcreg/rf_reg[6][31]_P}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="mips/dp/pcreg/rf_reg[6][31]_P"}]]]
+resize_pblock [get_pblocks {CLKAG_mips/dp/pcreg/rf_reg[6][31]_P}] -add {CLOCKREGION_X0Y0:CLOCKREGION_X0Y0}
+#endgroup
+
+# Clock net "mips/dp/pcreg/rf_reg[6][3]_P" driven by instance "mips/dp/pcreg/rf_reg[6][3]_LDC_i_1" located at site "SLICE_X33Y16"
+#startgroup
+create_pblock {CLKAG_mips/dp/pcreg/rf_reg[6][3]_P}
+add_cells_to_pblock [get_pblocks  {CLKAG_mips/dp/pcreg/rf_reg[6][3]_P}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="mips/dp/pcreg/rf_reg[6][3]_P"}]]]
+resize_pblock [get_pblocks {CLKAG_mips/dp/pcreg/rf_reg[6][3]_P}] -add {CLOCKREGION_X0Y0:CLOCKREGION_X0Y0}
+#endgroup
+
+# Clock net "mips/dp/pcreg/rf_reg[6][4]_P" driven by instance "mips/dp/pcreg/rf_reg[6][4]_LDC_i_1" located at site "SLICE_X30Y24"
+#startgroup
+create_pblock {CLKAG_mips/dp/pcreg/rf_reg[6][4]_P}
+add_cells_to_pblock [get_pblocks  {CLKAG_mips/dp/pcreg/rf_reg[6][4]_P}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="mips/dp/pcreg/rf_reg[6][4]_P"}]]]
+resize_pblock [get_pblocks {CLKAG_mips/dp/pcreg/rf_reg[6][4]_P}] -add {CLOCKREGION_X0Y0:CLOCKREGION_X0Y0}
+#endgroup
+
+# Clock net "mips/dp/pcreg/rf_reg[6][5]_P" driven by instance "mips/dp/pcreg/rf_reg[6][5]_LDC_i_1" located at site "SLICE_X34Y24"
+#startgroup
+create_pblock {CLKAG_mips/dp/pcreg/rf_reg[6][5]_P}
+add_cells_to_pblock [get_pblocks  {CLKAG_mips/dp/pcreg/rf_reg[6][5]_P}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="mips/dp/pcreg/rf_reg[6][5]_P"}]]]
+resize_pblock [get_pblocks {CLKAG_mips/dp/pcreg/rf_reg[6][5]_P}] -add {CLOCKREGION_X0Y0:CLOCKREGION_X0Y0}
+#endgroup
+
+# Clock net "mips/dp/pcreg/rf_reg[6][6]_P" driven by instance "mips/dp/pcreg/rf_reg[6][6]_LDC_i_1" located at site "SLICE_X28Y14"
+#startgroup
+create_pblock {CLKAG_mips/dp/pcreg/rf_reg[6][6]_P}
+add_cells_to_pblock [get_pblocks  {CLKAG_mips/dp/pcreg/rf_reg[6][6]_P}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="mips/dp/pcreg/rf_reg[6][6]_P"}]]]
+resize_pblock [get_pblocks {CLKAG_mips/dp/pcreg/rf_reg[6][6]_P}] -add {CLOCKREGION_X0Y0:CLOCKREGION_X0Y0}
+#endgroup
+
+# Clock net "mips/dp/pcreg/rf_reg[6][7]_P" driven by instance "mips/dp/pcreg/rf_reg[6][7]_LDC_i_1" located at site "SLICE_X33Y16"
+#startgroup
+create_pblock {CLKAG_mips/dp/pcreg/rf_reg[6][7]_P}
+add_cells_to_pblock [get_pblocks  {CLKAG_mips/dp/pcreg/rf_reg[6][7]_P}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="mips/dp/pcreg/rf_reg[6][7]_P"}]]]
+resize_pblock [get_pblocks {CLKAG_mips/dp/pcreg/rf_reg[6][7]_P}] -add {CLOCKREGION_X0Y0:CLOCKREGION_X0Y0}
+#endgroup
+
+# Clock net "mips/dp/pcreg/rf_reg[6][8]_P" driven by instance "mips/dp/pcreg/rf_reg[6][8]_LDC_i_1" located at site "SLICE_X42Y20"
+#startgroup
+create_pblock {CLKAG_mips/dp/pcreg/rf_reg[6][8]_P}
+add_cells_to_pblock [get_pblocks  {CLKAG_mips/dp/pcreg/rf_reg[6][8]_P}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="mips/dp/pcreg/rf_reg[6][8]_P"}]]]
+resize_pblock [get_pblocks {CLKAG_mips/dp/pcreg/rf_reg[6][8]_P}] -add {CLOCKREGION_X1Y0:CLOCKREGION_X1Y0}
+#endgroup
+
+# Clock net "mips/dp/pcreg/rf_reg[6][9]_P" driven by instance "mips/dp/pcreg/rf_reg[6][9]_LDC_i_1" located at site "SLICE_X47Y17"
+#startgroup
+create_pblock {CLKAG_mips/dp/pcreg/rf_reg[6][9]_P}
+add_cells_to_pblock [get_pblocks  {CLKAG_mips/dp/pcreg/rf_reg[6][9]_P}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="mips/dp/pcreg/rf_reg[6][9]_P"}]]]
+resize_pblock [get_pblocks {CLKAG_mips/dp/pcreg/rf_reg[6][9]_P}] -add {CLOCKREGION_X1Y0:CLOCKREGION_X1Y0}
+#endgroup
+
+# Clock net "mips/dp/pcreg/rf_reg[7][0]_P" driven by instance "mips/dp/pcreg/rf_reg[7][0]_LDC_i_1" located at site "SLICE_X35Y20"
+#startgroup
+create_pblock {CLKAG_mips/dp/pcreg/rf_reg[7][0]_P}
+add_cells_to_pblock [get_pblocks  {CLKAG_mips/dp/pcreg/rf_reg[7][0]_P}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="mips/dp/pcreg/rf_reg[7][0]_P"}]]]
+resize_pblock [get_pblocks {CLKAG_mips/dp/pcreg/rf_reg[7][0]_P}] -add {CLOCKREGION_X0Y0:CLOCKREGION_X0Y0 CLOCKREGION_X1Y0:CLOCKREGION_X1Y0}
+#endgroup
+
+# Clock net "mips/dp/pcreg/rf_reg[7][10]_P" driven by instance "mips/dp/pcreg/rf_reg[7][10]_LDC_i_1" located at site "SLICE_X46Y14"
+#startgroup
+create_pblock {CLKAG_mips/dp/pcreg/rf_reg[7][10]_P}
+add_cells_to_pblock [get_pblocks  {CLKAG_mips/dp/pcreg/rf_reg[7][10]_P}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="mips/dp/pcreg/rf_reg[7][10]_P"}]]]
+resize_pblock [get_pblocks {CLKAG_mips/dp/pcreg/rf_reg[7][10]_P}] -add {CLOCKREGION_X1Y0:CLOCKREGION_X1Y0}
+#endgroup
+
+# Clock net "mips/dp/pcreg/rf_reg[7][11]_P" driven by instance "mips/dp/pcreg/rf_reg[7][11]_LDC_i_1" located at site "SLICE_X40Y16"
+#startgroup
+create_pblock {CLKAG_mips/dp/pcreg/rf_reg[7][11]_P}
+add_cells_to_pblock [get_pblocks  {CLKAG_mips/dp/pcreg/rf_reg[7][11]_P}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="mips/dp/pcreg/rf_reg[7][11]_P"}]]]
+resize_pblock [get_pblocks {CLKAG_mips/dp/pcreg/rf_reg[7][11]_P}] -add {CLOCKREGION_X1Y0:CLOCKREGION_X1Y0}
+#endgroup
+
+# Clock net "mips/dp/pcreg/rf_reg[7][12]_P" driven by instance "mips/dp/pcreg/rf_reg[7][12]_LDC_i_1" located at site "SLICE_X52Y15"
+#startgroup
+create_pblock {CLKAG_mips/dp/pcreg/rf_reg[7][12]_P}
+add_cells_to_pblock [get_pblocks  {CLKAG_mips/dp/pcreg/rf_reg[7][12]_P}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="mips/dp/pcreg/rf_reg[7][12]_P"}]]]
+resize_pblock [get_pblocks {CLKAG_mips/dp/pcreg/rf_reg[7][12]_P}] -add {CLOCKREGION_X1Y0:CLOCKREGION_X1Y0}
+#endgroup
+
+# Clock net "mips/dp/pcreg/rf_reg[7][13]_P" driven by instance "mips/dp/pcreg/rf_reg[7][13]_LDC_i_1" located at site "SLICE_X43Y23"
+#startgroup
+create_pblock {CLKAG_mips/dp/pcreg/rf_reg[7][13]_P}
+add_cells_to_pblock [get_pblocks  {CLKAG_mips/dp/pcreg/rf_reg[7][13]_P}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="mips/dp/pcreg/rf_reg[7][13]_P"}]]]
+resize_pblock [get_pblocks {CLKAG_mips/dp/pcreg/rf_reg[7][13]_P}] -add {CLOCKREGION_X1Y0:CLOCKREGION_X1Y0}
+#endgroup
+
+# Clock net "mips/dp/pcreg/rf_reg[7][14]_P" driven by instance "mips/dp/pcreg/rf_reg[7][14]_LDC_i_1" located at site "SLICE_X52Y22"
+#startgroup
+create_pblock {CLKAG_mips/dp/pcreg/rf_reg[7][14]_P}
+add_cells_to_pblock [get_pblocks  {CLKAG_mips/dp/pcreg/rf_reg[7][14]_P}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="mips/dp/pcreg/rf_reg[7][14]_P"}]]]
+resize_pblock [get_pblocks {CLKAG_mips/dp/pcreg/rf_reg[7][14]_P}] -add {CLOCKREGION_X1Y0:CLOCKREGION_X1Y0}
+#endgroup
+
+# Clock net "mips/dp/pcreg/rf_reg[7][15]_P" driven by instance "mips/dp/pcreg/rf_reg[7][15]_LDC_i_1" located at site "SLICE_X52Y22"
+#startgroup
+create_pblock {CLKAG_mips/dp/pcreg/rf_reg[7][15]_P}
+add_cells_to_pblock [get_pblocks  {CLKAG_mips/dp/pcreg/rf_reg[7][15]_P}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="mips/dp/pcreg/rf_reg[7][15]_P"}]]]
+resize_pblock [get_pblocks {CLKAG_mips/dp/pcreg/rf_reg[7][15]_P}] -add {CLOCKREGION_X1Y0:CLOCKREGION_X1Y0}
+#endgroup
+
+# Clock net "mips/dp/pcreg/rf_reg[7][16]_P" driven by instance "mips/dp/pcreg/rf_reg[7][16]_LDC_i_1" located at site "SLICE_X37Y29"
+#startgroup
+create_pblock {CLKAG_mips/dp/pcreg/rf_reg[7][16]_P}
+add_cells_to_pblock [get_pblocks  {CLKAG_mips/dp/pcreg/rf_reg[7][16]_P}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="mips/dp/pcreg/rf_reg[7][16]_P"}]]]
+resize_pblock [get_pblocks {CLKAG_mips/dp/pcreg/rf_reg[7][16]_P}] -add {CLOCKREGION_X1Y0:CLOCKREGION_X1Y0}
+#endgroup
+
+# Clock net "mips/dp/pcreg/rf_reg[7][17]_P" driven by instance "mips/dp/pcreg/rf_reg[7][17]_LDC_i_1" located at site "SLICE_X30Y31"
+#startgroup
+create_pblock {CLKAG_mips/dp/pcreg/rf_reg[7][17]_P}
+add_cells_to_pblock [get_pblocks  {CLKAG_mips/dp/pcreg/rf_reg[7][17]_P}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="mips/dp/pcreg/rf_reg[7][17]_P"}]]]
+resize_pblock [get_pblocks {CLKAG_mips/dp/pcreg/rf_reg[7][17]_P}] -add {CLOCKREGION_X0Y0:CLOCKREGION_X0Y0}
+#endgroup
+
+# Clock net "mips/dp/pcreg/rf_reg[7][18]_P" driven by instance "mips/dp/pcreg/rf_reg[7][18]_LDC_i_1" located at site "SLICE_X29Y30"
+#startgroup
+create_pblock {CLKAG_mips/dp/pcreg/rf_reg[7][18]_P}
+add_cells_to_pblock [get_pblocks  {CLKAG_mips/dp/pcreg/rf_reg[7][18]_P}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="mips/dp/pcreg/rf_reg[7][18]_P"}]]]
+resize_pblock [get_pblocks {CLKAG_mips/dp/pcreg/rf_reg[7][18]_P}] -add {CLOCKREGION_X0Y0:CLOCKREGION_X0Y0}
+#endgroup
+
+# Clock net "mips/dp/pcreg/rf_reg[7][19]_P" driven by instance "mips/dp/pcreg/rf_reg[7][19]_LDC_i_1" located at site "SLICE_X32Y27"
+#startgroup
+create_pblock {CLKAG_mips/dp/pcreg/rf_reg[7][19]_P}
+add_cells_to_pblock [get_pblocks  {CLKAG_mips/dp/pcreg/rf_reg[7][19]_P}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="mips/dp/pcreg/rf_reg[7][19]_P"}]]]
+resize_pblock [get_pblocks {CLKAG_mips/dp/pcreg/rf_reg[7][19]_P}] -add {CLOCKREGION_X0Y0:CLOCKREGION_X0Y0}
+#endgroup
+
+# Clock net "mips/dp/pcreg/rf_reg[7][1]_P" driven by instance "mips/dp/pcreg/rf_reg[7][1]_LDC_i_1" located at site "SLICE_X38Y19"
+#startgroup
+create_pblock {CLKAG_mips/dp/pcreg/rf_reg[7][1]_P}
+add_cells_to_pblock [get_pblocks  {CLKAG_mips/dp/pcreg/rf_reg[7][1]_P}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="mips/dp/pcreg/rf_reg[7][1]_P"}]]]
+resize_pblock [get_pblocks {CLKAG_mips/dp/pcreg/rf_reg[7][1]_P}] -add {CLOCKREGION_X1Y0:CLOCKREGION_X1Y0}
+#endgroup
+
+# Clock net "mips/dp/pcreg/rf_reg[7][20]_P" driven by instance "mips/dp/pcreg/rf_reg[7][20]_LDC_i_1" located at site "SLICE_X45Y30"
+#startgroup
+create_pblock {CLKAG_mips/dp/pcreg/rf_reg[7][20]_P}
+add_cells_to_pblock [get_pblocks  {CLKAG_mips/dp/pcreg/rf_reg[7][20]_P}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="mips/dp/pcreg/rf_reg[7][20]_P"}]]]
+resize_pblock [get_pblocks {CLKAG_mips/dp/pcreg/rf_reg[7][20]_P}] -add {CLOCKREGION_X1Y0:CLOCKREGION_X1Y0}
+#endgroup
+
+# Clock net "mips/dp/pcreg/rf_reg[7][21]_P" driven by instance "mips/dp/pcreg/rf_reg[7][21]_LDC_i_1" located at site "SLICE_X52Y32"
+#startgroup
+create_pblock {CLKAG_mips/dp/pcreg/rf_reg[7][21]_P}
+add_cells_to_pblock [get_pblocks  {CLKAG_mips/dp/pcreg/rf_reg[7][21]_P}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="mips/dp/pcreg/rf_reg[7][21]_P"}]]]
+resize_pblock [get_pblocks {CLKAG_mips/dp/pcreg/rf_reg[7][21]_P}] -add {CLOCKREGION_X1Y0:CLOCKREGION_X1Y0}
+#endgroup
+
+# Clock net "mips/dp/pcreg/rf_reg[7][22]_P" driven by instance "mips/dp/pcreg/rf_reg[7][22]_LDC_i_1" located at site "SLICE_X51Y29"
+#startgroup
+create_pblock {CLKAG_mips/dp/pcreg/rf_reg[7][22]_P}
+add_cells_to_pblock [get_pblocks  {CLKAG_mips/dp/pcreg/rf_reg[7][22]_P}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="mips/dp/pcreg/rf_reg[7][22]_P"}]]]
+resize_pblock [get_pblocks {CLKAG_mips/dp/pcreg/rf_reg[7][22]_P}] -add {CLOCKREGION_X1Y0:CLOCKREGION_X1Y0}
+#endgroup
+
+# Clock net "mips/dp/pcreg/rf_reg[7][23]_P" driven by instance "mips/dp/pcreg/rf_reg[7][23]_LDC_i_1" located at site "SLICE_X49Y31"
+#startgroup
+create_pblock {CLKAG_mips/dp/pcreg/rf_reg[7][23]_P}
+add_cells_to_pblock [get_pblocks  {CLKAG_mips/dp/pcreg/rf_reg[7][23]_P}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="mips/dp/pcreg/rf_reg[7][23]_P"}]]]
+resize_pblock [get_pblocks {CLKAG_mips/dp/pcreg/rf_reg[7][23]_P}] -add {CLOCKREGION_X1Y0:CLOCKREGION_X1Y0}
+#endgroup
+
+# Clock net "mips/dp/pcreg/rf_reg[7][24]_P" driven by instance "mips/dp/pcreg/rf_reg[7][24]_LDC_i_1" located at site "SLICE_X44Y34"
+#startgroup
+create_pblock {CLKAG_mips/dp/pcreg/rf_reg[7][24]_P}
+add_cells_to_pblock [get_pblocks  {CLKAG_mips/dp/pcreg/rf_reg[7][24]_P}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="mips/dp/pcreg/rf_reg[7][24]_P"}]]]
+resize_pblock [get_pblocks {CLKAG_mips/dp/pcreg/rf_reg[7][24]_P}] -add {CLOCKREGION_X1Y0:CLOCKREGION_X1Y0}
+#endgroup
+
+# Clock net "mips/dp/pcreg/rf_reg[7][25]_P" driven by instance "mips/dp/pcreg/rf_reg[7][25]_LDC_i_1" located at site "SLICE_X44Y30"
+#startgroup
+create_pblock {CLKAG_mips/dp/pcreg/rf_reg[7][25]_P}
+add_cells_to_pblock [get_pblocks  {CLKAG_mips/dp/pcreg/rf_reg[7][25]_P}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="mips/dp/pcreg/rf_reg[7][25]_P"}]]]
+resize_pblock [get_pblocks {CLKAG_mips/dp/pcreg/rf_reg[7][25]_P}] -add {CLOCKREGION_X1Y0:CLOCKREGION_X1Y0}
+#endgroup
+
+# Clock net "mips/dp/pcreg/rf_reg[7][26]_P" driven by instance "mips/dp/pcreg/rf_reg[7][26]_LDC_i_1" located at site "SLICE_X46Y31"
+#startgroup
+create_pblock {CLKAG_mips/dp/pcreg/rf_reg[7][26]_P}
+add_cells_to_pblock [get_pblocks  {CLKAG_mips/dp/pcreg/rf_reg[7][26]_P}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="mips/dp/pcreg/rf_reg[7][26]_P"}]]]
+resize_pblock [get_pblocks {CLKAG_mips/dp/pcreg/rf_reg[7][26]_P}] -add {CLOCKREGION_X1Y0:CLOCKREGION_X1Y0}
+#endgroup
+
+# Clock net "mips/dp/pcreg/rf_reg[7][27]_P" driven by instance "mips/dp/pcreg/rf_reg[7][27]_LDC_i_1" located at site "SLICE_X39Y35"
+#startgroup
+create_pblock {CLKAG_mips/dp/pcreg/rf_reg[7][27]_P}
+add_cells_to_pblock [get_pblocks  {CLKAG_mips/dp/pcreg/rf_reg[7][27]_P}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="mips/dp/pcreg/rf_reg[7][27]_P"}]]]
+resize_pblock [get_pblocks {CLKAG_mips/dp/pcreg/rf_reg[7][27]_P}] -add {CLOCKREGION_X1Y0:CLOCKREGION_X1Y0}
+#endgroup
+
+# Clock net "mips/dp/pcreg/rf_reg[7][28]_P" driven by instance "mips/dp/pcreg/rf_reg[7][28]_LDC_i_1" located at site "SLICE_X34Y35"
+#startgroup
+create_pblock {CLKAG_mips/dp/pcreg/rf_reg[7][28]_P}
+add_cells_to_pblock [get_pblocks  {CLKAG_mips/dp/pcreg/rf_reg[7][28]_P}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="mips/dp/pcreg/rf_reg[7][28]_P"}]]]
+resize_pblock [get_pblocks {CLKAG_mips/dp/pcreg/rf_reg[7][28]_P}] -add {CLOCKREGION_X0Y0:CLOCKREGION_X0Y0}
+#endgroup
+
+# Clock net "mips/dp/pcreg/rf_reg[7][29]_P" driven by instance "mips/dp/pcreg/rf_reg[7][29]_LDC_i_1" located at site "SLICE_X30Y33"
+#startgroup
+create_pblock {CLKAG_mips/dp/pcreg/rf_reg[7][29]_P}
+add_cells_to_pblock [get_pblocks  {CLKAG_mips/dp/pcreg/rf_reg[7][29]_P}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="mips/dp/pcreg/rf_reg[7][29]_P"}]]]
+resize_pblock [get_pblocks {CLKAG_mips/dp/pcreg/rf_reg[7][29]_P}] -add {CLOCKREGION_X0Y0:CLOCKREGION_X0Y0}
+#endgroup
+
+# Clock net "mips/dp/pcreg/rf_reg[7][2]_P" driven by instance "mips/dp/pcreg/rf_reg[7][2]_LDC_i_1" located at site "SLICE_X33Y15"
+#startgroup
+create_pblock {CLKAG_mips/dp/pcreg/rf_reg[7][2]_P}
+add_cells_to_pblock [get_pblocks  {CLKAG_mips/dp/pcreg/rf_reg[7][2]_P}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="mips/dp/pcreg/rf_reg[7][2]_P"}]]]
+resize_pblock [get_pblocks {CLKAG_mips/dp/pcreg/rf_reg[7][2]_P}] -add {CLOCKREGION_X0Y0:CLOCKREGION_X0Y0}
+#endgroup
+
+# Clock net "mips/dp/pcreg/rf_reg[7][30]_P" driven by instance "mips/dp/pcreg/rf_reg[7][30]_LDC_i_1" located at site "SLICE_X36Y34"
+#startgroup
+create_pblock {CLKAG_mips/dp/pcreg/rf_reg[7][30]_P}
+add_cells_to_pblock [get_pblocks  {CLKAG_mips/dp/pcreg/rf_reg[7][30]_P}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="mips/dp/pcreg/rf_reg[7][30]_P"}]]]
+resize_pblock [get_pblocks {CLKAG_mips/dp/pcreg/rf_reg[7][30]_P}] -add {CLOCKREGION_X1Y0:CLOCKREGION_X1Y0}
+#endgroup
+
+# Clock net "mips/dp/pcreg/rf_reg[7][31]_P" driven by instance "mips/dp/pcreg/rf_reg[7][31]_LDC_i_1" located at site "SLICE_X29Y35"
+#startgroup
+create_pblock {CLKAG_mips/dp/pcreg/rf_reg[7][31]_P}
+add_cells_to_pblock [get_pblocks  {CLKAG_mips/dp/pcreg/rf_reg[7][31]_P}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="mips/dp/pcreg/rf_reg[7][31]_P"}]]]
+resize_pblock [get_pblocks {CLKAG_mips/dp/pcreg/rf_reg[7][31]_P}] -add {CLOCKREGION_X0Y0:CLOCKREGION_X0Y0}
+#endgroup
+
+# Clock net "mips/dp/pcreg/rf_reg[7][3]_P" driven by instance "mips/dp/pcreg/rf_reg[7][3]_LDC_i_1" located at site "SLICE_X30Y14"
+#startgroup
+create_pblock {CLKAG_mips/dp/pcreg/rf_reg[7][3]_P}
+add_cells_to_pblock [get_pblocks  {CLKAG_mips/dp/pcreg/rf_reg[7][3]_P}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="mips/dp/pcreg/rf_reg[7][3]_P"}]]]
+resize_pblock [get_pblocks {CLKAG_mips/dp/pcreg/rf_reg[7][3]_P}] -add {CLOCKREGION_X0Y0:CLOCKREGION_X0Y0}
+#endgroup
+
+# Clock net "mips/dp/pcreg/rf_reg[7][4]_P" driven by instance "mips/dp/pcreg/rf_reg[7][4]_LDC_i_1" located at site "SLICE_X31Y21"
+#startgroup
+create_pblock {CLKAG_mips/dp/pcreg/rf_reg[7][4]_P}
+add_cells_to_pblock [get_pblocks  {CLKAG_mips/dp/pcreg/rf_reg[7][4]_P}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="mips/dp/pcreg/rf_reg[7][4]_P"}]]]
+resize_pblock [get_pblocks {CLKAG_mips/dp/pcreg/rf_reg[7][4]_P}] -add {CLOCKREGION_X0Y0:CLOCKREGION_X0Y0}
+#endgroup
+
+# Clock net "mips/dp/pcreg/rf_reg[7][5]_P" driven by instance "mips/dp/pcreg/rf_reg[7][5]_LDC_i_1" located at site "SLICE_X33Y24"
+#startgroup
+create_pblock {CLKAG_mips/dp/pcreg/rf_reg[7][5]_P}
+add_cells_to_pblock [get_pblocks  {CLKAG_mips/dp/pcreg/rf_reg[7][5]_P}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="mips/dp/pcreg/rf_reg[7][5]_P"}]]]
+resize_pblock [get_pblocks {CLKAG_mips/dp/pcreg/rf_reg[7][5]_P}] -add {CLOCKREGION_X0Y0:CLOCKREGION_X0Y0}
+#endgroup
+
+# Clock net "mips/dp/pcreg/rf_reg[7][6]_P" driven by instance "mips/dp/pcreg/rf_reg[7][6]_LDC_i_1" located at site "SLICE_X28Y15"
+#startgroup
+create_pblock {CLKAG_mips/dp/pcreg/rf_reg[7][6]_P}
+add_cells_to_pblock [get_pblocks  {CLKAG_mips/dp/pcreg/rf_reg[7][6]_P}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="mips/dp/pcreg/rf_reg[7][6]_P"}]]]
+resize_pblock [get_pblocks {CLKAG_mips/dp/pcreg/rf_reg[7][6]_P}] -add {CLOCKREGION_X0Y0:CLOCKREGION_X0Y0}
+#endgroup
+
+# Clock net "mips/dp/pcreg/rf_reg[7][7]_P" driven by instance "mips/dp/pcreg/rf_reg[7][7]_LDC_i_1" located at site "SLICE_X28Y14"
+#startgroup
+create_pblock {CLKAG_mips/dp/pcreg/rf_reg[7][7]_P}
+add_cells_to_pblock [get_pblocks  {CLKAG_mips/dp/pcreg/rf_reg[7][7]_P}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="mips/dp/pcreg/rf_reg[7][7]_P"}]]]
+resize_pblock [get_pblocks {CLKAG_mips/dp/pcreg/rf_reg[7][7]_P}] -add {CLOCKREGION_X0Y0:CLOCKREGION_X0Y0}
+#endgroup
+
+# Clock net "mips/dp/pcreg/rf_reg[7][8]_P" driven by instance "mips/dp/pcreg/rf_reg[7][8]_LDC_i_1" located at site "SLICE_X44Y19"
+#startgroup
+create_pblock {CLKAG_mips/dp/pcreg/rf_reg[7][8]_P}
+add_cells_to_pblock [get_pblocks  {CLKAG_mips/dp/pcreg/rf_reg[7][8]_P}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="mips/dp/pcreg/rf_reg[7][8]_P"}]]]
+resize_pblock [get_pblocks {CLKAG_mips/dp/pcreg/rf_reg[7][8]_P}] -add {CLOCKREGION_X1Y0:CLOCKREGION_X1Y0}
+#endgroup
+
+# Clock net "mips/dp/pcreg/rf_reg[7][9]_P" driven by instance "mips/dp/pcreg/rf_reg[7][9]_LDC_i_1" located at site "SLICE_X48Y17"
+#startgroup
+create_pblock {CLKAG_mips/dp/pcreg/rf_reg[7][9]_P}
+add_cells_to_pblock [get_pblocks  {CLKAG_mips/dp/pcreg/rf_reg[7][9]_P}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="mips/dp/pcreg/rf_reg[7][9]_P"}]]]
+resize_pblock [get_pblocks {CLKAG_mips/dp/pcreg/rf_reg[7][9]_P}] -add {CLOCKREGION_X1Y0:CLOCKREGION_X1Y0}
+#endgroup

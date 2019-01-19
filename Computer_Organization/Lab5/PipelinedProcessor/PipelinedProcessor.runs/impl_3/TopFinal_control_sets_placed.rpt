@@ -1,0 +1,80 @@
+Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
+-------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2015.2 (win64) Build 1266856 Fri Jun 26 16:35:25 MDT 2015
+| Date         : Wed Dec 06 11:04:06 2017
+| Host         : EALAB01 running 64-bit Service Pack 1  (build 7601)
+| Command      : report_control_sets -verbose -file TopFinal_control_sets_placed.rpt
+| Design       : TopFinal
+| Device       : xc7a35t
+-------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Flip-Flop Distribution
+3. Detailed Control Set Information
+
+1. Summary
+----------
+
++-------------------------------------------------------------------+-------+
+|                               Status                              | Count |
++-------------------------------------------------------------------+-------+
+| Number of unique control sets                                     |    27 |
+| Minimum Number of register sites lost to control set restrictions |   174 |
++-------------------------------------------------------------------+-------+
+
+
+2. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |               0 |            0 |
+| No           | No                    | Yes                    |              77 |           35 |
+| No           | Yes                   | No                     |               8 |            8 |
+| Yes          | No                    | No                     |               0 |            0 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |              21 |            6 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+3. Detailed Control Set Information
+-----------------------------------
+
++------------------------------------+---------------------+-----------------------------------+------------------+----------------+
+|            Clock Signal            |    Enable Signal    |          Set/Reset Signal         | Slice Load Count | Bel Load Count |
++------------------------------------+---------------------+-----------------------------------+------------------+----------------+
+|  debouncedClock_BUFG               |                     | topp/mips/dp/mwreg/rf_reg[8][7]_P |                1 |              1 |
+|  debouncedClock_BUFG               |                     | topp/mips/dp/mwreg/rf_reg[8][7]_C |                1 |              1 |
+|  debouncedClock_BUFG               |                     | topp/mips/dp/mwreg/rf_reg[8][6]_P |                1 |              1 |
+|  debouncedClock_BUFG               |                     | topp/mips/dp/mwreg/rf_reg[8][6]_C |                1 |              1 |
+|  debouncedClock_BUFG               |                     | topp/mips/dp/mwreg/rf_reg[8][5]_P |                1 |              1 |
+|  debouncedClock_BUFG               |                     | topp/mips/dp/mwreg/rf_reg[8][5]_C |                1 |              1 |
+|  debouncedClock_BUFG               |                     | topp/mips/dp/mwreg/rf_reg[8][4]_P |                1 |              1 |
+|  debouncedClock_BUFG               |                     | topp/mips/dp/mwreg/rf_reg[8][4]_C |                1 |              1 |
+|  debouncedClock_BUFG               |                     | topp/mips/dp/mwreg/rf_reg[8][3]_P |                1 |              1 |
+|  debouncedClock_BUFG               |                     | topp/mips/dp/mwreg/rf_reg[8][3]_C |                1 |              1 |
+|  debouncedClock_BUFG               |                     | topp/mips/dp/mwreg/rf_reg[8][2]_P |                1 |              1 |
+|  debouncedClock_BUFG               |                     | topp/mips/dp/mwreg/rf_reg[8][2]_C |                1 |              1 |
+|  debouncedClock_BUFG               |                     | topp/mips/dp/mwreg/rf_reg[8][1]_P |                1 |              1 |
+|  debouncedClock_BUFG               |                     | topp/mips/dp/mwreg/rf_reg[8][1]_C |                1 |              1 |
+|  debouncedClock_BUFG               |                     | topp/mips/dp/mwreg/rf_reg[8][0]_P |                1 |              1 |
+|  debouncedClock_BUFG               |                     | topp/mips/dp/mwreg/rf_reg[8][0]_C |                1 |              1 |
+|  topp/mips/dp/mwreg/rf_reg[8][7]_P |                     | topp/mips/dp/mwreg/rf_reg[8][7]_C |                1 |              1 |
+|  topp/mips/dp/mwreg/rf_reg[8][6]_P |                     | topp/mips/dp/mwreg/rf_reg[8][6]_C |                1 |              1 |
+|  topp/mips/dp/mwreg/rf_reg[8][5]_P |                     | topp/mips/dp/mwreg/rf_reg[8][5]_C |                1 |              1 |
+|  topp/mips/dp/mwreg/rf_reg[8][4]_P |                     | topp/mips/dp/mwreg/rf_reg[8][4]_C |                1 |              1 |
+|  topp/mips/dp/mwreg/rf_reg[8][3]_P |                     | topp/mips/dp/mwreg/rf_reg[8][3]_C |                1 |              1 |
+|  topp/mips/dp/mwreg/rf_reg[8][2]_P |                     | topp/mips/dp/mwreg/rf_reg[8][2]_C |                1 |              1 |
+|  topp/mips/dp/mwreg/rf_reg[8][1]_P |                     | topp/mips/dp/mwreg/rf_reg[8][1]_C |                1 |              1 |
+|  topp/mips/dp/mwreg/rf_reg[8][0]_P |                     | topp/mips/dp/mwreg/rf_reg[8][0]_C |                1 |              1 |
+|  clk_IBUF_BUFG                     | pcc/CNT[17]_i_2_n_0 | pcc/CNT[17]_i_1_n_0               |                6 |             21 |
+|  clk_IBUF_BUFG                     |                     | reset_IBUF                        |                6 |             22 |
+|  debouncedClock_BUFG               |                     | reset_IBUF                        |               13 |             39 |
++------------------------------------+---------------------+-----------------------------------+------------------+----------------+
+
+

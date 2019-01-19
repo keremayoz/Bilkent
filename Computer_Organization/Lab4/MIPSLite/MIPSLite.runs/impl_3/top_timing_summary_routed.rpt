@@ -1,0 +1,1781 @@
+Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
+-----------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2015.2 (win64) Build 1266856 Fri Jun 26 16:35:25 MDT 2015
+| Date         : Tue Nov 14 23:57:52 2017
+| Host         : EALAB01 running 64-bit Service Pack 1  (build 7601)
+| Command      : report_timing_summary -warn_on_violation -max_paths 10 -file top_timing_summary_routed.rpt -rpx top_timing_summary_routed.rpx
+| Design       : top
+| Device       : 7a35t-cpg236
+| Speed File   : -1  PRODUCTION 1.14 2014-09-11
+-----------------------------------------------------------------------------------------------------------------------------------------------
+
+Timing Summary Report
+
+------------------------------------------------------------------------------------------------
+| Timer Settings
+| --------------
+------------------------------------------------------------------------------------------------
+
+  Enable Multi Corner Analysis               :  Yes
+  Enable Pessimism Removal                   :  Yes
+  Pessimism Removal Resolution               :  Nearest Common Node
+  Enable Input Delay Default Clock           :  No
+  Enable Preset / Clear Arcs                 :  No
+  Disable Flight Delays                      :  No
+
+  Corner  Analyze    Analyze    
+  Name    Max Paths  Min Paths  
+  ------  ---------  ---------  
+  Slow    Yes        Yes        
+  Fast    Yes        Yes        
+
+
+
+check_timing report
+
+Table of Contents
+-----------------
+1. checking no_clock
+2. checking constant_clock
+3. checking pulse_width_clock
+4. checking unconstrained_internal_endpoints
+5. checking no_input_delay
+6. checking no_output_delay
+7. checking multiple_clock
+8. checking generated_clocks
+9. checking loops
+10. checking partial_input_delay
+11. checking partial_output_delay
+12. checking latch_loops
+
+1. checking no_clock
+--------------------
+ There are 549 register/latch pins with no clock driven by root clock pin: clk (HIGH)
+
+ There are 8 register/latch pins with no clock driven by root clock pin: dmem/RAM_reg_0_63_0_0/SP/CLK (HIGH)
+
+ There are 8 register/latch pins with no clock driven by root clock pin: dmem/RAM_reg_0_63_10_10/SP/CLK (HIGH)
+
+ There are 8 register/latch pins with no clock driven by root clock pin: dmem/RAM_reg_0_63_11_11/SP/CLK (HIGH)
+
+ There are 8 register/latch pins with no clock driven by root clock pin: dmem/RAM_reg_0_63_12_12/SP/CLK (HIGH)
+
+ There are 8 register/latch pins with no clock driven by root clock pin: dmem/RAM_reg_0_63_13_13/SP/CLK (HIGH)
+
+ There are 8 register/latch pins with no clock driven by root clock pin: dmem/RAM_reg_0_63_14_14/SP/CLK (HIGH)
+
+ There are 8 register/latch pins with no clock driven by root clock pin: dmem/RAM_reg_0_63_15_15/SP/CLK (HIGH)
+
+ There are 8 register/latch pins with no clock driven by root clock pin: dmem/RAM_reg_0_63_16_16/SP/CLK (HIGH)
+
+ There are 8 register/latch pins with no clock driven by root clock pin: dmem/RAM_reg_0_63_17_17/SP/CLK (HIGH)
+
+ There are 8 register/latch pins with no clock driven by root clock pin: dmem/RAM_reg_0_63_18_18/SP/CLK (HIGH)
+
+ There are 8 register/latch pins with no clock driven by root clock pin: dmem/RAM_reg_0_63_19_19/SP/CLK (HIGH)
+
+ There are 8 register/latch pins with no clock driven by root clock pin: dmem/RAM_reg_0_63_1_1/SP/CLK (HIGH)
+
+ There are 8 register/latch pins with no clock driven by root clock pin: dmem/RAM_reg_0_63_20_20/SP/CLK (HIGH)
+
+ There are 8 register/latch pins with no clock driven by root clock pin: dmem/RAM_reg_0_63_21_21/SP/CLK (HIGH)
+
+ There are 8 register/latch pins with no clock driven by root clock pin: dmem/RAM_reg_0_63_22_22/SP/CLK (HIGH)
+
+ There are 8 register/latch pins with no clock driven by root clock pin: dmem/RAM_reg_0_63_23_23/SP/CLK (HIGH)
+
+ There are 8 register/latch pins with no clock driven by root clock pin: dmem/RAM_reg_0_63_24_24/SP/CLK (HIGH)
+
+ There are 8 register/latch pins with no clock driven by root clock pin: dmem/RAM_reg_0_63_25_25/SP/CLK (HIGH)
+
+ There are 8 register/latch pins with no clock driven by root clock pin: dmem/RAM_reg_0_63_26_26/SP/CLK (HIGH)
+
+ There are 8 register/latch pins with no clock driven by root clock pin: dmem/RAM_reg_0_63_27_27/SP/CLK (HIGH)
+
+ There are 8 register/latch pins with no clock driven by root clock pin: dmem/RAM_reg_0_63_28_28/SP/CLK (HIGH)
+
+ There are 8 register/latch pins with no clock driven by root clock pin: dmem/RAM_reg_0_63_29_29/SP/CLK (HIGH)
+
+ There are 8 register/latch pins with no clock driven by root clock pin: dmem/RAM_reg_0_63_2_2/SP/CLK (HIGH)
+
+ There are 8 register/latch pins with no clock driven by root clock pin: dmem/RAM_reg_0_63_30_30/SP/CLK (HIGH)
+
+ There are 8 register/latch pins with no clock driven by root clock pin: dmem/RAM_reg_0_63_31_31/SP/CLK (HIGH)
+
+ There are 8 register/latch pins with no clock driven by root clock pin: dmem/RAM_reg_0_63_3_3/SP/CLK (HIGH)
+
+ There are 8 register/latch pins with no clock driven by root clock pin: dmem/RAM_reg_0_63_4_4/SP/CLK (HIGH)
+
+ There are 8 register/latch pins with no clock driven by root clock pin: dmem/RAM_reg_0_63_5_5/SP/CLK (HIGH)
+
+ There are 8 register/latch pins with no clock driven by root clock pin: dmem/RAM_reg_0_63_6_6/SP/CLK (HIGH)
+
+ There are 8 register/latch pins with no clock driven by root clock pin: dmem/RAM_reg_0_63_7_7/SP/CLK (HIGH)
+
+ There are 8 register/latch pins with no clock driven by root clock pin: dmem/RAM_reg_0_63_8_8/SP/CLK (HIGH)
+
+ There are 8 register/latch pins with no clock driven by root clock pin: dmem/RAM_reg_0_63_9_9/SP/CLK (HIGH)
+
+ There are 257 register/latch pins with no clock driven by root clock pin: mips/dp/pcreg/q_reg[2]/C (HIGH)
+
+ There are 257 register/latch pins with no clock driven by root clock pin: mips/dp/pcreg/q_reg[3]/C (HIGH)
+
+ There are 257 register/latch pins with no clock driven by root clock pin: mips/dp/pcreg/q_reg[4]/C (HIGH)
+
+ There are 257 register/latch pins with no clock driven by root clock pin: mips/dp/pcreg/q_reg[5]/C (HIGH)
+
+ There are 257 register/latch pins with no clock driven by root clock pin: mips/dp/pcreg/q_reg[6]/C (HIGH)
+
+ There are 256 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[0][0]_C/C (HIGH)
+
+ There are 255 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[0][0]_LDC/G (HIGH)
+
+ There are 256 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[0][0]_P/C (HIGH)
+
+ There are 184 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[0][10]_C/C (HIGH)
+
+ There are 183 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[0][10]_LDC/G (HIGH)
+
+ There are 184 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[0][10]_P/C (HIGH)
+
+ There are 176 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[0][11]_C/C (HIGH)
+
+ There are 175 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[0][11]_LDC/G (HIGH)
+
+ There are 176 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[0][11]_P/C (HIGH)
+
+ There are 168 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[0][12]_C/C (HIGH)
+
+ There are 167 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[0][12]_LDC/G (HIGH)
+
+ There are 168 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[0][12]_P/C (HIGH)
+
+ There are 160 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[0][13]_C/C (HIGH)
+
+ There are 159 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[0][13]_LDC/G (HIGH)
+
+ There are 160 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[0][13]_P/C (HIGH)
+
+ There are 152 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[0][14]_C/C (HIGH)
+
+ There are 151 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[0][14]_LDC/G (HIGH)
+
+ There are 152 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[0][14]_P/C (HIGH)
+
+ There are 144 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[0][15]_C/C (HIGH)
+
+ There are 143 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[0][15]_LDC/G (HIGH)
+
+ There are 144 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[0][15]_P/C (HIGH)
+
+ There are 136 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[0][16]_C/C (HIGH)
+
+ There are 135 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[0][16]_LDC/G (HIGH)
+
+ There are 136 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[0][16]_P/C (HIGH)
+
+ There are 128 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[0][17]_C/C (HIGH)
+
+ There are 127 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[0][17]_LDC/G (HIGH)
+
+ There are 128 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[0][17]_P/C (HIGH)
+
+ There are 120 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[0][18]_C/C (HIGH)
+
+ There are 119 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[0][18]_LDC/G (HIGH)
+
+ There are 120 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[0][18]_P/C (HIGH)
+
+ There are 112 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[0][19]_C/C (HIGH)
+
+ There are 111 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[0][19]_LDC/G (HIGH)
+
+ There are 112 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[0][19]_P/C (HIGH)
+
+ There are 256 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[0][1]_C/C (HIGH)
+
+ There are 255 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[0][1]_LDC/G (HIGH)
+
+ There are 256 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[0][1]_P/C (HIGH)
+
+ There are 104 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[0][20]_C/C (HIGH)
+
+ There are 103 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[0][20]_LDC/G (HIGH)
+
+ There are 104 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[0][20]_P/C (HIGH)
+
+ There are 96 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[0][21]_C/C (HIGH)
+
+ There are 95 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[0][21]_LDC/G (HIGH)
+
+ There are 96 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[0][21]_P/C (HIGH)
+
+ There are 88 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[0][22]_C/C (HIGH)
+
+ There are 87 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[0][22]_LDC/G (HIGH)
+
+ There are 88 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[0][22]_P/C (HIGH)
+
+ There are 80 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[0][23]_C/C (HIGH)
+
+ There are 79 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[0][23]_LDC/G (HIGH)
+
+ There are 80 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[0][23]_P/C (HIGH)
+
+ There are 72 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[0][24]_C/C (HIGH)
+
+ There are 71 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[0][24]_LDC/G (HIGH)
+
+ There are 72 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[0][24]_P/C (HIGH)
+
+ There are 64 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[0][25]_C/C (HIGH)
+
+ There are 63 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[0][25]_LDC/G (HIGH)
+
+ There are 64 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[0][25]_P/C (HIGH)
+
+ There are 56 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[0][26]_C/C (HIGH)
+
+ There are 55 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[0][26]_LDC/G (HIGH)
+
+ There are 56 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[0][26]_P/C (HIGH)
+
+ There are 48 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[0][27]_C/C (HIGH)
+
+ There are 47 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[0][27]_LDC/G (HIGH)
+
+ There are 48 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[0][27]_P/C (HIGH)
+
+ There are 40 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[0][28]_C/C (HIGH)
+
+ There are 39 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[0][28]_LDC/G (HIGH)
+
+ There are 40 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[0][28]_P/C (HIGH)
+
+ There are 32 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[0][29]_C/C (HIGH)
+
+ There are 31 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[0][29]_LDC/G (HIGH)
+
+ There are 32 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[0][29]_P/C (HIGH)
+
+ There are 256 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[0][2]_C/C (HIGH)
+
+ There are 255 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[0][2]_LDC/G (HIGH)
+
+ There are 256 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[0][2]_P/C (HIGH)
+
+ There are 24 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[0][30]_C/C (HIGH)
+
+ There are 23 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[0][30]_LDC/G (HIGH)
+
+ There are 24 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[0][30]_P/C (HIGH)
+
+ There are 16 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[0][31]_C/C (HIGH)
+
+ There are 15 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[0][31]_LDC/G (HIGH)
+
+ There are 16 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[0][31]_P/C (HIGH)
+
+ There are 256 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[0][3]_C/C (HIGH)
+
+ There are 255 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[0][3]_LDC/G (HIGH)
+
+ There are 256 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[0][3]_P/C (HIGH)
+
+ There are 256 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[0][4]_C/C (HIGH)
+
+ There are 255 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[0][4]_LDC/G (HIGH)
+
+ There are 256 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[0][4]_P/C (HIGH)
+
+ There are 256 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[0][5]_C/C (HIGH)
+
+ There are 255 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[0][5]_LDC/G (HIGH)
+
+ There are 256 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[0][5]_P/C (HIGH)
+
+ There are 256 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[0][6]_C/C (HIGH)
+
+ There are 255 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[0][6]_LDC/G (HIGH)
+
+ There are 256 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[0][6]_P/C (HIGH)
+
+ There are 256 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[0][7]_C/C (HIGH)
+
+ There are 255 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[0][7]_LDC/G (HIGH)
+
+ There are 256 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[0][7]_P/C (HIGH)
+
+ There are 200 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[0][8]_C/C (HIGH)
+
+ There are 199 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[0][8]_LDC/G (HIGH)
+
+ There are 200 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[0][8]_P/C (HIGH)
+
+ There are 192 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[0][9]_C/C (HIGH)
+
+ There are 191 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[0][9]_LDC/G (HIGH)
+
+ There are 192 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[0][9]_P/C (HIGH)
+
+ There are 256 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[1][0]_C/C (HIGH)
+
+ There are 255 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[1][0]_LDC/G (HIGH)
+
+ There are 256 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[1][0]_P/C (HIGH)
+
+ There are 184 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[1][10]_C/C (HIGH)
+
+ There are 183 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[1][10]_LDC/G (HIGH)
+
+ There are 184 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[1][10]_P/C (HIGH)
+
+ There are 176 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[1][11]_C/C (HIGH)
+
+ There are 175 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[1][11]_LDC/G (HIGH)
+
+ There are 176 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[1][11]_P/C (HIGH)
+
+ There are 168 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[1][12]_C/C (HIGH)
+
+ There are 167 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[1][12]_LDC/G (HIGH)
+
+ There are 168 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[1][12]_P/C (HIGH)
+
+ There are 160 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[1][13]_C/C (HIGH)
+
+ There are 159 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[1][13]_LDC/G (HIGH)
+
+ There are 160 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[1][13]_P/C (HIGH)
+
+ There are 152 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[1][14]_C/C (HIGH)
+
+ There are 151 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[1][14]_LDC/G (HIGH)
+
+ There are 152 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[1][14]_P/C (HIGH)
+
+ There are 144 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[1][15]_C/C (HIGH)
+
+ There are 143 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[1][15]_LDC/G (HIGH)
+
+ There are 144 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[1][15]_P/C (HIGH)
+
+ There are 136 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[1][16]_C/C (HIGH)
+
+ There are 135 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[1][16]_LDC/G (HIGH)
+
+ There are 136 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[1][16]_P/C (HIGH)
+
+ There are 128 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[1][17]_C/C (HIGH)
+
+ There are 127 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[1][17]_LDC/G (HIGH)
+
+ There are 128 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[1][17]_P/C (HIGH)
+
+ There are 120 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[1][18]_C/C (HIGH)
+
+ There are 119 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[1][18]_LDC/G (HIGH)
+
+ There are 120 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[1][18]_P/C (HIGH)
+
+ There are 112 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[1][19]_C/C (HIGH)
+
+ There are 111 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[1][19]_LDC/G (HIGH)
+
+ There are 112 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[1][19]_P/C (HIGH)
+
+ There are 256 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[1][1]_C/C (HIGH)
+
+ There are 255 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[1][1]_LDC/G (HIGH)
+
+ There are 256 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[1][1]_P/C (HIGH)
+
+ There are 104 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[1][20]_C/C (HIGH)
+
+ There are 103 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[1][20]_LDC/G (HIGH)
+
+ There are 104 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[1][20]_P/C (HIGH)
+
+ There are 96 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[1][21]_C/C (HIGH)
+
+ There are 95 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[1][21]_LDC/G (HIGH)
+
+ There are 96 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[1][21]_P/C (HIGH)
+
+ There are 88 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[1][22]_C/C (HIGH)
+
+ There are 87 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[1][22]_LDC/G (HIGH)
+
+ There are 88 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[1][22]_P/C (HIGH)
+
+ There are 80 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[1][23]_C/C (HIGH)
+
+ There are 79 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[1][23]_LDC/G (HIGH)
+
+ There are 80 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[1][23]_P/C (HIGH)
+
+ There are 72 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[1][24]_C/C (HIGH)
+
+ There are 71 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[1][24]_LDC/G (HIGH)
+
+ There are 72 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[1][24]_P/C (HIGH)
+
+ There are 64 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[1][25]_C/C (HIGH)
+
+ There are 63 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[1][25]_LDC/G (HIGH)
+
+ There are 64 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[1][25]_P/C (HIGH)
+
+ There are 56 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[1][26]_C/C (HIGH)
+
+ There are 55 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[1][26]_LDC/G (HIGH)
+
+ There are 56 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[1][26]_P/C (HIGH)
+
+ There are 48 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[1][27]_C/C (HIGH)
+
+ There are 47 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[1][27]_LDC/G (HIGH)
+
+ There are 48 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[1][27]_P/C (HIGH)
+
+ There are 40 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[1][28]_C/C (HIGH)
+
+ There are 39 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[1][28]_LDC/G (HIGH)
+
+ There are 40 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[1][28]_P/C (HIGH)
+
+ There are 32 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[1][29]_C/C (HIGH)
+
+ There are 31 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[1][29]_LDC/G (HIGH)
+
+ There are 32 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[1][29]_P/C (HIGH)
+
+ There are 256 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[1][2]_C/C (HIGH)
+
+ There are 255 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[1][2]_LDC/G (HIGH)
+
+ There are 256 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[1][2]_P/C (HIGH)
+
+ There are 24 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[1][30]_C/C (HIGH)
+
+ There are 23 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[1][30]_LDC/G (HIGH)
+
+ There are 24 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[1][30]_P/C (HIGH)
+
+ There are 16 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[1][31]_C/C (HIGH)
+
+ There are 15 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[1][31]_LDC/G (HIGH)
+
+ There are 16 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[1][31]_P/C (HIGH)
+
+ There are 256 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[1][3]_C/C (HIGH)
+
+ There are 255 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[1][3]_LDC/G (HIGH)
+
+ There are 256 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[1][3]_P/C (HIGH)
+
+ There are 256 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[1][4]_C/C (HIGH)
+
+ There are 255 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[1][4]_LDC/G (HIGH)
+
+ There are 256 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[1][4]_P/C (HIGH)
+
+ There are 256 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[1][5]_C/C (HIGH)
+
+ There are 255 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[1][5]_LDC/G (HIGH)
+
+ There are 256 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[1][5]_P/C (HIGH)
+
+ There are 256 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[1][6]_C/C (HIGH)
+
+ There are 255 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[1][6]_LDC/G (HIGH)
+
+ There are 256 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[1][6]_P/C (HIGH)
+
+ There are 256 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[1][7]_C/C (HIGH)
+
+ There are 255 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[1][7]_LDC/G (HIGH)
+
+ There are 256 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[1][7]_P/C (HIGH)
+
+ There are 200 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[1][8]_C/C (HIGH)
+
+ There are 199 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[1][8]_LDC/G (HIGH)
+
+ There are 200 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[1][8]_P/C (HIGH)
+
+ There are 192 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[1][9]_C/C (HIGH)
+
+ There are 191 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[1][9]_LDC/G (HIGH)
+
+ There are 192 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[1][9]_P/C (HIGH)
+
+ There are 256 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[2][0]_C/C (HIGH)
+
+ There are 255 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[2][0]_LDC/G (HIGH)
+
+ There are 256 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[2][0]_P/C (HIGH)
+
+ There are 184 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[2][10]_C/C (HIGH)
+
+ There are 183 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[2][10]_LDC/G (HIGH)
+
+ There are 184 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[2][10]_P/C (HIGH)
+
+ There are 176 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[2][11]_C/C (HIGH)
+
+ There are 175 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[2][11]_LDC/G (HIGH)
+
+ There are 176 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[2][11]_P/C (HIGH)
+
+ There are 168 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[2][12]_C/C (HIGH)
+
+ There are 167 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[2][12]_LDC/G (HIGH)
+
+ There are 168 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[2][12]_P/C (HIGH)
+
+ There are 160 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[2][13]_C/C (HIGH)
+
+ There are 159 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[2][13]_LDC/G (HIGH)
+
+ There are 160 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[2][13]_P/C (HIGH)
+
+ There are 152 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[2][14]_C/C (HIGH)
+
+ There are 151 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[2][14]_LDC/G (HIGH)
+
+ There are 152 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[2][14]_P/C (HIGH)
+
+ There are 144 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[2][15]_C/C (HIGH)
+
+ There are 143 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[2][15]_LDC/G (HIGH)
+
+ There are 144 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[2][15]_P/C (HIGH)
+
+ There are 136 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[2][16]_C/C (HIGH)
+
+ There are 135 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[2][16]_LDC/G (HIGH)
+
+ There are 136 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[2][16]_P/C (HIGH)
+
+ There are 128 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[2][17]_C/C (HIGH)
+
+ There are 127 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[2][17]_LDC/G (HIGH)
+
+ There are 128 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[2][17]_P/C (HIGH)
+
+ There are 120 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[2][18]_C/C (HIGH)
+
+ There are 119 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[2][18]_LDC/G (HIGH)
+
+ There are 120 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[2][18]_P/C (HIGH)
+
+ There are 112 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[2][19]_C/C (HIGH)
+
+ There are 111 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[2][19]_LDC/G (HIGH)
+
+ There are 112 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[2][19]_P/C (HIGH)
+
+ There are 256 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[2][1]_C/C (HIGH)
+
+ There are 255 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[2][1]_LDC/G (HIGH)
+
+ There are 256 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[2][1]_P/C (HIGH)
+
+ There are 104 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[2][20]_C/C (HIGH)
+
+ There are 103 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[2][20]_LDC/G (HIGH)
+
+ There are 104 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[2][20]_P/C (HIGH)
+
+ There are 96 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[2][21]_C/C (HIGH)
+
+ There are 95 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[2][21]_LDC/G (HIGH)
+
+ There are 96 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[2][21]_P/C (HIGH)
+
+ There are 88 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[2][22]_C/C (HIGH)
+
+ There are 87 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[2][22]_LDC/G (HIGH)
+
+ There are 88 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[2][22]_P/C (HIGH)
+
+ There are 80 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[2][23]_C/C (HIGH)
+
+ There are 79 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[2][23]_LDC/G (HIGH)
+
+ There are 80 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[2][23]_P/C (HIGH)
+
+ There are 72 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[2][24]_C/C (HIGH)
+
+ There are 71 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[2][24]_LDC/G (HIGH)
+
+ There are 72 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[2][24]_P/C (HIGH)
+
+ There are 64 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[2][25]_C/C (HIGH)
+
+ There are 63 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[2][25]_LDC/G (HIGH)
+
+ There are 64 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[2][25]_P/C (HIGH)
+
+ There are 56 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[2][26]_C/C (HIGH)
+
+ There are 55 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[2][26]_LDC/G (HIGH)
+
+ There are 56 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[2][26]_P/C (HIGH)
+
+ There are 48 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[2][27]_C/C (HIGH)
+
+ There are 47 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[2][27]_LDC/G (HIGH)
+
+ There are 48 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[2][27]_P/C (HIGH)
+
+ There are 40 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[2][28]_C/C (HIGH)
+
+ There are 39 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[2][28]_LDC/G (HIGH)
+
+ There are 40 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[2][28]_P/C (HIGH)
+
+ There are 32 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[2][29]_C/C (HIGH)
+
+ There are 31 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[2][29]_LDC/G (HIGH)
+
+ There are 32 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[2][29]_P/C (HIGH)
+
+ There are 256 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[2][2]_C/C (HIGH)
+
+ There are 255 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[2][2]_LDC/G (HIGH)
+
+ There are 256 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[2][2]_P/C (HIGH)
+
+ There are 24 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[2][30]_C/C (HIGH)
+
+ There are 23 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[2][30]_LDC/G (HIGH)
+
+ There are 24 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[2][30]_P/C (HIGH)
+
+ There are 16 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[2][31]_C/C (HIGH)
+
+ There are 15 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[2][31]_LDC/G (HIGH)
+
+ There are 16 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[2][31]_P/C (HIGH)
+
+ There are 256 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[2][3]_C/C (HIGH)
+
+ There are 255 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[2][3]_LDC/G (HIGH)
+
+ There are 256 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[2][3]_P/C (HIGH)
+
+ There are 256 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[2][4]_C/C (HIGH)
+
+ There are 255 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[2][4]_LDC/G (HIGH)
+
+ There are 256 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[2][4]_P/C (HIGH)
+
+ There are 256 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[2][5]_C/C (HIGH)
+
+ There are 255 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[2][5]_LDC/G (HIGH)
+
+ There are 256 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[2][5]_P/C (HIGH)
+
+ There are 256 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[2][6]_C/C (HIGH)
+
+ There are 255 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[2][6]_LDC/G (HIGH)
+
+ There are 256 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[2][6]_P/C (HIGH)
+
+ There are 256 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[2][7]_C/C (HIGH)
+
+ There are 255 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[2][7]_LDC/G (HIGH)
+
+ There are 256 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[2][7]_P/C (HIGH)
+
+ There are 200 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[2][8]_C/C (HIGH)
+
+ There are 199 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[2][8]_LDC/G (HIGH)
+
+ There are 200 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[2][8]_P/C (HIGH)
+
+ There are 192 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[2][9]_C/C (HIGH)
+
+ There are 191 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[2][9]_LDC/G (HIGH)
+
+ There are 192 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[2][9]_P/C (HIGH)
+
+ There are 256 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[3][0]_C/C (HIGH)
+
+ There are 255 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[3][0]_LDC/G (HIGH)
+
+ There are 256 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[3][0]_P/C (HIGH)
+
+ There are 184 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[3][10]_C/C (HIGH)
+
+ There are 183 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[3][10]_LDC/G (HIGH)
+
+ There are 184 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[3][10]_P/C (HIGH)
+
+ There are 176 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[3][11]_C/C (HIGH)
+
+ There are 175 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[3][11]_LDC/G (HIGH)
+
+ There are 176 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[3][11]_P/C (HIGH)
+
+ There are 168 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[3][12]_C/C (HIGH)
+
+ There are 167 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[3][12]_LDC/G (HIGH)
+
+ There are 168 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[3][12]_P/C (HIGH)
+
+ There are 160 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[3][13]_C/C (HIGH)
+
+ There are 159 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[3][13]_LDC/G (HIGH)
+
+ There are 160 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[3][13]_P/C (HIGH)
+
+ There are 152 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[3][14]_C/C (HIGH)
+
+ There are 151 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[3][14]_LDC/G (HIGH)
+
+ There are 152 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[3][14]_P/C (HIGH)
+
+ There are 144 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[3][15]_C/C (HIGH)
+
+ There are 143 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[3][15]_LDC/G (HIGH)
+
+ There are 144 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[3][15]_P/C (HIGH)
+
+ There are 136 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[3][16]_C/C (HIGH)
+
+ There are 135 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[3][16]_LDC/G (HIGH)
+
+ There are 136 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[3][16]_P/C (HIGH)
+
+ There are 128 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[3][17]_C/C (HIGH)
+
+ There are 127 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[3][17]_LDC/G (HIGH)
+
+ There are 128 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[3][17]_P/C (HIGH)
+
+ There are 120 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[3][18]_C/C (HIGH)
+
+ There are 119 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[3][18]_LDC/G (HIGH)
+
+ There are 120 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[3][18]_P/C (HIGH)
+
+ There are 112 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[3][19]_C/C (HIGH)
+
+ There are 111 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[3][19]_LDC/G (HIGH)
+
+ There are 112 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[3][19]_P/C (HIGH)
+
+ There are 256 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[3][1]_C/C (HIGH)
+
+ There are 255 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[3][1]_LDC/G (HIGH)
+
+ There are 256 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[3][1]_P/C (HIGH)
+
+ There are 104 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[3][20]_C/C (HIGH)
+
+ There are 103 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[3][20]_LDC/G (HIGH)
+
+ There are 104 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[3][20]_P/C (HIGH)
+
+ There are 96 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[3][21]_C/C (HIGH)
+
+ There are 95 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[3][21]_LDC/G (HIGH)
+
+ There are 96 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[3][21]_P/C (HIGH)
+
+ There are 88 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[3][22]_C/C (HIGH)
+
+ There are 87 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[3][22]_LDC/G (HIGH)
+
+ There are 88 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[3][22]_P/C (HIGH)
+
+ There are 80 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[3][23]_C/C (HIGH)
+
+ There are 79 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[3][23]_LDC/G (HIGH)
+
+ There are 80 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[3][23]_P/C (HIGH)
+
+ There are 72 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[3][24]_C/C (HIGH)
+
+ There are 71 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[3][24]_LDC/G (HIGH)
+
+ There are 72 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[3][24]_P/C (HIGH)
+
+ There are 64 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[3][25]_C/C (HIGH)
+
+ There are 63 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[3][25]_LDC/G (HIGH)
+
+ There are 64 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[3][25]_P/C (HIGH)
+
+ There are 56 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[3][26]_C/C (HIGH)
+
+ There are 55 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[3][26]_LDC/G (HIGH)
+
+ There are 56 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[3][26]_P/C (HIGH)
+
+ There are 48 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[3][27]_C/C (HIGH)
+
+ There are 47 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[3][27]_LDC/G (HIGH)
+
+ There are 48 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[3][27]_P/C (HIGH)
+
+ There are 40 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[3][28]_C/C (HIGH)
+
+ There are 39 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[3][28]_LDC/G (HIGH)
+
+ There are 40 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[3][28]_P/C (HIGH)
+
+ There are 32 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[3][29]_C/C (HIGH)
+
+ There are 31 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[3][29]_LDC/G (HIGH)
+
+ There are 32 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[3][29]_P/C (HIGH)
+
+ There are 256 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[3][2]_C/C (HIGH)
+
+ There are 255 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[3][2]_LDC/G (HIGH)
+
+ There are 256 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[3][2]_P/C (HIGH)
+
+ There are 24 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[3][30]_C/C (HIGH)
+
+ There are 23 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[3][30]_LDC/G (HIGH)
+
+ There are 24 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[3][30]_P/C (HIGH)
+
+ There are 16 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[3][31]_C/C (HIGH)
+
+ There are 15 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[3][31]_LDC/G (HIGH)
+
+ There are 16 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[3][31]_P/C (HIGH)
+
+ There are 256 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[3][3]_C/C (HIGH)
+
+ There are 255 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[3][3]_LDC/G (HIGH)
+
+ There are 256 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[3][3]_P/C (HIGH)
+
+ There are 256 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[3][4]_C/C (HIGH)
+
+ There are 255 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[3][4]_LDC/G (HIGH)
+
+ There are 256 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[3][4]_P/C (HIGH)
+
+ There are 256 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[3][5]_C/C (HIGH)
+
+ There are 255 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[3][5]_LDC/G (HIGH)
+
+ There are 256 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[3][5]_P/C (HIGH)
+
+ There are 256 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[3][6]_C/C (HIGH)
+
+ There are 255 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[3][6]_LDC/G (HIGH)
+
+ There are 256 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[3][6]_P/C (HIGH)
+
+ There are 256 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[3][7]_C/C (HIGH)
+
+ There are 255 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[3][7]_LDC/G (HIGH)
+
+ There are 256 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[3][7]_P/C (HIGH)
+
+ There are 200 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[3][8]_C/C (HIGH)
+
+ There are 199 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[3][8]_LDC/G (HIGH)
+
+ There are 200 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[3][8]_P/C (HIGH)
+
+ There are 192 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[3][9]_C/C (HIGH)
+
+ There are 191 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[3][9]_LDC/G (HIGH)
+
+ There are 192 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[3][9]_P/C (HIGH)
+
+ There are 256 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[4][0]_C/C (HIGH)
+
+ There are 255 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[4][0]_LDC/G (HIGH)
+
+ There are 256 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[4][0]_P/C (HIGH)
+
+ There are 184 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[4][10]_C/C (HIGH)
+
+ There are 183 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[4][10]_LDC/G (HIGH)
+
+ There are 184 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[4][10]_P/C (HIGH)
+
+ There are 176 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[4][11]_C/C (HIGH)
+
+ There are 175 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[4][11]_LDC/G (HIGH)
+
+ There are 176 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[4][11]_P/C (HIGH)
+
+ There are 168 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[4][12]_C/C (HIGH)
+
+ There are 167 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[4][12]_LDC/G (HIGH)
+
+ There are 168 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[4][12]_P/C (HIGH)
+
+ There are 160 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[4][13]_C/C (HIGH)
+
+ There are 159 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[4][13]_LDC/G (HIGH)
+
+ There are 160 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[4][13]_P/C (HIGH)
+
+ There are 152 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[4][14]_C/C (HIGH)
+
+ There are 151 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[4][14]_LDC/G (HIGH)
+
+ There are 152 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[4][14]_P/C (HIGH)
+
+ There are 144 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[4][15]_C/C (HIGH)
+
+ There are 143 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[4][15]_LDC/G (HIGH)
+
+ There are 144 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[4][15]_P/C (HIGH)
+
+ There are 136 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[4][16]_C/C (HIGH)
+
+ There are 135 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[4][16]_LDC/G (HIGH)
+
+ There are 136 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[4][16]_P/C (HIGH)
+
+ There are 128 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[4][17]_C/C (HIGH)
+
+ There are 127 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[4][17]_LDC/G (HIGH)
+
+ There are 128 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[4][17]_P/C (HIGH)
+
+ There are 120 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[4][18]_C/C (HIGH)
+
+ There are 119 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[4][18]_LDC/G (HIGH)
+
+ There are 120 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[4][18]_P/C (HIGH)
+
+ There are 112 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[4][19]_C/C (HIGH)
+
+ There are 111 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[4][19]_LDC/G (HIGH)
+
+ There are 112 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[4][19]_P/C (HIGH)
+
+ There are 256 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[4][1]_C/C (HIGH)
+
+ There are 255 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[4][1]_LDC/G (HIGH)
+
+ There are 256 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[4][1]_P/C (HIGH)
+
+ There are 104 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[4][20]_C/C (HIGH)
+
+ There are 103 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[4][20]_LDC/G (HIGH)
+
+ There are 104 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[4][20]_P/C (HIGH)
+
+ There are 96 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[4][21]_C/C (HIGH)
+
+ There are 95 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[4][21]_LDC/G (HIGH)
+
+ There are 96 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[4][21]_P/C (HIGH)
+
+ There are 88 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[4][22]_C/C (HIGH)
+
+ There are 87 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[4][22]_LDC/G (HIGH)
+
+ There are 88 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[4][22]_P/C (HIGH)
+
+ There are 80 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[4][23]_C/C (HIGH)
+
+ There are 79 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[4][23]_LDC/G (HIGH)
+
+ There are 80 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[4][23]_P/C (HIGH)
+
+ There are 72 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[4][24]_C/C (HIGH)
+
+ There are 71 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[4][24]_LDC/G (HIGH)
+
+ There are 72 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[4][24]_P/C (HIGH)
+
+ There are 64 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[4][25]_C/C (HIGH)
+
+ There are 63 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[4][25]_LDC/G (HIGH)
+
+ There are 64 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[4][25]_P/C (HIGH)
+
+ There are 56 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[4][26]_C/C (HIGH)
+
+ There are 55 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[4][26]_LDC/G (HIGH)
+
+ There are 56 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[4][26]_P/C (HIGH)
+
+ There are 48 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[4][27]_C/C (HIGH)
+
+ There are 47 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[4][27]_LDC/G (HIGH)
+
+ There are 48 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[4][27]_P/C (HIGH)
+
+ There are 40 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[4][28]_C/C (HIGH)
+
+ There are 39 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[4][28]_LDC/G (HIGH)
+
+ There are 40 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[4][28]_P/C (HIGH)
+
+ There are 32 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[4][29]_C/C (HIGH)
+
+ There are 31 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[4][29]_LDC/G (HIGH)
+
+ There are 32 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[4][29]_P/C (HIGH)
+
+ There are 256 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[4][2]_C/C (HIGH)
+
+ There are 255 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[4][2]_LDC/G (HIGH)
+
+ There are 256 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[4][2]_P/C (HIGH)
+
+ There are 24 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[4][30]_C/C (HIGH)
+
+ There are 23 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[4][30]_LDC/G (HIGH)
+
+ There are 24 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[4][30]_P/C (HIGH)
+
+ There are 16 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[4][31]_C/C (HIGH)
+
+ There are 15 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[4][31]_LDC/G (HIGH)
+
+ There are 16 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[4][31]_P/C (HIGH)
+
+ There are 256 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[4][3]_C/C (HIGH)
+
+ There are 255 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[4][3]_LDC/G (HIGH)
+
+ There are 256 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[4][3]_P/C (HIGH)
+
+ There are 256 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[4][4]_C/C (HIGH)
+
+ There are 255 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[4][4]_LDC/G (HIGH)
+
+ There are 256 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[4][4]_P/C (HIGH)
+
+ There are 256 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[4][5]_C/C (HIGH)
+
+ There are 255 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[4][5]_LDC/G (HIGH)
+
+ There are 256 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[4][5]_P/C (HIGH)
+
+ There are 256 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[4][6]_C/C (HIGH)
+
+ There are 255 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[4][6]_LDC/G (HIGH)
+
+ There are 256 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[4][6]_P/C (HIGH)
+
+ There are 256 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[4][7]_C/C (HIGH)
+
+ There are 255 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[4][7]_LDC/G (HIGH)
+
+ There are 256 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[4][7]_P/C (HIGH)
+
+ There are 200 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[4][8]_C/C (HIGH)
+
+ There are 199 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[4][8]_LDC/G (HIGH)
+
+ There are 200 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[4][8]_P/C (HIGH)
+
+ There are 192 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[4][9]_C/C (HIGH)
+
+ There are 191 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[4][9]_LDC/G (HIGH)
+
+ There are 192 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[4][9]_P/C (HIGH)
+
+ There are 256 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[5][0]_C/C (HIGH)
+
+ There are 255 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[5][0]_LDC/G (HIGH)
+
+ There are 256 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[5][0]_P/C (HIGH)
+
+ There are 184 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[5][10]_C/C (HIGH)
+
+ There are 183 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[5][10]_LDC/G (HIGH)
+
+ There are 184 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[5][10]_P/C (HIGH)
+
+ There are 176 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[5][11]_C/C (HIGH)
+
+ There are 175 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[5][11]_LDC/G (HIGH)
+
+ There are 176 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[5][11]_P/C (HIGH)
+
+ There are 168 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[5][12]_C/C (HIGH)
+
+ There are 167 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[5][12]_LDC/G (HIGH)
+
+ There are 168 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[5][12]_P/C (HIGH)
+
+ There are 160 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[5][13]_C/C (HIGH)
+
+ There are 159 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[5][13]_LDC/G (HIGH)
+
+ There are 160 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[5][13]_P/C (HIGH)
+
+ There are 152 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[5][14]_C/C (HIGH)
+
+ There are 151 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[5][14]_LDC/G (HIGH)
+
+ There are 152 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[5][14]_P/C (HIGH)
+
+ There are 144 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[5][15]_C/C (HIGH)
+
+ There are 143 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[5][15]_LDC/G (HIGH)
+
+ There are 144 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[5][15]_P/C (HIGH)
+
+ There are 136 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[5][16]_C/C (HIGH)
+
+ There are 135 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[5][16]_LDC/G (HIGH)
+
+ There are 136 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[5][16]_P/C (HIGH)
+
+ There are 128 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[5][17]_C/C (HIGH)
+
+ There are 127 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[5][17]_LDC/G (HIGH)
+
+ There are 128 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[5][17]_P/C (HIGH)
+
+ There are 120 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[5][18]_C/C (HIGH)
+
+ There are 119 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[5][18]_LDC/G (HIGH)
+
+ There are 120 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[5][18]_P/C (HIGH)
+
+ There are 112 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[5][19]_C/C (HIGH)
+
+ There are 111 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[5][19]_LDC/G (HIGH)
+
+ There are 112 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[5][19]_P/C (HIGH)
+
+ There are 256 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[5][1]_C/C (HIGH)
+
+ There are 255 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[5][1]_LDC/G (HIGH)
+
+ There are 256 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[5][1]_P/C (HIGH)
+
+ There are 104 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[5][20]_C/C (HIGH)
+
+ There are 103 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[5][20]_LDC/G (HIGH)
+
+ There are 104 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[5][20]_P/C (HIGH)
+
+ There are 96 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[5][21]_C/C (HIGH)
+
+ There are 95 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[5][21]_LDC/G (HIGH)
+
+ There are 96 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[5][21]_P/C (HIGH)
+
+ There are 88 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[5][22]_C/C (HIGH)
+
+ There are 87 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[5][22]_LDC/G (HIGH)
+
+ There are 88 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[5][22]_P/C (HIGH)
+
+ There are 80 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[5][23]_C/C (HIGH)
+
+ There are 79 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[5][23]_LDC/G (HIGH)
+
+ There are 80 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[5][23]_P/C (HIGH)
+
+ There are 72 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[5][24]_C/C (HIGH)
+
+ There are 71 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[5][24]_LDC/G (HIGH)
+
+ There are 72 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[5][24]_P/C (HIGH)
+
+ There are 64 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[5][25]_C/C (HIGH)
+
+ There are 63 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[5][25]_LDC/G (HIGH)
+
+ There are 64 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[5][25]_P/C (HIGH)
+
+ There are 56 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[5][26]_C/C (HIGH)
+
+ There are 55 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[5][26]_LDC/G (HIGH)
+
+ There are 56 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[5][26]_P/C (HIGH)
+
+ There are 48 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[5][27]_C/C (HIGH)
+
+ There are 47 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[5][27]_LDC/G (HIGH)
+
+ There are 48 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[5][27]_P/C (HIGH)
+
+ There are 40 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[5][28]_C/C (HIGH)
+
+ There are 39 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[5][28]_LDC/G (HIGH)
+
+ There are 40 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[5][28]_P/C (HIGH)
+
+ There are 32 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[5][29]_C/C (HIGH)
+
+ There are 31 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[5][29]_LDC/G (HIGH)
+
+ There are 32 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[5][29]_P/C (HIGH)
+
+ There are 256 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[5][2]_C/C (HIGH)
+
+ There are 255 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[5][2]_LDC/G (HIGH)
+
+ There are 256 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[5][2]_P/C (HIGH)
+
+ There are 24 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[5][30]_C/C (HIGH)
+
+ There are 23 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[5][30]_LDC/G (HIGH)
+
+ There are 24 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[5][30]_P/C (HIGH)
+
+ There are 16 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[5][31]_C/C (HIGH)
+
+ There are 15 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[5][31]_LDC/G (HIGH)
+
+ There are 16 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[5][31]_P/C (HIGH)
+
+ There are 256 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[5][3]_C/C (HIGH)
+
+ There are 255 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[5][3]_LDC/G (HIGH)
+
+ There are 256 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[5][3]_P/C (HIGH)
+
+ There are 256 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[5][4]_C/C (HIGH)
+
+ There are 255 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[5][4]_LDC/G (HIGH)
+
+ There are 256 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[5][4]_P/C (HIGH)
+
+ There are 256 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[5][5]_C/C (HIGH)
+
+ There are 255 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[5][5]_LDC/G (HIGH)
+
+ There are 256 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[5][5]_P/C (HIGH)
+
+ There are 256 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[5][6]_C/C (HIGH)
+
+ There are 255 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[5][6]_LDC/G (HIGH)
+
+ There are 256 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[5][6]_P/C (HIGH)
+
+ There are 256 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[5][7]_C/C (HIGH)
+
+ There are 255 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[5][7]_LDC/G (HIGH)
+
+ There are 256 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[5][7]_P/C (HIGH)
+
+ There are 200 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[5][8]_C/C (HIGH)
+
+ There are 199 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[5][8]_LDC/G (HIGH)
+
+ There are 200 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[5][8]_P/C (HIGH)
+
+ There are 192 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[5][9]_C/C (HIGH)
+
+ There are 191 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[5][9]_LDC/G (HIGH)
+
+ There are 192 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[5][9]_P/C (HIGH)
+
+ There are 256 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[6][0]_C/C (HIGH)
+
+ There are 255 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[6][0]_LDC/G (HIGH)
+
+ There are 256 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[6][0]_P/C (HIGH)
+
+ There are 184 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[6][10]_C/C (HIGH)
+
+ There are 183 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[6][10]_LDC/G (HIGH)
+
+ There are 184 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[6][10]_P/C (HIGH)
+
+ There are 176 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[6][11]_C/C (HIGH)
+
+ There are 175 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[6][11]_LDC/G (HIGH)
+
+ There are 176 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[6][11]_P/C (HIGH)
+
+ There are 168 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[6][12]_C/C (HIGH)
+
+ There are 167 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[6][12]_LDC/G (HIGH)
+
+ There are 168 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[6][12]_P/C (HIGH)
+
+ There are 160 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[6][13]_C/C (HIGH)
+
+ There are 159 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[6][13]_LDC/G (HIGH)
+
+ There are 160 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[6][13]_P/C (HIGH)
+
+ There are 152 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[6][14]_C/C (HIGH)
+
+ There are 151 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[6][14]_LDC/G (HIGH)
+
+ There are 152 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[6][14]_P/C (HIGH)
+
+ There are 144 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[6][15]_C/C (HIGH)
+
+ There are 143 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[6][15]_LDC/G (HIGH)
+
+ There are 144 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[6][15]_P/C (HIGH)
+
+ There are 136 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[6][16]_C/C (HIGH)
+
+ There are 135 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[6][16]_LDC/G (HIGH)
+
+ There are 136 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[6][16]_P/C (HIGH)
+
+ There are 128 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[6][17]_C/C (HIGH)
+
+ There are 127 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[6][17]_LDC/G (HIGH)
+
+ There are 128 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[6][17]_P/C (HIGH)
+
+ There are 120 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[6][18]_C/C (HIGH)
+
+ There are 119 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[6][18]_LDC/G (HIGH)
+
+ There are 120 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[6][18]_P/C (HIGH)
+
+ There are 112 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[6][19]_C/C (HIGH)
+
+ There are 111 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[6][19]_LDC/G (HIGH)
+
+ There are 112 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[6][19]_P/C (HIGH)
+
+ There are 256 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[6][1]_C/C (HIGH)
+
+ There are 255 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[6][1]_LDC/G (HIGH)
+
+ There are 256 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[6][1]_P/C (HIGH)
+
+ There are 104 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[6][20]_C/C (HIGH)
+
+ There are 103 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[6][20]_LDC/G (HIGH)
+
+ There are 104 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[6][20]_P/C (HIGH)
+
+ There are 96 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[6][21]_C/C (HIGH)
+
+ There are 95 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[6][21]_LDC/G (HIGH)
+
+ There are 96 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[6][21]_P/C (HIGH)
+
+ There are 88 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[6][22]_C/C (HIGH)
+
+ There are 87 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[6][22]_LDC/G (HIGH)
+
+ There are 88 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[6][22]_P/C (HIGH)
+
+ There are 80 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[6][23]_C/C (HIGH)
+
+ There are 79 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[6][23]_LDC/G (HIGH)
+
+ There are 80 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[6][23]_P/C (HIGH)
+
+ There are 72 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[6][24]_C/C (HIGH)
+
+ There are 71 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[6][24]_LDC/G (HIGH)
+
+ There are 72 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[6][24]_P/C (HIGH)
+
+ There are 64 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[6][25]_C/C (HIGH)
+
+ There are 63 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[6][25]_LDC/G (HIGH)
+
+ There are 64 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[6][25]_P/C (HIGH)
+
+ There are 56 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[6][26]_C/C (HIGH)
+
+ There are 55 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[6][26]_LDC/G (HIGH)
+
+ There are 56 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[6][26]_P/C (HIGH)
+
+ There are 48 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[6][27]_C/C (HIGH)
+
+ There are 47 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[6][27]_LDC/G (HIGH)
+
+ There are 48 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[6][27]_P/C (HIGH)
+
+ There are 40 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[6][28]_C/C (HIGH)
+
+ There are 39 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[6][28]_LDC/G (HIGH)
+
+ There are 40 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[6][28]_P/C (HIGH)
+
+ There are 32 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[6][29]_C/C (HIGH)
+
+ There are 31 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[6][29]_LDC/G (HIGH)
+
+ There are 32 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[6][29]_P/C (HIGH)
+
+ There are 256 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[6][2]_C/C (HIGH)
+
+ There are 255 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[6][2]_LDC/G (HIGH)
+
+ There are 256 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[6][2]_P/C (HIGH)
+
+ There are 24 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[6][30]_C/C (HIGH)
+
+ There are 23 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[6][30]_LDC/G (HIGH)
+
+ There are 24 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[6][30]_P/C (HIGH)
+
+ There are 16 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[6][31]_C/C (HIGH)
+
+ There are 15 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[6][31]_LDC/G (HIGH)
+
+ There are 16 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[6][31]_P/C (HIGH)
+
+ There are 256 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[6][3]_C/C (HIGH)
+
+ There are 255 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[6][3]_LDC/G (HIGH)
+
+ There are 256 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[6][3]_P/C (HIGH)
+
+ There are 256 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[6][4]_C/C (HIGH)
+
+ There are 255 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[6][4]_LDC/G (HIGH)
+
+ There are 256 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[6][4]_P/C (HIGH)
+
+ There are 256 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[6][5]_C/C (HIGH)
+
+ There are 255 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[6][5]_LDC/G (HIGH)
+
+ There are 256 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[6][5]_P/C (HIGH)
+
+ There are 256 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[6][6]_C/C (HIGH)
+
+ There are 255 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[6][6]_LDC/G (HIGH)
+
+ There are 256 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[6][6]_P/C (HIGH)
+
+ There are 256 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[6][7]_C/C (HIGH)
+
+ There are 255 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[6][7]_LDC/G (HIGH)
+
+ There are 256 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[6][7]_P/C (HIGH)
+
+ There are 200 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[6][8]_C/C (HIGH)
+
+ There are 199 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[6][8]_LDC/G (HIGH)
+
+ There are 200 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[6][8]_P/C (HIGH)
+
+ There are 192 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[6][9]_C/C (HIGH)
+
+ There are 191 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[6][9]_LDC/G (HIGH)
+
+ There are 192 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[6][9]_P/C (HIGH)
+
+ There are 256 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[7][0]_C/C (HIGH)
+
+ There are 255 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[7][0]_LDC/G (HIGH)
+
+ There are 256 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[7][0]_P/C (HIGH)
+
+ There are 184 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[7][10]_C/C (HIGH)
+
+ There are 183 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[7][10]_LDC/G (HIGH)
+
+ There are 184 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[7][10]_P/C (HIGH)
+
+ There are 176 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[7][11]_C/C (HIGH)
+
+ There are 175 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[7][11]_LDC/G (HIGH)
+
+ There are 176 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[7][11]_P/C (HIGH)
+
+ There are 168 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[7][12]_C/C (HIGH)
+
+ There are 167 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[7][12]_LDC/G (HIGH)
+
+ There are 168 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[7][12]_P/C (HIGH)
+
+ There are 160 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[7][13]_C/C (HIGH)
+
+ There are 159 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[7][13]_LDC/G (HIGH)
+
+ There are 160 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[7][13]_P/C (HIGH)
+
+ There are 152 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[7][14]_C/C (HIGH)
+
+ There are 151 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[7][14]_LDC/G (HIGH)
+
+ There are 152 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[7][14]_P/C (HIGH)
+
+ There are 144 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[7][15]_C/C (HIGH)
+
+ There are 143 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[7][15]_LDC/G (HIGH)
+
+ There are 144 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[7][15]_P/C (HIGH)
+
+ There are 136 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[7][16]_C/C (HIGH)
+
+ There are 135 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[7][16]_LDC/G (HIGH)
+
+ There are 136 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[7][16]_P/C (HIGH)
+
+ There are 128 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[7][17]_C/C (HIGH)
+
+ There are 127 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[7][17]_LDC/G (HIGH)
+
+ There are 128 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[7][17]_P/C (HIGH)
+
+ There are 120 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[7][18]_C/C (HIGH)
+
+ There are 119 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[7][18]_LDC/G (HIGH)
+
+ There are 120 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[7][18]_P/C (HIGH)
+
+ There are 112 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[7][19]_C/C (HIGH)
+
+ There are 111 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[7][19]_LDC/G (HIGH)
+
+ There are 112 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[7][19]_P/C (HIGH)
+
+ There are 256 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[7][1]_C/C (HIGH)
+
+ There are 255 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[7][1]_LDC/G (HIGH)
+
+ There are 256 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[7][1]_P/C (HIGH)
+
+ There are 104 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[7][20]_C/C (HIGH)
+
+ There are 103 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[7][20]_LDC/G (HIGH)
+
+ There are 104 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[7][20]_P/C (HIGH)
+
+ There are 96 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[7][21]_C/C (HIGH)
+
+ There are 95 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[7][21]_LDC/G (HIGH)
+
+ There are 96 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[7][21]_P/C (HIGH)
+
+ There are 88 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[7][22]_C/C (HIGH)
+
+ There are 87 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[7][22]_LDC/G (HIGH)
+
+ There are 88 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[7][22]_P/C (HIGH)
+
+ There are 80 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[7][23]_C/C (HIGH)
+
+ There are 79 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[7][23]_LDC/G (HIGH)
+
+ There are 80 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[7][23]_P/C (HIGH)
+
+ There are 72 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[7][24]_C/C (HIGH)
+
+ There are 71 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[7][24]_LDC/G (HIGH)
+
+ There are 72 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[7][24]_P/C (HIGH)
+
+ There are 64 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[7][25]_C/C (HIGH)
+
+ There are 63 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[7][25]_LDC/G (HIGH)
+
+ There are 64 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[7][25]_P/C (HIGH)
+
+ There are 56 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[7][26]_C/C (HIGH)
+
+ There are 55 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[7][26]_LDC/G (HIGH)
+
+ There are 56 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[7][26]_P/C (HIGH)
+
+ There are 48 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[7][27]_C/C (HIGH)
+
+ There are 47 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[7][27]_LDC/G (HIGH)
+
+ There are 48 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[7][27]_P/C (HIGH)
+
+ There are 40 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[7][28]_C/C (HIGH)
+
+ There are 39 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[7][28]_LDC/G (HIGH)
+
+ There are 40 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[7][28]_P/C (HIGH)
+
+ There are 32 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[7][29]_C/C (HIGH)
+
+ There are 31 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[7][29]_LDC/G (HIGH)
+
+ There are 32 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[7][29]_P/C (HIGH)
+
+ There are 256 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[7][2]_C/C (HIGH)
+
+ There are 255 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[7][2]_LDC/G (HIGH)
+
+ There are 256 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[7][2]_P/C (HIGH)
+
+ There are 24 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[7][30]_C/C (HIGH)
+
+ There are 23 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[7][30]_LDC/G (HIGH)
+
+ There are 24 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[7][30]_P/C (HIGH)
+
+ There are 16 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[7][31]_C/C (HIGH)
+
+ There are 15 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[7][31]_LDC/G (HIGH)
+
+ There are 16 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[7][31]_P/C (HIGH)
+
+ There are 256 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[7][3]_C/C (HIGH)
+
+ There are 255 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[7][3]_LDC/G (HIGH)
+
+ There are 256 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[7][3]_P/C (HIGH)
+
+ There are 256 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[7][4]_C/C (HIGH)
+
+ There are 255 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[7][4]_LDC/G (HIGH)
+
+ There are 256 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[7][4]_P/C (HIGH)
+
+ There are 256 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[7][5]_C/C (HIGH)
+
+ There are 255 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[7][5]_LDC/G (HIGH)
+
+ There are 256 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[7][5]_P/C (HIGH)
+
+ There are 256 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[7][6]_C/C (HIGH)
+
+ There are 255 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[7][6]_LDC/G (HIGH)
+
+ There are 256 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[7][6]_P/C (HIGH)
+
+ There are 256 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[7][7]_C/C (HIGH)
+
+ There are 255 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[7][7]_LDC/G (HIGH)
+
+ There are 256 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[7][7]_P/C (HIGH)
+
+ There are 200 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[7][8]_C/C (HIGH)
+
+ There are 199 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[7][8]_LDC/G (HIGH)
+
+ There are 200 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[7][8]_P/C (HIGH)
+
+ There are 192 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[7][9]_C/C (HIGH)
+
+ There are 191 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[7][9]_LDC/G (HIGH)
+
+ There are 192 register/latch pins with no clock driven by root clock pin: mips/dp/rf/rf_reg[7][9]_P/C (HIGH)
+
+
+2. checking constant_clock
+--------------------------
+ There are 0 register/latch pins with constant_clock.
+
+
+3. checking pulse_width_clock
+-----------------------------
+ There are 0 register/latch pins which need pulse_width check
+
+
+4. checking unconstrained_internal_endpoints
+--------------------------------------------
+ There are 1547 pins that are not constrained for maximum delay. (HIGH)
+
+ There are 0 pins that are not constrained for maximum delay due to constant clock.
+
+
+5. checking no_input_delay
+--------------------------
+ There are 2 input ports with no input delay specified. (HIGH)
+
+ There are 0 input ports with no input delay but user has a false path constraint.
+
+
+6. checking no_output_delay
+---------------------------
+ There are 65 ports with no output delay specified. (HIGH)
+
+ There are 0 ports with no output delay but user has a false path constraint
+
+ There are 0 ports with no output delay but with a timing clock defined on it or propagating through it
+
+
+7. checking multiple_clock
+--------------------------
+ There are 0 register/latch pins with multiple clocks.
+
+
+8. checking generated_clocks
+----------------------------
+ There are 0 generated clocks that are not connected to a clock source.
+
+
+9. checking loops
+-----------------
+ There are 0 combinational loops in the design.
+
+
+10. checking partial_input_delay
+--------------------------------
+ There are 0 input ports with partial input delay specified.
+
+
+11. checking partial_output_delay
+---------------------------------
+ There are 0 ports with partial output delay specified.
+
+
+12. checking latch_loops
+------------------------
+ There are 0 combinational latch loops in the design through latch input
+
+
+
+------------------------------------------------------------------------------------------------
+| Design Timing Summary
+| ---------------------
+------------------------------------------------------------------------------------------------
+
+    WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints     WPWS(ns)     TPWS(ns)  TPWS Failing Endpoints  TPWS Total Endpoints  
+    -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------     --------     --------  ----------------------  --------------------  
+         NA           NA                     NA                   NA           NA           NA                     NA                   NA           NA           NA                      NA                    NA  
+
+
+There are no user specified timing constraints.
+
+
+------------------------------------------------------------------------------------------------
+| Clock Summary
+| -------------
+------------------------------------------------------------------------------------------------
+
+
+------------------------------------------------------------------------------------------------
+| Intra Clock Table
+| -----------------
+------------------------------------------------------------------------------------------------
+
+Clock             WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints     WPWS(ns)     TPWS(ns)  TPWS Failing Endpoints  TPWS Total Endpoints  
+-----             -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------     --------     --------  ----------------------  --------------------  
+
+
+------------------------------------------------------------------------------------------------
+| Inter Clock Table
+| -----------------
+------------------------------------------------------------------------------------------------
+
+From Clock    To Clock          WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints  
+----------    --------          -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------  
+
+
+------------------------------------------------------------------------------------------------
+| Other Path Groups Table
+| -----------------------
+------------------------------------------------------------------------------------------------
+
+Path Group    From Clock    To Clock          WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints  
+----------    ----------    --------          -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------  
+
+
+------------------------------------------------------------------------------------------------
+| Timing Details
+| --------------
+------------------------------------------------------------------------------------------------
+
+
