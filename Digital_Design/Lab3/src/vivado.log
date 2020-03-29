@@ -1,0 +1,22 @@
+#-----------------------------------------------------------
+# Vivado v2016.4 (64-bit)
+# SW Build 1756540 on Mon Jan 23 19:11:23 MST 2017
+# IP Build 1755317 on Mon Jan 23 20:30:07 MST 2017
+# Start of session at: Tue Mar 21 23:40:34 2017
+# Process ID: 6496
+# Current directory: C:/Users/kerem/Google Drive/Semester3/CS-223/Labs/Lab3/KeremLab3
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent1512 C:\Users\kerem\Google Drive\Semester3\CS-223\Labs\Lab3\KeremLab3\KeremLab3.xpr
+# Log file: C:/Users/kerem/Google Drive/Semester3/CS-223/Labs/Lab3/KeremLab3/vivado.log
+# Journal file: C:/Users/kerem/Google Drive/Semester3/CS-223/Labs/Lab3/KeremLab3\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project -read_only {C:/Users/kerem/Google Drive/Semester3/CS-223/Labs/Lab3/KeremLab3/KeremLab3.xpr}
+INFO: [Project 1-313] Project file moved from 'D:/Users/TEMP/Desktop/KeremLab3' since last save.
+Scanning sources...
+Finished scanning sources
+WARNING: [Project 1-229] Project 'KeremLab3.xpr' is read-only and therefore could not be upgraded for this version of Vivado.  Use 'File | Save Project As...' if you wish to save an upgraded copy.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Vivado/Vivado/2016.4/data/ip'.
+exit
+INFO: [Common 17-206] Exiting Vivado at Tue Mar 21 23:41:23 2017...

@@ -1,0 +1,11 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  "ClockTest_time_synth.v"
+sv xil_defaultlib  "../../../../Lab5.srcs/sim_1/new/MotorTest.sv"
+sv xil_defaultlib  "../../../../Lab5.srcs/sim_1/new/CarTest.sv"
+sv xil_defaultlib  "../../../../Lab5.srcs/sim_1/new/ClockTest.sv"
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

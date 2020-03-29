@@ -1,0 +1,13 @@
+#-----------------------------------------------------------
+# Webtalk v2016.4 (64-bit)
+# SW Build 1756540 on Mon Jan 23 19:11:23 MST 2017
+# IP Build 1755317 on Mon Jan 23 20:30:07 MST 2017
+# Start of session at: Tue Mar 21 23:24:02 2017
+# Process ID: 8200
+# Current directory: C:/Users/kerem/Desktop/lab4/lab4.sim/sim_1/behav
+# Command line: wbtcv.exe -mode batch -source C:/Users/kerem/Desktop/lab4/lab4.sim/sim_1/behav/xsim.dir/trafficsim_behav/webtalk/xsim_webtalk.tcl -notrace
+# Log file: C:/Users/kerem/Desktop/lab4/lab4.sim/sim_1/behav/webtalk.log
+# Journal file: C:/Users/kerem/Desktop/lab4/lab4.sim/sim_1/behav\webtalk.jou
+#-----------------------------------------------------------
+source C:/Users/kerem/Desktop/lab4/lab4.sim/sim_1/behav/xsim.dir/trafficsim_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Tue Mar 21 23:24:02 2017...

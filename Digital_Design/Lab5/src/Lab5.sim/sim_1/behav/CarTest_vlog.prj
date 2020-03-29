@@ -1,0 +1,14 @@
+# compile verilog/system verilog design source files
+sv xil_defaultlib  "../../../Lab5.srcs/sources_1/new/ClockDivider.sv"
+sv xil_defaultlib  "../../../Lab5.srcs/sources_1/new/MotorDriver.sv"
+sv xil_defaultlib  "../../../Lab5.srcs/sources_1/new/SevSeg_4digit.sv"
+sv xil_defaultlib  "../../../Lab5.srcs/sources_1/new/Car.sv"
+sv xil_defaultlib  "../../../Lab5.srcs/sim_1/new/MotorTest.sv"
+sv xil_defaultlib  "../../../Lab5.srcs/sim_1/new/CarTest.sv"
+sv xil_defaultlib  "../../../Lab5.srcs/sim_1/new/ClockTest.sv"
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

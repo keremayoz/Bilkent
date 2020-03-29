@@ -1,0 +1,10 @@
+#-----------------------------------------------------------
+# Vivado v2015.2 (64-bit)
+# SW Build 1266856 on Fri Jun 26 16:35:25 MDT 2015
+# IP Build 1264090 on Wed Jun 24 14:22:01 MDT 2015
+# Start of session at: Thu Apr 06 12:13:22 2017
+# Process ID: 3760
+# Log file: D:/Users/TEMP/Desktop/Lab5/Lab5.runs/synth_1/Car.vds
+# Journal file: D:/Users/TEMP/Desktop/Lab5/Lab5.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source Car.tcl -notrace

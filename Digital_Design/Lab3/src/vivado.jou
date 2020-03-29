@@ -1,0 +1,13 @@
+#-----------------------------------------------------------
+# Vivado v2016.4 (64-bit)
+# SW Build 1756540 on Mon Jan 23 19:11:23 MST 2017
+# IP Build 1755317 on Mon Jan 23 20:30:07 MST 2017
+# Start of session at: Tue Mar 21 23:40:34 2017
+# Process ID: 6496
+# Current directory: C:/Users/kerem/Google Drive/Semester3/CS-223/Labs/Lab3/KeremLab3
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent1512 C:\Users\kerem\Google Drive\Semester3\CS-223\Labs\Lab3\KeremLab3\KeremLab3.xpr
+# Log file: C:/Users/kerem/Google Drive/Semester3/CS-223/Labs/Lab3/KeremLab3/vivado.log
+# Journal file: C:/Users/kerem/Google Drive/Semester3/CS-223/Labs/Lab3/KeremLab3\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project -read_only {C:/Users/kerem/Google Drive/Semester3/CS-223/Labs/Lab3/KeremLab3/KeremLab3.xpr}

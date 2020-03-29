@@ -1,0 +1,29 @@
+Vivado Simulator 2015.2
+Copyright 1986-1999, 2001-2015 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2015.2/bin/unwrapped/win64.o/xelab.exe -wto f270c12f58024beab1c8746ad83ae2ed --debug typical --relax --mt 2 --maxdelay -L xil_defaultlib -L simprims_ver -L secureip --snapshot TestBench_time_synth -transport_int_delays -pulse_r 0 -pulse_int_r 0 xil_defaultlib.TestBench xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+INFO: [XSIM 43-3451] SDF backannotation process started with SDF file "TestBench_time_synth.sdf", for root module "TestBench/gc".
+INFO: [XSIM 43-3452] SDF backannotation was successful for SDF file "TestBench_time_synth.sdf", for root module "TestBench/gc".
+Time Resolution for simulation is 1ps
+Compiling module simprims_ver.BUFG
+Compiling module simprims_ver.x_lut1_mux2
+Compiling module simprims_ver.LUT1
+Compiling module simprims_ver.sffsrce_fdre
+Compiling module simprims_ver.FDRE
+Compiling module simprims_ver.CARRY4
+Compiling module xil_defaultlib.ClockDivider
+Compiling module simprims_ver.IBUF
+Compiling module simprims_ver.latchsre_ldce
+Compiling module simprims_ver.LDCE
+Compiling module xil_defaultlib.flipflop
+Compiling module xil_defaultlib.GrayCounter
+Compiling module simprims_ver.OBUF
+Compiling module xil_defaultlib.top
+Compiling module xil_defaultlib.TestBench
+Compiling module xil_defaultlib.glbl
+Waiting for 3 sub-compilation(s) to finish...
+Built simulation snapshot TestBench_time_synth

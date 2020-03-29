@@ -1,0 +1,18 @@
+Vivado Simulator 2015.2
+Copyright 1986-1999, 2001-2015 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2015.2/bin/unwrapped/win64.o/xelab.exe -wto be9152a1560c46d89139347bd5f1d60d --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot CarTest_behav xil_defaultlib.CarTest xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module unisims_ver.BUFG
+Compiling module xil_defaultlib.ClockDivider
+Compiling module xil_defaultlib.MotorDriver
+Compiling module xil_defaultlib.SevSeg_4digit
+Compiling module xil_defaultlib.Car
+Compiling module xil_defaultlib.CarTest
+Compiling module xil_defaultlib.glbl
+Waiting for 2 sub-compilation(s) to finish...
+Built simulation snapshot CarTest_behav

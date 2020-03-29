@@ -1,0 +1,15 @@
+P Ali
+P Veli
+P Ahmet
+P Mehmet
+F Ali Veli
+F Ahmet Mehmet
+F Mehmet Ali
+F Mehmet Veli
+L Mehmet
+L Veli
+U Mehmet Ahmet
+L Mehmet
+Q Ali Veli
+Q Ahmet Mehmet
+X

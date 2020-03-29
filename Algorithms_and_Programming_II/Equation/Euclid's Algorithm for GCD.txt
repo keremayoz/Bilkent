@@ -1,0 +1,112 @@
+Euclid's GCD Algorithm
+One of the earliest known numerical algorithms is that developed by Euclid (the father of geometry) in about 300 B.C. for computing the greatest common divisor (GCD) of two positive integers. 
+Let GCD(x,y) be the GCD of positive integers x and y. If x = y, then obviously 
+
+GCD(x,y) = GCD(x,x) = x
+. 
+Euclid's insight was to observe that, if x > y, then 
+
+GCD(x,y) = GCD(x-y,y)
+. 
+Actually, this is easy to prove. Suppose that d is a divisor of both x and y. Then there exist integers q1 and q2 such that x = q1d and y = q2d. But then 
+x - y = q1d - q2d = (q1 - q2)d. Therefore d is also a divisor of x-y. 
+Using similar reasoning, one can show the converse, i.e., that any divisor of x-y and y is also a divisor of x. Hence, the set of common divisors of x and y is the same as the set of common divisors of x-y and y. In particular, the largest values in these two sets are the same, which is to say that GCD(x,y) = GCD(x-y,y). 
+A Java method that implements Euclid's algorithm is as follows: 
+
+   int gcd(int K, int M) {
+      int k = K;   // In order to state a simple, elegant loop invariant,
+      int m = M;   // we keep the formal arguments constant and use 
+                   // local variables to do the calculations.
+      // loop invariant: GCD(K,M) = GCD(k,m)
+      while (k != m) {
+         if (k > m) 
+            { k = k-m; }
+         else 
+            { m = m-k; }
+      }
+      // At this point, GCD(K,M) = GCD(k,m) = GCD(k,k) = k
+      return k;
+   }
+
+As an example, suppose that we use this method to compute the GCD of 420 and 96. If we were to take a snapshot of the method's local variables immediately before the first loop iteration and immediately after each iteration, we'd get 
+When                         k     m
+--------------------       ----- -----
+Before 1st iteration        420   96
+After 1st iteration         324   96
+After 2nd iteration         228   96
+After 3rd iteration         132   96
+After 4th iteration          36   96
+After 5th iteration          36   60 
+After 6th iteration          36   24
+After 7th iteration          12   24
+After 8th iteration          12   12
+A significant improvement in performance (in some cases) is possible, however, by using the remainder operator (%) rather than subtraction. Notice in the above that we subtracted m's value from k's four times before k became less than m. The same effect results from replacing k's value by k % m. (In this case, 420 % 96 is 36.) Using this approach forces us to change the loop condition, however, as here what will eventually happen is that one of k or m will become zero. (Indeed, k == m is impossible to arrive at unless K == M.) Note that GCD(x,0) = GCD(0,x) = x. (After all, x's greatest divisor is itself, which is also a divisor of zero.) 
+Our new method is as follows: 
+
+   int gcd(int K, int M) {
+      int k = K;   // In order to state a simple, elegant loop invariant,
+      int m = M;   // we keep the formal arguments constant and use 
+                   // local variables to do the calculations.
+      // loop invariant: GCD(K,M) = GCD(k,m)
+      while (k !=0  &&  m != 0) {
+         if (k > m)
+            { k = k % m; }
+         else
+            { m = m % k; }
+      }
+      // At this point, GCD(K,M) = GCD(k,m) = max(k,m)
+      return Math.max(k,m);
+   }
+
+Using this version of the method, we get the following snapshots: 
+When                         k     m
+--------------------       ----- -----
+Before 1st iteration        420   96
+After 1th iteration          36   96
+After 2nd iteration          36   24
+After 3rd iteration          12   24
+After 4th iteration          12    0
+Notice that the number of loop iterations has been cut in half. Further code-simplification improvements are possible, however, by ensuring that k ? m. We can achieve this by replacing, on each iteration, k's value by m's and m's by k % m. This way, no if statement is needed: 
+
+   int gcd(int K, int M) {
+      int k = Math.max(K,M);
+      int m = Math.min(K,M);
+      // loop invariant: k ? m ? GCD(K,M) = GCD(k,m)
+      while (m != 0) {
+         int r = k % m;
+         k = m;
+         m = r;
+      }
+      // At this point, GCD(K,M) = GCD(k,m) = GCD(k,0) = k
+      return k;
+   }
+
+Using this version of the method, we get the following snapshots: 
+When                         k     m
+--------------------       ----- -----
+Before 1st iteration        420   96
+After 1th iteration          96   36
+After 2nd iteration          36   24
+After 3rd iteration          24   12
+After 4th iteration          12    0
+
+
+******************************************************************************************
+
+//gcd() method that finds greatest common divisor of two numbers
+    public static int gcd(int k, int l) {
+    	while (Math.max(k,l) % Math.min(k,l) != 0) {
+    		//Making k everytime greater than l by swapping if l > k
+    		if (l > k) {
+	    		k = k + l;
+	    		l = k - l;
+	    		k = k - l;
+    		}
+    		k = k % l;
+    		/*After every operation we supposed to have the least element and the remainder as new elements
+    			So we change the greatest one with the remainder and take the least one directly.
+    				No matter which one is greater because we make k the greatest everytime at the beginning */
+    	}
+    	return (int)Math.min(k,l);
+    }
+

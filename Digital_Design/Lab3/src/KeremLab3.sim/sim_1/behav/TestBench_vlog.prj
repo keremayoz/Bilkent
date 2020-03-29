@@ -1,0 +1,9 @@
+# compile verilog/system verilog design source files
+sv xil_defaultlib  "../../../KeremLab3.srcs/sources_1/new/GrayCounter.sv"
+sv xil_defaultlib  "../../../KeremLab3.srcs/sim_1/new/TestBench.sv"
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

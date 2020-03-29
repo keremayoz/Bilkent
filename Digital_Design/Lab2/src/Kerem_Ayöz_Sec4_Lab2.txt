@@ -1,0 +1,54 @@
+`timescale 1ns / 1ps
+//////////////////////////////////////////////////////////////////////////////////
+// Company: 
+// Engineer: 
+// 
+// Create Date: 03/02/2017 10:04:30 AM
+// Design Name: 
+// Module Name: decoder24
+// Project Name: 
+// Target Devices: 
+// Tool Versions: 
+// Description: 
+// 
+// Dependencies: 
+// 
+// Revision:
+// Revision 0.01 - File Created
+// Additional Comments:
+// 
+//////////////////////////////////////////////////////////////////////////////////
+
+//2:4 decoder implementation
+module decoder24(
+    input x,
+    input y,
+    output d0,
+    output d1,
+    output d2,
+    output d3
+    );
+    
+    assign d0 = ~x & ~y;
+    assign d1 = ~x & y;
+    assign d2 = x & ~y;
+    assign d3 = x & y;
+    
+endmodule
+
+
+#Switches
+set_property PACKAGE_PIN V17 [get_ports {x}] 	 	 	 	 	 
+ 	set_property IOSTANDARD LVCMOS33 [get_ports {x}] 
+set_property PACKAGE_PIN V16 [get_ports {y}] 	 	 	 	 	 
+ 	set_property IOSTANDARD LVCMOS33 [get_ports {y}]
+
+#LED's
+set_property PACKAGE_PIN P3 [get_ports {d3}]  	 	 	 	 
+ 	set_property IOSTANDARD LVCMOS33 [get_ports {d3}] 
+set_property PACKAGE_PIN N3 [get_ports {d2}]  	 	 	 	 
+ 	set_property IOSTANDARD LVCMOS33 [get_ports {d2}] 
+set_property PACKAGE_PIN P1 [get_ports {d1}]  	 	 	 	 
+ 	set_property IOSTANDARD LVCMOS33 [get_ports {d1}] 
+set_property PACKAGE_PIN L1 [get_ports {d0}]  	 	 	 	  			
+    set_property IOSTANDARD LVCMOS33 [get_ports {d0}]
